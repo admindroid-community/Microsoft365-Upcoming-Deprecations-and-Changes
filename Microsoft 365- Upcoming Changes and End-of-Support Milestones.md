@@ -4,7 +4,7 @@ Join us in this blog as we explore the dynamic world of Microsoft 365. We will s
 
 Discover the **key changes, deprecations,** and **end-of-support** scenarios that require your attention. From deprecated features to configuration modifications and essential upgrade plans, we'll cover everything you need to make informed decisions and ensure a smooth transition.
 
-##Microsoft 365 Upcoming Changes and Deprecations List:
+## Microsoft 365 Upcoming Changes and Deprecations List:
 
 Here is a list of changes categorized by month and year.
 
@@ -32,7 +32,7 @@ Change:1, Major Announcement:2)
 (New Feature:5 \| Retirement: 5 \| Enhancement:2 \| Configuration
 Change:1 \| Major Announcement:1)
 
-### New Feature:
+### New Features:
 
 ### July 2023: Collaborative Meeting Notes in Microsoft Teams
 
@@ -84,9 +84,9 @@ policy wizard, and see the new insights in insider risk analytics.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC572514>
 
-## Enhancement:
+### Enhancements
 
-Mid July 2023- Data Loss Prevention for EXO - Deliver the Message to the
+### Mid July 2023- Data Loss Prevention for EXO - Deliver the Message to the
 Hosted Quarantine.\
 Microsoft is introducing a new column in the \"Data Loss Prevention\"
 section that allows easy viewing of messages delivered to hosted
@@ -109,9 +109,9 @@ admins on identity assets.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC574388>
 
-## Retirement
+### Retirements
 
-July 01, 2023: Retirement of Remote PowerShell (RPS) Protocol in
+### July 01, 2023: Retirement of Remote PowerShell (RPS) Protocol in
 Exchange Online PowerShell.\
 If you are using RPS to establish an Exchange Online connection, you
 will not be able to do so after July 1, 2023.\
@@ -160,7 +160,7 @@ file to PDF.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC584834>
 
-July 2023: Changes are Coming to the Minimum Supported Browsers &
+### July 2023: Changes are Coming to the Minimum Supported Browsers &
 Versions for Microsoft 365 Web Apps.\
 Unsupported browsers will no longer be able to connect to the Microsoft
 365 web applications. applications.\
@@ -170,7 +170,7 @@ the latest version.\
 ***Ref:***
 https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC518729\
 \
-Configuration change:
+Configuration Change:
 
 ### July 11, 2023 - Azure Information Protection Add-in will be Disabled by Default for Office Apps
 
@@ -183,7 +183,7 @@ using the Add-in.\
 ***Ref:***
 <https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC500902>
 
-## Major announcement:
+## Major Announcements:
 
 ### Azure AD Graph PowerShell Deprecation Postponed
 
@@ -203,7 +203,7 @@ SMS and voice for MFA will be prompted to use the **Microsoft
 Authenticator** app. They can skip this prompt for a maximum of 3 times,
 after which registration of the app will be required.
 
-# **Solution:** Admins can [run a registration campaign to set up Microsoft Authenticator](https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-registration-campaign)
+**Solution:** Admins can [run a registration campaign to set up Microsoft Authenticator](https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-registration-campaign)
 
 ***Ref***:
 https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396
@@ -214,7 +214,7 @@ New feature: 2 \| Enhancements: 1
 
 ## New feature:
 
-Aug 2023- Double-key Encryption to Protect Sensitive Files and Emails in
+### Aug 2023- Double-key Encryption to Protect Sensitive Files and Emails in
 Microsoft 365 Apps.\
 To protect sensitive content, Microsoft 365 Apps users can now use
 Double Key Encryption (DKE) for files and emails using the built-in
@@ -223,7 +223,7 @@ labeling client.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC611732>
 
-Aug 2023- Introducing Voice OTP
+### Aug 2023- Introducing Voice OTP
 
 Starting in early August, Microsoft is introducing Voice OTP (One-Time
 Password) as an enhancement to registration campaigns. This new feature
@@ -234,7 +234,7 @@ will be available starting from July.
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396>
 
-Enhancement:
+### Enhancement:
 
 ### Early Aug 2023- Enhanced Support for Teams Video Clips
 
@@ -287,7 +287,7 @@ the Get-*MailTrafficATPReport,* *Get-MailDetailATPReport*, and
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC588322>
 
-Sep 15, 2023- Disable Video Upload to Stream (Classic)
+### Sep 15, 2023- Disable Video Upload to Stream (Classic)
 
 As part of Classic Stream retirement, you can't upload video to Stream
 (Classic)
@@ -352,7 +352,7 @@ date, size, or opt-out status.
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692>
 
-Oct 10, 2023- Older Office Versions Not Supported for Connecting to
+### Oct 10, 2023- Older Office Versions Not Supported for Connecting to
 Microsoft 365 Services
 
 Older Office versions (Office 2016 & 2019) might still be able to
@@ -364,7 +364,7 @@ supported.
 ***Ref**:*
 <https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity>
 
-Oct 15, 2023- Classic Stream Retirement.\
+### Oct 15, 2023- Classic Stream Retirement.\
 Users are no longer able to access or use Stream (Classic) unless admin
 takes action to delay this change.
 
@@ -375,7 +375,7 @@ This change can be delayed until April 15, 2024.
 ***Ref:***
 https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming
 
-Nov 2023
+## Nov 2023
 
 Major update: 1
 
@@ -420,7 +420,7 @@ Message Encryption protection.
 ***Ref:***
 <https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516>
 
-2024 (Attention needed: 8)
+## 2024 (Attention needed: 8)
 
 ### Jan 2024- Wiki Retirement in Teams Channels
 
@@ -512,7 +512,7 @@ Windows with the new Outlook for Windows.
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123>
 
-2025 (Attention needed: 2)
+## 2025 (Attention needed: 2)
 
 ### Feb 01, 2025- Azure Key Vault: Soft-delete Will be Enabled on All Key Vaults 
 
@@ -529,7 +529,7 @@ Office 2016 and Office 2019 extended support ends in 2025.\
 ***Ref:***
 https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016
 
-2026 (Attention needed: 4)
+## 2026 (Attention needed: 4)
 
 ### Jan 13, 2026- End of Extended Support for Microsoft Advanced Threat Analytics 1.x 
 
@@ -553,7 +553,7 @@ control, which has all the same capabilities
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
 
-Apr 02, 2026- SharePoint 2013 Workflow Retirement\
+### Apr 02, 2026- SharePoint 2013 Workflow Retirement\
 SharePoint 2013 workflows will no longer be supported.
 
 **Solution:** You can move to Power Automate or other supported
@@ -579,6 +579,7 @@ Apps, Power Automate, or Forms.
 <https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-infopath-forms-services-in-microsoft-365/ba-p/3858190>
 
 
-In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires staying informed about the changes. By proactively adapting to these changes, you can optimize your Microsoft 365 experience, maximize productivity, and effectively plan for the future. We are committed to keeping this blog updated with the latest information, so stay tuned for upcoming updates.
+In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires staying informed about the changes. By proactively adapting to these changes, you can optimize your Microsoft 365 experience, maximize productivity, and effectively plan for the future. 
 
-Blog link: https://blog.admindroid.com/microsoft-365-end-of-support-milestones
+We are committed to keeping this blog updated with the latest information, so stay tuned for upcoming updates.
+### Blog link: https://blog.admindroid.com/microsoft-365-end-of-support-milestones
