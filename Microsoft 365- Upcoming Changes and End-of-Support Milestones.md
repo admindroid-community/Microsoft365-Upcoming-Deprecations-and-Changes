@@ -4,60 +4,580 @@ Join us in this blog as we explore the dynamic world of Microsoft 365. We will s
 
 Discover the **key changes, deprecations,** and **end-of-support** scenarios that require your attention. From deprecated features to configuration modifications and essential upgrade plans, we'll cover everything you need to make informed decisions and ensure a smooth transition.
 
-|       Message                                                                                                                                                  |     Type                             |     Act By             |     Detailed Description                                                                                                                                                                                       |     Solution                                                                                                                                                                          |     For More Info                                                                                                                                                                                                                                       |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     Deprecation of Remote PowerShell (RPS) Protocol in Exchange Online PowerShell                                                                              |   Deprecation                        |   June 01, 2023        |   From June, Microsoft will start blocking RPS connections for tenants who haven’t opted out.  MS will block RPS for all tenants no matter the tenant creation date, size, or opt-out status  From Oct 2023.   |   You can use EXO V3 module                                                                                                                                                           |   https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597                                                                                                                    |
-|     Microsoft Authenticator Lite in Outlook: It allows users to complete MFA for their work or school account using Outlook on their iOS or Android device.    |   New feature/ Configuration change  |   June 09, 2023        |   This feature will be enabled on June 9th for all tenants that have not disabled it.                                                                                                                          |   To prevent its activation, set the state to 'disabled' or configure user include and exclude groups before June 9th.                                                                |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC532607                                                                                                                                                                    |
-|     Ending support for Microsoft Store for Business and Education apps                                                                                         |   End of support                     |   June 15, 2023        |   Intune will stop enforcing online and offline Microsoft Store for Business and Education apps on devices.                                                                                                    |   Add your apps through the new Microsoft Store app experience in Intune.                                                                                                             |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC553242                                                                                                                                                                    |
-|     Breakout rooms support in Microsoft Teams Rooms on Windows                                                                                                 |   New feature                        |   Mid-June 2023        |   Participate in a breakout room and be moved in and out of the main meeting, depending on a meeting organizer’s control.                                                                                      |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC564198                                                                                                                                                                    |
-|     Select together mode for everyone in Microsoft Teams Rooms on Windows                                                                                      |   New feature                        |   Mid-June 2023        |   Meeting organizers and presenters can select Together Mode for all the participants and select a layout to fit the meeting type.                                                                             |                                                                                                                                                                                       |   https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=126105                                                                                                                                                                     |
-|     Quarantine Admin Role Required for Exchange Admins for Quarantine Operations                                                                               |   Functionality change               |   June 2023            |   Tenant Exchange Administrators) need to be a Quarantine Administrator to perform Quarantine operations in the portal.                                                                                        |   Admins should update their organization roles                                                                                                                                       |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC447339                                                                                                                                                                    |
-|     Microsoft Stream Migration Tool: Partial Migration and Orphan Video Support                                                                                |   New feature                        |   June 2023            |   Partial migration support enables selecting specific content for migration. Orphan video support facilitates migrating videos that have no assigned owner in Stream (Classic).                               |   You can start migrating from classic Stream to Stram in SPO.  https://learn.microsoft.com/en-us/stream/streamnew/migration-process                                                  |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC553277    For detailed retirement timeline: https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#migration--retirement-timeline    |
-|     New limits on number and size of group secrets                                                                                                             |   Plan for change                    |   June 2023            |   The secrets stored on a single group can't exceed 48 individual secrets or have a total size greater than 10KB across all secrets on a single group. Else, group will stop working.                          |   To reduce secrets assigned to a group, create additional groups and split up group assignments for your Password-based SSO applications among them.                                 |   https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/whats-new#general-availability--new-limits-on-number-and-size-of-group-secrets-starting-june-2023                                                                               |
-|     Role Based Access Control (RBAC) in Microsoft Compliance Purview                                                                                           |   New feature                        |   June 2023 (Preview)  |   Audit will provide role-based information with Audit search results through the Microsoft Purview compliance portal user interface.                                                                          |   -                                                                                                                                                                                   |   https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=98145                                                                                                                                                                      |
-|     Microsoft365 admin center: Group driven membership management                                                                                              |   New feature                        |   June 2023 (Preview)  |   Admins can add a Security Group or a Microsoft 365 Group as a member of a Dynamic Microsoft 365 Group by using the memberOf property.                                                                        |   -                                                                                                                                                                                   |   https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=83113                                                                                                                                                                      |
-|     Collaborative Meeting Notes in Microsoft Teams                                                                                                             |   New feature                        |   June 2023            |   Collaborative notes allow meeting attendees to co-create and collaborate on their meeting agenda, notes, and action items.                                                                                   |   -                                                                                                                                                                                   |   https://o365reports.com/2023/05/09/collaborative-meeting-notes-in-microsoft-teams/                                                                                                                                                                    |
-|     Microsoft retiring the ‘SharedWith’ and ‘SharedWithDetails’ columns from OneDrive and SharePoint                                                           |   Retirement                         |   June 2023            |   Microsoft retiring the ‘SharedWith’ and ‘SharedWithDetails’ columns, as they do not accurately reflect the permissions and people who have access to an item.                                                |   “Microsoft 365 audit logs” or the “Manage Access” to understand which users have permission to an item.                                                                             |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC545906                                                                                                                                                                    |
-|     New Look of Office for the Web                                                                                                                             |   Enhancement                        |   June 2023            |   Excel, PowerPoint, and Word web have refreshed visuals to give you a clean modern look and help you focus on your work.                                                                                      |                                                                                                                                                                                       |   https://admin.microsoft.com/adminportal/home?#/MessageCenter/:/messages/MC452253                                                                                                                                                                      |
-|     REST API for On-Premises Mailboxes Preview Ending                                                                                                          |   Retirement                         |   June 2023            |   The ability to use these REST APIs in hybrid deployments will no longer be available.                                                                                                                        |   You can use Microsoft Graph to work with Exchange Online mailboxes and use EWS to work with Exchange Server (on-premises) mailboxes.                                                |   https://techcommunity.microsoft.com/t5/exchange-team-blog/the-end-of-the-rest-api-for-on-premises-mailboxes-preview/ba-p/3221219                                                                                                                      |
-|     Microsoft Defender for Office 365: Hourly option for notifications                                                                                         |   Enhancement                        |   June 2023            |   Using the quarantine policy, Admins can configure an hourly notification frequency for users in their organization.                                                                                          |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC383901                                                                                                                                                                    |
-|     AntiMalware Default policy:   common attachment filter settings changes                                                                                    |   Configuration Change               |   June 2023            |   The earlier default selection value of the 'Quarantine the message' is changed to 'Reject the message with NDR'.                                                                                             |   Create a new policy with ‘Quarantine the message’ selected or, you can revert the selection to ‘Quarantine the message’ after this change is rolled out.                            |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC544793                                                                                                                                                                    |
-|     Microsoft Teams: Set your work hours and location                                                                                                          |   New feature                        |   June 2023            |   Set your work location for the day in Microsoft Teams so your team can know your availability for in-office and remote collaboration.                                                                        |                                                                                                                                                                                       |   https://blog.admindroid.com/work-hours-and-location-in-outlook-for-efficient-collaboration/                                                                                                                                                           |
-|     Microsoft Defender for Office 365: New filter option for messages blocked due to file type block                                                           |   Enhancement                        |   June 2023            |   Microsoft is introducing the Admin Action - File type block filter to the Quarantine reason filter. It allows easy review of email messages blocked solely due to file type block.                           |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC528356                                                                                                                                                                    |
-|     Microsoft Secure Score is retiring the option to share recommended action details through Microsoft Planner                                                |   Retirement                         |   June 2023            |   Sharing recommendation details through Microsoft Planner will be no longer supported.                                                                                                                        |   You can share recommended action details through a link, email or Microsoft Teams.                                                                                                  |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC551024                                                                                                                                                                    |
-|     Microsoft Teams: Customize and edit emails for webinars                                                                                                    |                                      |   June 2023            |   Customize and edit content for webinar emails including registration confirmation, reminder emails, cancellation notices, and more.                                                                          |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC549348                                                                                                                                                                    |
-|     GradeSync for Teams Assignments retirement                                                                                                                 |   Retirement                         |   June 30, 2023        |   Grade Sync will no longer sync Assignments and grades from Microsoft Teams Assignments and the student information system (SIS).                                                                             |   Teachers can manually create assignments and update the grades from Teams Assignments into the SIS.                                                                                 |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC550584                                                                                                                                                                    |
-|     Azure AD, Azure AD Preview, and MS Online PowerShell modules deprecation.                                                                                  |   Retirement                         |   June 30, 2023        |   These modules will work with minimal investment, except for security updates. Some cmdlets may stop functioning after June 30, 2023, based on the Azure AD API status.                                       |   You can use Microsoft Graph PowerShell SDK                                                                                                                                          |   https://learn.microsoft.com/en-us/powershell/microsoftgraph/migration-steps?view=graph-powershell-1.0                                                                                                                                                 |
-|     Retirement of Dynamic Ordering feature in classic search                                                                                                   |   Retirement                         |   June 30, 2023        |   Microsoft disabled Dynamic Ordering for classic search experiences in SharePoint, rendering all associated configurations ineffective.                                                                       |   You can use the modern search                                                                                                                                                       |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC544789                                                                                                                                                                    |
-|     Retirement of OMEv1 (Office 365 Message Encryption)                                                                                                        |   Retirement                         |   June 30, 2023        |   on June 30th OMEv1 mail flow rules become read-only or delete-only. No new rules or rule modifications will be allowed.  On Dec 31 the OME v1 mail flow rules will be fully retired.                         |   If you don’t do anything, Microsoft will process all mail flow rules that currently applies OME protection to Microsoft Purview Message Encryption protection.                      |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516                                                                                                                                                                    |
-|     Azure Active Directory (Azure AD) Graph is deprecation                                                                                                     |   Retirement                         |   June 30, 2023        |   Azure Active Directory (Azure AD) Graph is deprecated and will be retired at any time after June 30, 2023, without advance notice.                                                                           |   Switch to Microsoft Graph which is more secure and resilient than Azure AD Graph.                                                                                                   |   https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview                                                                                                                                                                               |
-|     Azure Active Directory Authentication Library (ADAL) Retirement                                                                                            |   End of life                        |   June 30, 2023        |   While ADAL apps may continue to work, no support or security fixes will be provided past the end of life.                                                                                                    |   Update your applications to use Microsoft Authentication Library and Microsoft Graph API                                                                                            |   https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363                                                                                                    |
-|     Microsoft 365 E5/A5/G5/F5 (or equivalent) licenses required to use Teams DLP.                                                                              |   License plan change                |   June 30, 2023        |   Currently, users with E3/G3/A3/F3 license can create Teams DLP policies. But it won’t work after June.                                                                                                       |   Assign the appropriate Microsoft 365 E5/G5/A5/F5 licenses to users within the scope of the Teams DLP policies.                                                                      |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC546441                                                                                                                                                                    |
-|     Retirement of Remote PowerShell (RPS) protocol in Exchange Online PowerShell                                                                               |   Retirement                         |   July 01,2023         |   If you are using RPS to establish an Exchange Online connection, you will not be able to do so after July 1, 2023.                                                                                           |   You can use the EXO V3 module.                                                                                                                                                      |   https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597                                                                                                                    |
-|     Collaborative Meeting Notes in Microsoft Teams                                                                                                             |   New feature                        |   July 2023            |   Users will see a Notes button during meetings.  Participants can collaborate in real time, create an agenda, take notes and add tasks.                                                                       |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC538385                                                                                                                                                                    |
-|     Unsupported browsers will no longer be able to connect to the Microsoft 365 web applications                                                               |   Update                             |   July 2023            |   Changes are coming to the Minimum Supported Browsers & versions for Microsoft 365 web apps                                                                                                                   |   Ensure all devices in the organization are using a Microsoft 365 supported browser, and that browsers have been updated to the latest version.                                      |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC518729                                                                                                                                                                    |
-|     Azure Information Protection Add-in will be disabled by default for Office apps                                                                            |   Configuration change               |   July 11, 2023        |   Azure Information Protection Add-in will be disabled by default for Office Apps for the Semi-Annual Enterprise Channel.                                                                                      |   You will need to configure the policy setting "Use the Azure Information Protection add-in for sensitivity labeling" to keep using the Add-in.                                      |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC500902                                                                                                                                                                    |
-|     RPS retirement in SCC                                                                                                                                      |   Retirement                         |   July 15, 2023        |   Microsoft is deprecating the legacy RPS protocol in the Security and Compliance PowerShell module.                                                                                                           |   Use EXO PowerShell module version 3.2.0-Preview3 to ensure REST is used.  Use Connect-IPPSSession -UseRPSSession:$false   to establish the connection.                              |   https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-rps-protocol-in-security-and/ba-p/3815432                                                                                                                  |
-|     Stream (Classic) retirement                                                                                                                                |   Retirement                         |   Aug 15, 2023         |   As part of Classic Stream retirement, you can’t upload video to Stream (Classic)                                                                                                                             |   You can start to use Stream in SharePoint                                                                                                                                           |   https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#migration--retirement-timeline                                                                                                                            |
-|     Ending support for Microsoft Store for Business and Education apps                                                                                         |   End of support                     |   Sep 15, 2023         |   Microsoft Store for Business and Education apps will be removed from the Intune admin center.                                                                                                                |   Add your apps through the new Microsoft Store app experience in Intune.                                                                                                             |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC553242                                                                                                                                                                    |
-|     Microsoft Graph to Support HTTP/2                                                                                                                          |   New feature                        |   Sep 15, 2023         |   Microsoft Graph service (graph.microsoft.com) will enable HTTP version 2 (HTTP/2) in addition to HTTP/1.1. for API requests.                                                                                 |   -                                                                                                                                                                                   |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC447341                                                                                                                                                                    |
-|     Microsoft will retire the Stream live events                                                                                                               |   Retirement                         |   Sep 15, 2023         |   This affects customers who use Stream (Classic) or Yammer to create and host Stream live events.                                                                                                             |   Microsoft Teams live events will become a new platform to host and run live events.                                                                                                 |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC513601                                                                                                                                                                    |
-|     Azure Automation Run As accounts retirement                                                                                                                |   Retirement                         |   Sep 30, 2023         |   All runbook executions using Run As accounts, including Classic Run As accounts would not be supported after this date.                                                                                      |   If you have existing Azure Automation runbooks using Run As accounts, migrate them to Managed identities.                                                                           |   https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308                                                                                                    |
-|     Deprecation of Client Access Rules (CAR) in Exchange Online                                                                                                |   Retirement                         |   Sep 2023             |   Microsoft retiring CARs that provide granular access control based on client properties such as IP addresses, protocol, or application.                                                                      |   Migrate CARs to Continuous Access Evaluation (CAE)                                                                                                                                  |   https://techcommunity.microsoft.com/t5/exchange-team-blog/update-deprecation-of-client-access-rules-in-exchange-online/ba-p/3790165                                                                                                                   |
-|     Deprecation of Remote PowerShell (RPS) Protocol in Exchange Online PowerShell                                                                              |   Deprecation                        |   Oct 2023             |   MS will block RPS for all tenants irrespective of the tenant creation date, size, or opt-out status                                                                                                          |   You can use Exchange Online PowerShellV3 module                                                                                                                                     |   https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692                                                                                                                |
-|     Older Office versions not supported for connecting to Microsoft 365 services                                                                               |   Retirement                         |   Oct 10, 2023         |   Older Office versions (Office 2016 & 2019) might still be able to connect to Microsoft 365 services, but that connectivity isn't supported.                                                                  |   You can use Microsoft 365 apps                                                                                                                                                      |   https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity                                                                                                                                                       |
-|     Retirement of OMEv1 (Office 365 Message Encryption)                                                                                                        |   Retirement                         |   Dec 31, 2023         |   OME v1 mail flow rules will be fully retired.                                                                                                                                                                |   If you don’t do anything, Microsoft will process all mail flow rules that currently applies OME protection to Microsoft Purview Message Encryption protection.                      |   https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516                                                                                                                                                                    |
-|     Wiki retirement in Teams Channels                                                                                                                          |   Retirement                         |   Jan 2024             |   Wikis tab and wiki App wouldn't be able to accessible in Teams and users wouldn't be able to export.                                                                                                         |   Your data is accessible from SharePoint as per retention policy even after Wiki is deprecated. You can download wiki content from SharePoint.                                       |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248                                                                                                                                                                    |
-|     Classic Stream retirement                                                                                                                                  |   Retirement                         |   Feb 15, 2024         |   Microsoft will retire Stream (Classic) in February 2024. Certain parts of the service will be retired sooner unless you take action.                                                                         |   You can use Stream on SharePoint                                                                                                                                                    |   https://techcommunity.microsoft.com/t5/microsoft-stream-blog/update-on-stream-classic-retirement-last-day-of-service-set-for/ba-p/3712075                                                                                                             |
-|     SharePoint 2013 workflow retirement                                                                                                                        |   Retirement                         |   Apr 02, 2024         |   Starting April 2nd, 2024, SharePoint 2013 workflows will be turned off for newly created tenants.   Starting April 2nd, 2026, SharePoint 2013 workflows will no longer be supported for existing tenants.    |   You can move to Power Automate or other supported solutions.                                                                                                                        |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767                                                                                                                                                                    |
-|     Retirement for the Azure Information Protection Unified Labeling add-in for Office                                                                         |   Retirement                         |   Apr 11, 2024         |   The AIP Unified Labeling add-in for Office will reach end of availability and support of the service.                                                                                                        |   You can use sensitivity labeling directly into Office apps                                                                                                                          |   https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908                                                                                                     |
-|     Azure Multi-Factor Authentication Server                                                                                                                   |   End of Life                        |   Sep 30, 2024         |   Azure MFA Server deployments will no longer service MFA requests, which could cause authentications to fail for your organization                                                                            |   Organizations should migrate their users’ authentication data to the cloud-based Azure MFA service                                                                                  |   https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454                                                                                                           |
-|     Retirement of managing authentication methods in legacy MFA & SSPR policy                                                                                  |   Retirement                         |   Sep 30, 2024         |   Starting Oct 2024, Microsoft no longer allow authentication methods to be managed in the legacy MFA and SSPR policies.                                                                                       |   Organizations should use the converged authentication methods policy where methods can be managed centrally for all authentication scenarios including passwordless, MFA and SSPR.  |   https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448                                                                                                               |
-|     Azure Key vault: Soft-delete will be enabled on all key vaults                                                                                             |   Major change                       |   Feb 1, 2025          |   Soft Delete preserves deleted key vaults and secrets for up to 90 days, enabling customers to restore them through a self-serve process.                                                                     |   -                                                                                                                                                                                   |   https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change                                                                                                                                                                          |
-|     Office 2016 & Office 2019                                                                                                                                  |   End of extended support            |   Oct 14, 2025         |   Office 2016 and Office 2019 extended support ends in 2025                                                                                                                                                    |                                                                                                                                                                                       |   https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016                                                                                                                                                                            |
-|     Microsoft Advanced Threat Analytics 1.x                                                                                                                    |   End of extended support            |   Jan 13, 2026         |   Microsoft Advanced Threat Analytics (ATA) extended support will be ended on January 13, 2026.                                                                                                                |   Updates for Microsoft ATA are available from Microsoft Update or by manual download.                                                                                                |   https://support.microsoft.com/en-us/topic/description-of-update-3-for-microsoft-advanced-threat-analytics-1-9-954cb9b7-9646-78ce-2000-2a257b64df7c                                                                                                    |
-|     Deprecation of ‘Require approved client app’ Conditional Access Grant                                                                                      |   Retirement                         |   Mar 31, 2026         |   The Require approved client app control in Azure Active Directory (Azure AD) Conditional Access will be retired and no longer enforced.                                                                      |   You can make use of the “Require app protection policy” control, which has all the same capabilities                                                                                |   https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448                                                                                                               |
-|     SharePoint 2013 workflow retirement                                                                                                                        |   Retirement                         |   Apr 02, 2026         |   SharePoint 2013 workflows will no longer be supported.                                                                                                                                                       |   You can move to Power Automate or other supported solutions.                                                                                                                        |   https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767                                                                                                                                                                    |
+##Microsoft 365 Upcoming Changes and Deprecations List:
+
+Here is a list of changes categorized by month and year.
+
+- July 2023 (New Feature: 5, Retirement: 5, Enhancement: 2, Configuration
+Change:1, Major Announcement:2)
+
+- Aug 2023 (New feature: 2, Enhancement: 1)
+
+- Sept 2023 (New feature: 2, Retirement: 6)
+
+- Oct 2023 (Deprecation: 3)
+
+- Nov 2023 (Major update: 1)
+
+- Dec 2023 (Deprecation: 1)
+
+- 2024 (Attention needed: 8)
+
+- 2025 (Attention needed: 2)
+
+- 2026 (Attention needed: 4)
+
+### July 2023
+
+(New Feature:5 \| Retirement: 5 \| Enhancement:2 \| Configuration
+Change:1 \| Major Announcement:1)
+
+### New Feature:
+
+### July 2023: Collaborative Meeting Notes in Microsoft Teams
+
+Users will see a Notes button during meetings. Participants can
+collaborate in real time, create an agenda, take notes and add tasks.
+The rollout will complete in Mid-July.\
+***Ref**:*
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC538385>
+
+### Mid July 2023- New Microsoft Teams Rollout
+
+Starting in late July 2023, Microsoft will introduce the \"Try the new
+Teams\" toggle within the classic Microsoft Teams client. In September
+2023, the new Teams app will become the default option.
+
+**Solution:** Administrators have the ability to manage this change by
+configuring the \"Use new Teams client\" policy and setting \"New Teams
+as default\" for their users.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC617066>
+
+### Mid July 2023- Schedule Send on Outlook for Android
+
+The latest update of Outlook for Android introduces the new 'Schedule
+send' feature, enabling you to compose emails and schedule them to be
+sent later.
+
+Note: 'Schedule send' is already available in Outlook for iOS.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=98927>
+
+### Mid July 2023- Microsoft Purview eDiscovery (Premium): Tenant-wide Jobs Report
+
+With tenant-wide job report, administrators get visibility into all
+eDiscovery jobs in the tenant, allowing administrators to track and
+monitor them in relation to the specified limits.
+
+***Ref:***
+<https://learn.microsoft.com/en-us/microsoft-365/compliance/ediscovery-managing-jobs>
+
+### Mid July 2023- New Insider Risk Analytics Capabilities and Email Notifications in Insider Risk Management.
+
+Admins can manage email notifications through the "Admin notifications"
+section of Insider risk settings, see recommended thresholds in the
+policy wizard, and see the new insights in insider risk analytics.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC572514>
+
+## Enhancement:
+
+Mid July 2023- Data Loss Prevention for EXO - Deliver the Message to the
+Hosted Quarantine.\
+Microsoft is introducing a new column in the \"Data Loss Prevention\"
+section that allows easy viewing of messages delivered to hosted
+quarantine. This enhancement eliminates the need to filter these
+messages under transport rules.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC609877>
+
+### 
+
+### Mid July 2023- Microsoft Secure Score is Adding New Improvement Actions
+
+Microsoft has introduced Secure Score improvement actions to enhance the
+accuracy of your security posture. These actions include managing
+accounts with passwords older than 180 days, removing the attribute
+\'password never expires\' from domain accounts, and eliminating local
+admins on identity assets.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC574388>
+
+## Retirement
+
+July 01, 2023: Retirement of Remote PowerShell (RPS) Protocol in
+Exchange Online PowerShell.\
+If you are using RPS to establish an Exchange Online connection, you
+will not be able to do so after July 1, 2023.\
+**Solution:** You can use the EXO V3 module.\
+***Ref:***
+https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597
+
+### July 15, 2023- RPS Retirement in SCC
+
+Microsoft is deprecating the legacy RPS protocol in the Security and
+Compliance PowerShell module.
+
+**Solution:** Use the latest EXO PowerShell module to ensure REST is
+used.
+
+***Ref:***
+[*https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-rps-protocol-in-security-and/ba-p/3815432*](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-rps-protocol-in-security-and/ba-p/3815432)
+
+### July 15,2023 - Microsoft Bookings - Mobile Apps Retirement
+
+As Microsoft has removed the mobile apps from the Google Play Store and
+Apple App Store, users who already have the apps installed will still be
+able to access them. However, starting from July 15, users in
+organizations who have installed the Bookings Mobile Apps will no longer
+be able to access Bookings through these installed apps.
+
+**Solution:** Users currently using the mobile apps are advised to
+transition to the mobile-friendly web version by accessing the Bookings
+web page ([https://book.ms](https://book.ms/)) through their mobile
+browser.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590142>
+
+### Mid July 2023- PDF Tools app retirement
+
+Microsoft retiring the PDF Tools app from Teams, Office and Outlook
+store by mid-July 2023. This change will not affect the ability to open
+PDFs in existing apps like Teams and Outlook, nor will it impact the
+conversion of files to PDF within the Word, Excel, or PowerPoint apps.
+
+**Solution:** By accessing Office.com, you can right click on any file
+without opening it and select \"Convert to PDF\" to directly convert the
+file to PDF.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC584834>
+
+July 2023: Changes are Coming to the Minimum Supported Browsers &
+Versions for Microsoft 365 Web Apps.\
+Unsupported browsers will no longer be able to connect to the Microsoft
+365 web applications. applications.\
+**Solution:** Ensure all devices in the organization are using a
+Microsoft 365 supported browser, and that browsers have been updated to
+the latest version.\
+***Ref:***
+https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC518729\
+\
+Configuration change:
+
+### July 11, 2023 - Azure Information Protection Add-in will be Disabled by Default for Office Apps
+
+Azure Information Protection Add-in will be disabled by default for
+Office Apps for the Semi-Annual Enterprise Channel.
+
+**Solution:** You will need to configure the policy setting \"Use the
+Azure Information Protection add-in for sensitivity labeling\" to keep
+using the Add-in.\
+***Ref:***
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC500902>
+
+## Major announcement:
+
+### Azure AD Graph PowerShell Deprecation Postponed
+
+Previously, Microsoft had announced that the retirement of Azure AD
+PowerShell modules and Graph was scheduled for June 30, 2023. This meant
+that these modules would no longer function as expected starting from
+July 2023. However, the deprecations have now been postponed to March
+30, 2024.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270>
+
+### July 10, 2023: Changes to the Registration Campaign Feature in Azure AD
+
+Starting July 10th, 2023, users in your organization that are relying on
+SMS and voice for MFA will be prompted to use the **Microsoft
+Authenticator** app. They can skip this prompt for a maximum of 3 times,
+after which registration of the app will be required.
+
+# **Solution:** Admins can [run a registration campaign to set up Microsoft Authenticator](https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-registration-campaign)
+
+***Ref***:
+https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396
+
+## Aug 2023
+
+New feature: 2 \| Enhancements: 1
+
+## New feature:
+
+Aug 2023- Double-key Encryption to Protect Sensitive Files and Emails in
+Microsoft 365 Apps.\
+To protect sensitive content, Microsoft 365 Apps users can now use
+Double Key Encryption (DKE) for files and emails using the built-in
+labeling client.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC611732>
+
+Aug 2023- Introducing Voice OTP
+
+Starting in early August, Microsoft is introducing Voice OTP (One-Time
+Password) as an enhancement to registration campaigns. This new feature
+will be specifically available for existing tenants utilizing Azure AD
+free licenses. However, for new Azure AD free license tenants, Voice OTP
+will be available starting from July.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396>
+
+Enhancement:
+
+### Early Aug 2023- Enhanced Support for Teams Video Clips
+
+eDiscovery administrators collecting Teams video clips will now find
+them as separate video recording files attached to the respective Teams
+conversations. This enhancement allows for easier review and export of
+the video clips as MP4 files, providing admins with a clearer
+understanding of the content and context.
+
+This feature is available for Microsoft Purview eDiscovery (Premium)
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC578238>
+
+## Sep 2023
+
+New feature: 2 \| Retirement: 6
+
+## New Feature: 
+
+### Early-Sep 2023- Discover and Co-author Documents Labeled with User-defined Permissions.
+
+SharePoint and OneDrive will support discovery and coauthoring of files
+labeled with user-defined permissions. These files can be easily
+accessed, edited, co-authored, and benefit from the AutoSave feature in
+Word, Excel, and PowerPoint apps across all platforms.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC617055>
+
+Sept 15, 2023- Microsoft Graph to Support HTTP/2
+
+Microsoft Graph service (graph.microsoft.com) will enable HTTP version 2
+(HTTP/2) in addition to HTTP/1.1. for API requests
+
+***Ref***:
+https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC447341
+
+## Retirements:
+
+### Sep 01, 2023- Retirement of Get-ATPTotalTrafficReport Cmdlet
+
+Microsoft retiring the *Get-ATPTotalTrafficReport* cmdlet from Microsoft
+Defender for Office 365 beginning September 1st, 2023.
+
+**Solution:** Instead of *Get-ATPTotalTrafficReport* cmdlet, you can use
+the Get-*MailTrafficATPReport,* *Get-MailDetailATPReport*, and
+*Get-Mailflowstatusreport*.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC588322>
+
+Sep 15, 2023- Disable Video Upload to Stream (Classic)
+
+As part of Classic Stream retirement, you can't upload video to Stream
+(Classic)
+
+**Solution:** You can start to use Stream in SharePoint
+
+***Ref:***
+<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
+
+### Sep 15, 2023: Microsoft Will Retire the Stream Live Events
+
+This affects customers who use Stream (Classic) or Yammer to create and
+host Stream live events\
+**Solution:** Microsoft Teams live events will become a new platform to
+host and run live events.\
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC513601>
+
+### Sep 15, 2023- Ending Support for Microsoft Store for Business and Education Apps 
+
+Microsoft Store for Business and Education apps will be removed from the
+Intune admin center.
+
+**Solution:** Add your apps through the new Microsoft Store app
+experience in Intune.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC553242>
+
+### Sep 30, 2023- Azure Automation Run as Accounts Retirement
+
+All runbook executions using Run As accounts, including Classic Run As
+accounts would not be supported after this date.
+
+**Solution:** If you have existing Azure Automation runbooks using Run
+As accounts, migrate them to Managed identities.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/azure-governance-and-management/azure-automation-run-as-accounts-retiring-on-30-september-2023/ba-p/3744308>
+
+### Sep 30, 2023- Deprecation of Client Access Rules (CAR) in Exchange Online 
+
+Microsoft retiring CARs that provide granular access control based on
+client properties such as IP addresses, protocol, or application.
+
+**Solution:** Migrate CARs to Continuous Access Evaluation (CAE)
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/update-deprecation-of-client-access-rules-in-exchange-online/ba-p/3790165>
+
+## Oct 2023
+
+Deprecation: 3
+
+### Oct 2023- Deprecation of Remote PowerShell (RPS) Protocol in Exchange Online PowerShell.
+
+MS will block RPS for all tenants irrespective of the tenant creation
+date, size, or opt-out status.
+
+**Solution:** You can use Exchange Online PowerShellV3 module.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692>
+
+Oct 10, 2023- Older Office Versions Not Supported for Connecting to
+Microsoft 365 Services
+
+Older Office versions (Office 2016 & 2019) might still be able to
+connect to Microsoft 365 services, but that connectivity isn't
+supported.
+
+**Solution:** You can use Microsoft 365 apps.
+
+***Ref**:*
+<https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity>
+
+Oct 15, 2023- Classic Stream Retirement.\
+Users are no longer able to access or use Stream (Classic) unless admin
+takes action to delay this change.
+
+**Solution:** Admins can [extend the
+date](https://learn.microsoft.com/en-us/stream/streamnew/migration-settings#delay-upload-block-setting).
+This change can be delayed until April 15, 2024.
+
+***Ref:***
+https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming
+
+Nov 2023
+
+Major update: 1
+
+### Nov 1, 2023 -- New Requirements for SMTP Relay through Exchange Online
+
+Effective from November 1, 2023, the matching condition for the SMTP P2
+sender domain will be removed. This means that relaying email through
+Exchange Online will require meeting the following criteria:
+
+-   Accepted domain: The SMTP certificate domain on the SMTP connection
+    or the SMTP envelope sender domain in the MAIL FROM command (P1
+    sender domain) must be one of your organization\'s accepted domains.
+
+-   Inbound Connector: The sending host\'s IP address or certificate
+    domain on the SMTP connection must match your organization\'s
+    Inbound Connector of on-premises type.
+
+Failure to meet either of these conditions after November 1, 2023, will
+result in the rejection of relay attempts from your on-premises
+environment to Exchange Online
+
+**Solution:** It is necessary to modify your Inbound Connector of the
+on-premises type and switch from using IP addresses to a certificate
+domain. Furthermore, you need to ensure that the certificate domain is
+included as an accepted domain of your organization.
+
+***Ref:***
+https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357
+
+## Dec 2023
+
+Deprecation: 1
+
+### Dec 31, 2023 - Retirement of OMEv1 (Office 365 Message Encryption) 
+
+OME v1 mail flow rules will be fully retired.
+
+**Solution:** If you don't do anything, Microsoft will process all mail
+flow rules that currently applies OME protection to Microsoft Purview
+Message Encryption protection.
+
+***Ref:***
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516>
+
+2024 (Attention needed: 8)
+
+### Jan 2024- Wiki Retirement in Teams Channels
+
+Wikis tab and wiki App wouldn't be able to accessible in Teams and users
+wouldn't be able to export.
+
+**Solution:** Your data is accessible from SharePoint as per retention
+policy even after Wiki is deprecated. You can download wiki content from
+SharePoint.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248>
+
+### Mar 30, 2024 - Azure AD Graph Retirement and PowerShell Module Deprecation
+
+Microsoft has postponed the deprecation date for MS Online, AzureAD, and
+AzureAD Preview PowerShell modules to March 30, 2024.
+
+**Solution:** Before the deprecation date, you can migrate your existing
+scripts to MS Graph.
+
+***Ref***:
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270>
+
+### Apr 02, 2024- SharePoint 2013 Workflow Retirement 
+
+Starting April 2nd, 2024, SharePoint 2013 workflows will be turned off
+for newly created tenants. Starting April 2nd, 2026, SharePoint 2013
+workflows will no longer be supported for existing tenants.
+
+**Solution:** You can move to Power Automate or other supported
+solutions.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767>
+
+### Apr 11, 2024- Retirement for the Azure Information Protection Unified Labeling Add-in for Office
+
+The AIP Unified Labeling add-in for Office will reach end of
+availability and support of the service.
+
+**Solution:** You can use sensitivity labeling directly into Office
+apps.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908>
+
+### Apr 15, 2024- Stream (Classic) is Fully Retired & Automatically Disabled.
+
+Users & admins are no longer able to access or use Stream (Classic). Any
+remaining content in Stream (Classic) that wasn\'t migrated will be
+deleted.
+
+**Solution:** You can use Stream on SharePoint.
+
+***Ref***:
+https://techcommunity.microsoft.com/t5/microsoft-stream-blog/update-on-stream-classic-retirement-last-day-of-service-set-for/ba-p/3712075
+
+### Sep 30, 2024- Azure Multi-Factor Authentication Server 
+
+Azure MFA Server deployments will no longer service MFA requests, which
+could cause authentications to fail for your organization.
+
+**Solution:** Organizations should migrate their users' authentication
+data to the cloud-based Azure MFA service
+
+***Ref:***
+https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454
+
+### Sep 30, 2024- Retirement of Managing Authentication Methods in Legacy MFA & SSPR Policy 
+
+Starting Oct 2024, Microsoft no longer allow authentication methods to
+be managed in the legacy MFA and SSPR policies.
+
+**Solution:** Organizations should use the converged authentication
+methods policy where methods can be managed centrally for all
+authentication scenarios including passwordless, MFA and SSPR.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
+
+### End of 2024- Retirement of Mail and Calendar Apps in Windows
+
+At the end of 2024, Microsoft replacing the Mail and Calendar apps in
+Windows with the new Outlook for Windows.
+
+**Solution:** Start trying and testing the new Outlook for Windows.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123>
+
+2025 (Attention needed: 2)
+
+### Feb 01, 2025- Azure Key Vault: Soft-delete Will be Enabled on All Key Vaults 
+
+Soft Delete preserves deleted key vaults and secrets for up to 90 days,
+enabling customers to restore them through a self-serve process.
+
+***Ref:***
+<https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change>
+
+### Oct 14, 2025- End of Extended Support for Office 2016 & Office 2019 
+
+Office 2016 and Office 2019 extended support ends in 2025.\
+**Solution:** You can start to use the latest supported versions.\
+***Ref:***
+https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016
+
+2026 (Attention needed: 4)
+
+### Jan 13, 2026- End of Extended Support for Microsoft Advanced Threat Analytics 1.x 
+
+Microsoft Advanced Threat Analytics (ATA) extended support will be ended
+on January 13, 2026.
+
+**Solution**: Updates for Microsoft ATA are available from Microsoft
+Update or by manual download.
+
+***Ref:***
+<https://support.microsoft.com/en-us/topic/description-of-update-3-for-microsoft-advanced-threat-analytics-1-9-954cb9b7-9646-78ce-2000-2a257b64df7c>
+
+### Mar 31, 2026- Deprecation of 'Require Approved Client App' Conditional Access Grant 
+
+The Require approved client app control in Azure Active Directory (Azure
+AD) Conditional Access will be retired and no longer enforced.
+
+**Solution:** You can make use of the "Require app protection policy"
+control, which has all the same capabilities
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
+
+Apr 02, 2026- SharePoint 2013 Workflow Retirement\
+SharePoint 2013 workflows will no longer be supported.
+
+**Solution:** You can move to Power Automate or other supported
+solutions.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767>
+
+### July 14, 2026- InfoPath 2013 Client and InfoPath Forms Services in SharePoint Online will be Retired
+
+InfoPath Client 2013 will reach the end of its extended support period
+on July 14, 2026, and to keep an aligned experience across Microsoft
+products, InfoPath Forms Service will be retired from SharePoint Online.
+
+**Solution:** To understand the usage of InfoPath within your
+organization, you can utilize the [Microsoft 365 Assessment
+tool](https://aka.ms/assessment/infopath) to scan your tenant and
+analyze InfoPath usage. If you are currently using InfoPath, you can
+initiate the migration process to modern alternatives such as Power
+Apps, Power Automate, or Forms.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-infopath-forms-services-in-microsoft-365/ba-p/3858190>
+
 
 In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires staying informed about the changes. By proactively adapting to these changes, you can optimize your Microsoft 365 experience, maximize productivity, and effectively plan for the future. We are committed to keeping this blog updated with the latest information, so stay tuned for upcoming updates.
 
