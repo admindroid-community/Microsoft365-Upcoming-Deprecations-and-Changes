@@ -23,7 +23,7 @@ Here is a list of changes categorized by month and year.
 
 - 2026 (Attention needed: 4)
 
-##Top Of The List:
+## Top Of The List:
 
 ### Multi-tenant Organization (MTO) capabilities in Azure AD 
 
@@ -113,7 +113,9 @@ the Get-*MailTrafficATPReport,* *Get-MailDetailATPReport*, and
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC588322>
 
-### Sep 11, 2023 - Microsoft 365 connectors will no longer work on Viva Engage communities. From September 11, 2023, adding Microsoft 365 Apps to Yammer/Viva Engage communities via Microsoft 365 connectors will no longer be supported. Solution: If you are using a Microsoft 365 connector on a community, consider replacing your connector usage with the following:
+### Sep 11, 2023 - Microsoft 365 connectors will no longer work on Viva Engage communities. 
+
+From September 11, 2023, adding Microsoft 365 Apps to Yammer/Viva Engage communities via Microsoft 365 connectors will no longer be supported. Solution: If you are using a Microsoft 365 connector on a community, consider replacing your connector usage with the following:
 
 -   Viva Engage [connectors in Power
     Automate](https://learn.microsoft.com/en-us/connectors/yammer/),
@@ -195,7 +197,7 @@ live events from September 15, 2023, to January 30, 2024.
 
 ## Enhancement:
 
-# Mid Sep - Microsoft Authenticator Lite (for Outlook) Support in Legacy, Per-user MFA Policy
+### Mid Sep - Microsoft Authenticator Lite (for Outlook) Support in Legacy, Per-user MFA Policy
 
 For organizations using the legacy per-user MFA policy and having
 \"Notification through mobile app\" enabled, users without the Microsoft
@@ -277,7 +279,7 @@ supported.
 ***Ref**:*
 <https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity>
 
-### Oct 15, 2023- Classic Stream Retirement.\
+### Oct 15, 2023- Classic Stream Retirement.
 Users are no longer able to access or use Stream (Classic) unless admin
 takes action to delay this change.
 
@@ -494,7 +496,7 @@ control, which has all the same capabilities
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
 
-### Apr 02, 2026- SharePoint 2013 Workflow Retirement\
+### Apr 02, 2026- SharePoint 2013 Workflow Retirement
 SharePoint 2013 workflows will no longer be supported.
 
 **Solution:** You can move to Power Automate or other supported
