@@ -8,13 +8,12 @@ Discover the **key changes, deprecations,** and **end-of-support** scenarios tha
 
 Here is a list of changes categorized by month and year.
 
-- Aug 2023 (New features: 5, Retirements: 4, Enhancements: 3, Functionality Changes: 2, Review Required: 1 )
 
-- Sept 2023 (New feature: 2, Retirements: 8)
+- Sept 2023 (New features: 3, Retirements: 7, Retirement Postponed: 1, Enhancement: 1, Action Required: 1)
 
 - Oct 2023 (New Features: 1, Retirements: 4)
 
-- Nov 2023 (Major update: 1)
+- Nov 2023 (Major update: 1; Retirement: 1)
 
 - Dec 2023 (Deprecation: 1)
 
@@ -24,196 +23,44 @@ Here is a list of changes categorized by month and year.
 
 - 2026 (Attention needed: 4)
 
+##Top Of The List:
 
+### Multi-tenant Organization (MTO) capabilities in Azure AD 
 
-## Aug 2023
+This is one of the most awaited features from Microsoft. The Multi-tenant Organization (MTO) feature allows admins to create a tenant group within their organization. It can connect up to five tenants through cross-tenant access policies to enable smooth directory synchronization. 
 
-(New Features:5 \| Retirements: 4 \| Enhancement:3 \| Functionality
-Change:2 \| Review Required:1)
+MTO is particularly useful for organizations that maintain multiple Azure AD tenants, offering a streamlined approach to account management, especially in the context of mergers and acquisitions. 
 
-## New features:
+***Ref***: 
+<https://learn.microsoft.com/en-us/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-overview>
 
-### Aug 2023- Double-key Encryption to Protect Sensitive Files and Emails in
-Microsoft 365 Apps.\
-To protect sensitive content, Microsoft 365 Apps users can now use
-Double Key Encryption (DKE) for files and emails using the built-in
-labeling client.
+## Private Preview:
 
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC611732>
+### Microsoft Entra ID: Platform SSO for macOS
 
-### Aug 2023- Introducing Voice OTP
+Platform SSO is an advancement of the current SSO Extension functionalities designed for macOS. It grants users the ability to access their Macs without entering traditional passwords. Instead, they can use passwordless login or synchronize their local credentials with their Entra ID credentials.
 
-Starting in early August, Microsoft is introducing Voice OTP (One-Time
-Password) as an enhancement to registration campaigns. This new feature
-will be specifically available for existing tenants utilizing Azure AD
-free licenses. However, for new Azure AD free license tenants, Voice OTP
-will be available starting from July.
+***Ref***: 
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/coming-soon-platform-sso-for-macos/ba-p/3902280>
 
-***Ref:***
-<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-new-feature-and-change-announcements/ba-p/3796396>
-
-### New Features Aug 2023- Microsoft Teams: Teams Shared Device license on Teams mobile app for Android
-
-To enable mobile and flexible work, Microsoft Teams Shared Device
-license will be available to the Teams Android app. This allows Android
-phones to function as shared devices with full calling features like
-Walkie Talkie, call queues, auto attendants, and more.
-
-***Ref:***
-<https://learn.microsoft.com/en-us/microsoftteams/teams-add-on-licensing/teams-shared-device-license>
-
-### Aug 2023- Microsoft Teams: Enable second video stream with \"Teams
-Content Camera on Desktop\"\
-
-Users can now enable a second video stream on Desktop, supporting both
-Personal Video and Teams Content Camera. When activating Teams Content
-Camera on Desktop, Personal Video will remain until the user chooses a
-different Camera for the two video streams. This feature roll out will
-begin in Aug for Targeted release customers.\
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC642270>
-
-### Aug 2023- Microsoft Teams: New Admin Policy for Collaborative Annotations
-
-Microsoft introduced a user-level IT admin policy, giving admins the
-flexibility to decide if certain or all users in the company can utilize
-Collaborative Annotations. The IT admins can easily control this feature
-by toggling ON or OFF Collaborative Annotations from the Teams admin
-center under Meetings \--\> Meeting policies
-
-***Ref:***
-https://www.microsoft.com/en-in/microsoft-365/roadmap?rtc=1&searchterms=92502&filters=&searchterms=92502
-
-## Retirements
-
-### Aug 2023- Basic Authentication Retirement in Microsoft 365 Apps 
-
-Microsoft 365 Apps are disabling server sign-in prompts using Basic
-authentication in Office Apps such as, Access, Excel, OneNote, Outlook. 
-
-**Solution**: Instead of basic authentication, Microsoft recommends
-using Modern Authentication, and enabling multi-factor authentication
-based on OAuth2.0 token-based auth. 
-
-***Ref:*** [[https://learn.microsoft.com/en-us/deployoffice/security/basic-authentication-prompts-blocked#versions-of-microsoft-365-apps-affected-by-this-change]{.underline}](https://learn.microsoft.com/en-us/deployoffice/security/basic-authentication-prompts-blocked#versions-of-microsoft-365-apps-affected-by-this-change) 
-
-### Aug 15- Classic Stream Retirement
-
-On August 15, as part of the Classic Stream retirement process, users
-will no longer be able to create new Stream (Classic) web parts. This
-change is a step towards the complete retirement of Classic Stream,
-which is scheduled for April 15, 2024.
-
-**Solution:** You can start to use Stream in SharePoint 
-
-***Ref:***: [[https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming]{.underline}](https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming)
-
-### Aug 31: Kaizala Retirement
-
-Microsoft Kaizala is a communication tool designed for large groups,
-particularly suitable for organizations with mobile workforces.
-Microsoft will retire Kaizala on August 31, 2023. After the retirement
-date, access to and support for Kaizala will be discontinued.   
-
-**Solution:** Microsoft recommends moving to Microsoft Teams for
-continued connection, sharing, and collaboration. 
-
-***Ref:*** [[https://learn.microsoft.com/en-us/lifecycle/products/kaizala]{.underline}](https://learn.microsoft.com/en-us/lifecycle/products/kaizala?branch=live)
-
-### Aug 31- Scheduler for Microsoft 365 Retirement
-
-On September 1, 2023, Microsoft will retire Scheduler for Microsoft 365,
-a tool that helps users automate the process of scheduling meetings and
-delegate appointments. As a result, users will no longer be able to use
-Cortana to automatically schedule meetings.  
-
-**Solution**: At this time, Microsoft has not announced any alternative
-solution, though they may include some of these features in a future
-offering. 
-
-***Ref:*** [[https://admin.microsoft.com/AdminPortal/?ref=MessageCenter/:/messages/MC424413]{.underline}](https://admin.microsoft.com/AdminPortal/?ref=MessageCenter/:/messages/MC424413)
-
-
-### Enhancements:
-
-### Early Aug 2023- Enhanced Support for Teams Video Clips
-
-eDiscovery administrators collecting Teams video clips will now find
-them as separate video recording files attached to the respective Teams
-conversations. This enhancement allows for easier review and export of
-the video clips as MP4 files, providing admins with a clearer
-understanding of the content and context.
-
-This feature is available for Microsoft Purview eDiscovery (Premium)
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC578238>
-
-### Early Aug 2023- Microsoft Purview Insider Risk Management: Policy template limit increase
-
-Insider Risk Management enables customers to create policies based on
-their own internal policies, governance, and organizational
-requirements. With this update, the maximum number of policies for each
-insider risk policy template increases from 5 to 20.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC663628>
-
-### Aug 2023- OneDrive Sync Account Detection
-
-OneDrive Sync for work/school will display a one-time message to users
-signing into a personal account on their work machine. The message
-offers a one-click setup to configure their personal account with
-OneDrive. Once enabled, users can access both personal and work/school
-files in their OneDrive and File Explorer.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC626577>
-
-## Functionality Change:
-
-### Late Aug 2023- Microsoft 365 Apps: Encryption Algorithm Changes to AES256-CBC for Encrypting Emails and Files
-
-Microsoft 365 Apps, Exchange Online, and SharePoint Online will use
-AES256 in cipher block chaining (CBC) mode as the default encryption
-method for emails and documents when using Microsoft Purview Information
-Protection.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/security-compliance-and-identity/encryption-algorithm-changes-in-microsoft-purview-information/ba-p/3831909>
-
-### Late Aug 2023 - Windows Mail and Calendar are becoming Outlook
-
-The Mail and Calendar apps for Windows are being replaced with the new
-Outlook for Windows at the end of 2024. As part of this, in late August
-of 2023, Windows Mail and Calendar apps will auto-migrate to the new
-Outlook for Windows. Users can revert to the current apps by clicking a
-toggle in the new Outlook.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC650424>
-
-## Review Required
-
-###Aug 10, 2023 -- New DMARC Policy Handling
-
-Microsoft is updating its Anti-Phishing policy to automatically follow
-DMARC policies by default. For emails that fail DMARC authentication,
-the default actions will be set to \'reject\' and \'quarantine\' for
-\'p=reject\' and \'p=quarantine\' respectively.
-
-Now, recipient tenant admins will have the flexibility to choose whether
-to retain the default settings or modify them. They can decide to
-\'reject\' or \'junk\' messages based on their organizational needs.
-
-***Ref:***
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?rtc=2&searchterms=117533&filters=&searchterms=117533>
 
 ## Sep 2023
 
-New feature: 2 \| Retirement: 6
+Most Celebrated Update: 1 \| New features: 3 \| Retirements: 7 \| Retirement Postponed: 1 \| Enhancement: 1 \| Action Needed: 1
+
+## Most Celebrated Update:
+
+### Sep 2023- Default Microsoft 365 Audit Logging Retention Period Doubled
+
+Starting from September 2023, the Microsoft Purview Audit supports expanded logging capabilities for standard customers at no additional cost. It includes, 
+
+The extension of the default audit log retention period from 90 to 180 days for standard customers. . 
+
+30+ new activities, such as Mail Item Accessed, Teams message read, Teams chat created, etc., have been added to the audit log, which were previously exclusive to the Microsoft Purview Audit (Premium) subscription.
+
+***Ref***:  
+<https://www.microsoft.com/en-us/security/blog/2023/07/19/expanding-cloud-logging-to-give-customers-deeper-security-visibility>
+
 
 ## New Feature: 
 
@@ -227,7 +74,24 @@ Word, Excel, and PowerPoint apps across all platforms.
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC617055>
 
-Sept 15, 2023- Microsoft Graph to Support HTTP/2
+### Sep 2023 - Entra ID MFA Supports Text Message Delivery through Whatsapp
+
+Starting September 2023, users in a specific regions like India,
+Indonesia and New Zealand may start receiving multifactor authentication
+(MFA) text messages via WhatsApp. Only users that are enabled to receive
+MFA text messages and already have WhatsApp on their phone will get this
+experience.
+
+Note: Entra ID will expand this feature to other countries in Oct-Nov
+2023.
+
+**Solution:** If you do not want your users to get OTP through Whatsapp,
+you need to disable text message as authentication in your organization.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC666628>
+
+### Sept 15, 2023- Microsoft Graph to Support HTTP/2
 
 Microsoft Graph service (graph.microsoft.com) will enable HTTP version 2
 (HTTP/2) in addition to HTTP/1.1. for API requests
@@ -285,14 +149,6 @@ As part of Classic Stream retirement, you can't upload video to Stream
 ***Ref:***
 <https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
 
-### Sep 15, 2023: Microsoft Will Retire the Stream Live Events
-
-This affects customers who use Stream (Classic) or Yammer to create and
-host Stream live events\
-**Solution:** Microsoft Teams live events will become a new platform to
-host and run live events.\
-***Ref***:
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC513601>
 
 ### Sep 15, 2023- Ending Support for Microsoft Store for Business and Education Apps 
 
@@ -325,6 +181,51 @@ client properties such as IP addresses, protocol, or application.
 
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/exchange-team-blog/update-deprecation-of-client-access-rules-in-exchange-online/ba-p/3790165>
+
+## Retirement Postponed:
+
+### Retirement of Stream Live Events Postponed to Jan 30, 2024
+
+To provide ample time for organizations to implement Teams live events
+with encoder support, Microsoft has postponed the retirement of Stream
+live events from September 15, 2023, to January 30, 2024.
+
+***Ref:***
+<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
+
+## Enhancement:
+
+# Mid Sep - Microsoft Authenticator Lite (for Outlook) Support in Legacy, Per-user MFA Policy
+
+For organizations using the legacy per-user MFA policy and having
+\"Notification through mobile app\" enabled, users without the Microsoft
+Authenticator app can see the option to set up \"Microsoft Authenticator
+Lite\".
+
+**Solution:** If your organization doesn\'t want to use Microsoft
+Authenticator Lite,you can disable Authenticator Lite using the steps
+given in the [MS
+doc](https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-authenticator-lite#disabling-authenticator-lite-in-azure-portal-ux).
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC664476>
+
+## Action Required
+
+### Sep 29, New PowerBI Admin Setting To be Turned ON by Default
+
+The new setting \"*Users can view Power BI files saved in OneDrive and
+SharePoint (Preview) - UPDATE*\" allows users to view Power BI reports
+stored in OneDrive and SharePoint directly in their browsers. It will be
+ON by default starting in early October unless you take action before
+September 29th, 2023.
+
+**Solution:** If you do not want users in your tenant to view Power BI
+reports stored in OneDrive and SharePoint, turn off the settings from
+admin portal **before September 29th, 2023**.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC666631>
 
 ## Oct 2023
 
@@ -389,7 +290,9 @@ https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migrati
 
 ## Nov 2023
 
-Major update: 1
+Major update: 1, Retirement: 1
+
+## Major Update:
 
 ### Nov 1, 2023 -- New Requirements for SMTP Relay through Exchange Online
 
@@ -417,6 +320,20 @@ included as an accepted domain of your organization.
 ***Ref:***
 https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357
 
+## Retirement
+
+### Nov 13, 2023 - Exchange Transport Rules (ETRs) stopping support for DLP scenarios
+
+Beginning mid-November, Exchange DLP-related actions and
+conditions/exceptions (predicates) will be removed from mail flow rules
+
+**Solution:** You use Microsoft Purview Unified DLP, which provides DLP
+protection to SharePoint Online, OneDrive for Business, Teams chats,
+devices, and more.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895>
+
 ## Dec 2023
 
 Deprecation: 1
@@ -432,7 +349,7 @@ Message Encryption protection.
 ***Ref:***
 <https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516>
 
-## 2024 (Attention needed: 8)
+## 2024 (Attention needed: 9)
 
 ### Jan 2024- Wiki Retirement in Teams Channels
 
@@ -445,6 +362,18 @@ SharePoint.
 
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248>
+
+### Jan 31, 2024: Microsoft Will Retire the Stream Live Events 
+
+This affects customers who use Stream (Classic) or Yammer to create and
+host Stream live events. New Stream live events can't be created, and
+events scheduled after January 31, 2024, will be automatically removed.
+
+**Solution:** Microsoft Teams live events will become a platform to host
+and run live events.
+
+***Ref***:
+<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
 
 ### Mar 30, 2024 - Azure AD Graph Retirement and PowerShell Module Deprecation
 
