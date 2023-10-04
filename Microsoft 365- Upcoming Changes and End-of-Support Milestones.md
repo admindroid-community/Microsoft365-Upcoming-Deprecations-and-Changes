@@ -31,7 +31,7 @@ legacy Multifactor Authentication (MFA) and Self-Service Password Reset
 has been extended from September 30th, 2024, to September 30th, 2025.
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-authentication-methods-manage#finish-the-migration]{.underline}](https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-authentication-methods-manage#finish-the-migration)
+<https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-authentication-methods-manage#finish-the-migration>
 
 
 
@@ -50,7 +50,7 @@ connect with your team in a pre-designed immersive environment directly
 from the Teams meetings view menu.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677830]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677830)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677830>
 
 ## **New Features:**
 
@@ -62,7 +62,7 @@ organization. Town hall will replace Teams Live Events and be available
 for Microsoft 365 and Office 365 customers
 
 ***Ref:***
-[[https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=123148]{.underline}](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=123148)
+<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=123148>
   
 
 ### **Mid Oct 2023- Personal Plans in Planner** 
@@ -74,7 +74,7 @@ containers.' Personal plans are exclusively shared with the creator and
 will remain inaccessible to anyone else until explicitly shared.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677519]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677519)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677519>
 
 ### **Mid-Oct 2023- Meet App in Microsoft Teams** 
 
@@ -84,7 +84,7 @@ missed content, and access meeting-related materials like agendas,
 notes, chats, and recaps, all conveniently in one place.
 
 ***Ref:***
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC660610]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC660610)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC660610>
 
 ## **Retirements:**
 
@@ -97,7 +97,7 @@ Solution: You must migrate to Cloud sync or Azure AD Connect V2 based on
 the organization's requirement.
 
 ***Ref***:
-[[https://learn.microsoft.com/en-us/azure/active-directory/hybrid/decommission-connect-sync-v1]{.underline}](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/decommission-connect-sync-v1)
+<https://learn.microsoft.com/en-us/azure/active-directory/hybrid/decommission-connect-sync-v1>
 
 ### **Oct 2023- Deprecation of Remote PowerShell (RPS) Protocol in Exchange Online PowerShell**
 
@@ -107,7 +107,7 @@ date, size, or opt-out status.
 **Solution:** You can use Exchange Online PowerShellV3 module.
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692]{.underline}](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692)
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692>
 
 ### **Oct 2023- Classic Search in Purview Portal Retirement** 
 
@@ -118,7 +118,7 @@ which offers faster search times, additional search options, the ability
 to save searches, and more functionalities.
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/purview/audit-log-search]{.underline}](https://learn.microsoft.com/en-us/purview/audit-log-search)
+<https://learn.microsoft.com/en-us/purview/audit-log-search>
 
 ### **Oct 10, 2023- Older Office Versions Not Supported for Connecting to Microsoft 365 Services** 
 
@@ -129,7 +129,7 @@ supported.
 **Solution:** You can use Microsoft 365 apps.
 
 ***Ref**:*
-[[https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity]{.underline}](https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity)
+<https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity>
 
 ### **Oct 10, 2023- Microsoft Office 2019 for Mac** 
 
@@ -141,7 +141,7 @@ bug fixes, technical support, or online technical content support.
 comes with Microsoft 365 Apps.
 
 ***Ref***:
-[[https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2019-for-mac]{.underline}](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2019-for-mac)
+<https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2019-for-mac>
 
 ### **Oct 15, 2023- Classic Stream Retirement**
 
@@ -153,7 +153,7 @@ date]{.underline}](https://learn.microsoft.com/en-us/stream/streamnew/migration-
 This change can be delayed until April 15, 2024.
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming]{.underline}](https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming)
+<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
 
 ### **Mid Oct 2023- Files Hub retiring from the new Outlook for Windows** 
 
@@ -168,7 +168,7 @@ files" filter in the message list or the upcoming "Files" tab within
 search results.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678067]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678067)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678067>
 
 ## **Enhancements:** 
 
@@ -180,7 +180,7 @@ update, admins can configure up to 10,000 block entries and 5,000 allow
 entries based on the license type.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678057]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678057)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678057>
 
 ### **Oct 2023- Default Microsoft 365 Audit Logging Retention Period Doubled** 
 
@@ -197,7 +197,7 @@ includes,
     (Premium) subscription.
 
 ***Ref***:
-[[https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=171160]{.underline}](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=171160)
+<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=171160>
 
 ## **Functionality Change:** 
 
@@ -213,7 +213,7 @@ change it via the Teams settings menu: Settings \> Files and links \>
 Link open preferences.
 
 ***Ref:***
-[[https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/16/discover-new-ways-to-multitask-with-microsoft-365-and-edge/]{.underline}](https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/16/discover-new-ways-to-multitask-with-microsoft-365-and-edge/)
+<https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/16/discover-new-ways-to-multitask-with-microsoft-365-and-edge/>
 
 ## **Action Required:**
 
@@ -222,12 +222,12 @@ Link open preferences.
 From mid-October, users in the M365 organization will be able to
 initiate a self-service trial of Microsoft Purview.
 
-**Solution**: You can [[block self-service
-purchases]{.underline}](https://blog.admindroid.com/block-self-service-purchase-for-power-platform-products-using-powershell/)
+**Solution**: You can [block self-service
+purchases](https://blog.admindroid.com/block-self-service-purchase-for-power-platform-products-using-powershell/)
 to prevent users from starting self-service trials and purchases.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC676124]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC676124)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC676124>
 
 ## **November 2023** 
 
@@ -259,7 +259,7 @@ domain. Furthermore, you need to ensure that the certificate domain is
 included as an accepted domain of your organization.
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357]{.underline}](https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357)
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357>
 
 ## **Retirements:**
 
@@ -274,7 +274,7 @@ notebooks, you can use the OneNote app instead of OneNote for Windows
 10.
 
 ***Ref***:
-[[https://support.microsoft.com/en-us/office/deprecating-translation-in-onenote-for-windows-10-7a09cfa4-32de-486a-9c7f-965eeeba3439?storagetype=live]{.underline}](https://support.microsoft.com/en-us/office/deprecating-translation-in-onenote-for-windows-10-7a09cfa4-32de-486a-9c7f-965eeeba3439?storagetype=live)
+<https://support.microsoft.com/en-us/office/deprecating-translation-in-onenote-for-windows-10-7a09cfa4-32de-486a-9c7f-965eeeba3439?storagetype=live>
 
 ### **Nov 13, 2023 -- Exchange Transport Rules (ETRs) Stopping Support for DLP Scenarios** 
 
@@ -286,7 +286,7 @@ protection to SharePoint Online, OneDrive for Business, Teams chats,
 devices, and more.
 
 ***Ref:***
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895>
 
 ### **Nov 30, 2023- Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
 
@@ -298,7 +298,7 @@ administrators to manage user profile photos, including commands like:
 or Microsoft 365 admin center to manage user photos.
 
 ***Ref***:
-[[https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC678855]{.underline}](https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC678855)
+<https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC678855>
 
 ## **December 2023** 
 
@@ -315,7 +315,7 @@ flow rules that currently applies OME protection to Microsoft Purview
 Message Encryption protection.
 
 ***Ref:***
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516>
 
 ## **Existing Features Replacement:**
 
@@ -327,7 +327,7 @@ polling and quiz needs to provide an intuitive and easy-to-access
 experience.
 
 ***Ref***:
-[[https://techcommunity.microsoft.com/t5/microsoft-forms-blog/ultimate-polling-and-quiz-experience-with-polls-app-the/ba-p/3731630]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-forms-blog/ultimate-polling-and-quiz-experience-with-polls-app-the/ba-p/3731630)
+<https://techcommunity.microsoft.com/t5/microsoft-forms-blog/ultimate-polling-and-quiz-experience-with-polls-app-the/ba-p/3731630>
 
 ### **Dec 2023- Activity-Based Authentication Timeout for OWA Replacement** 
 
@@ -340,7 +340,7 @@ either stay signed in or be automatically signed out of Microsoft 365
 web apps, including Outlook on the web.
 
 ***Ref***:
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC674426]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC674426)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC674426>
 
 ## **2024 (Attention Needed: 11)** 
 
@@ -354,7 +354,7 @@ policy even after Wiki is deprecated. You can download wiki content from
 SharePoint.
 
 ***Ref***:
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248>
 
 ### **Jan 30, 2024 -- Retirement of Stream Live Events** 
 
@@ -364,7 +364,7 @@ host Stream live events
 **Solution**: You can use the Teams live events with encoder support,
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming]{.underline}](https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming)
+<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
 
 ### **Mar 30, 2024 -- Azure AD Graph Retirement and PowerShell Module Deprecation** 
 
@@ -375,7 +375,7 @@ AzureAD Preview PowerShell modules to March 30, 2024.
 scripts to MS Graph.
 
 ***Ref***:
-[[https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270)
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270>
 
 ### **Apr 02, 2024- SharePoint 2013 Workflow Retirement** 
 
@@ -387,7 +387,7 @@ workflows will no longer be supported for existing tenants.
 solutions.
 
 ***Ref:***
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767>
 
 ### **Apr 11, 2024- Retirement for the Azure Information Protection Unified Labeling Add-in for Office** 
 
@@ -398,7 +398,7 @@ availability and support of the service.
 apps.
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908]{.underline}](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908)
+<https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908>
 
 ### **Apr 15, 2024- Stream (Classic) is Fully Retired & Automatically Disabled.** 
 
@@ -409,7 +409,7 @@ deleted.
 **Solution:** You can use Stream on SharePoint.
 
 ***Ref***:
-[[https://techcommunity.microsoft.com/t5/microsoft-stream-blog/update-on-stream-classic-retirement-last-day-of-service-set-for/ba-p/3712075]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-stream-blog/update-on-stream-classic-retirement-last-day-of-service-set-for/ba-p/3712075)
+<https://techcommunity.microsoft.com/t5/microsoft-stream-blog/update-on-stream-classic-retirement-last-day-of-service-set-for/ba-p/3712075>
 
 ### **Sep 30, 2024- Azure Multi-Factor Authentication Server** 
 
@@ -420,7 +420,7 @@ could cause authentications to fail for your organization.
 data to the cloud-based Azure MFA service
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454)
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454>
 
 ### **Oct 14, 2024 -- Office 2016 End of Support** 
 
@@ -432,7 +432,7 @@ vulnerabilities that are discovered
 comes with Microsoft 365 Apps.
 
 ***Ref***:
-[[https://learn.microsoft.com/en-us/deployoffice/endofsupport/plan-upgrade-older-versions-office]{.underline}](https://learn.microsoft.com/en-us/deployoffice/endofsupport/plan-upgrade-older-versions-office)
+<https://learn.microsoft.com/en-us/deployoffice/endofsupport/plan-upgrade-older-versions-office>
 
 ###  **Dec 31, 2024- Microsoft Teams Live Event Retirement** 
 
@@ -444,7 +444,7 @@ before December 31.
 **Solution**: You can start to use town halls.
 
 ***Ref***:
-[[https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678003]{.underline}](https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678003)
+<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678003>
 
 ### **End of 2024- Retirement of Mail and Calendar Apps in Windows** 
 
@@ -454,7 +454,7 @@ Windows with the new Outlook for Windows.
 **Solution:** Start trying and testing the new Outlook for Windows.
 
 ***Ref***:
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123>
 
 ## **2025 (Attention Needed: 3)** 
 
@@ -464,7 +464,7 @@ Soft Delete preserves deleted key vaults and secrets for up to 90 days,
 enabling customers to restore them through a self-serve process.
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change]{.underline}](https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change)
+<https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change>
 
 ### **Sep 30, 2025- Retirement of Managing Authentication Methods in Legacy MFA & SSPR Policy** 
 
@@ -476,7 +476,7 @@ methods policy where methods can be managed centrally for all
 authentication scenarios including passwordless, MFA and SSPR.
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448)
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
 
 ### **Oct 14, 2025- End of Extended Support for Office 2016 & Office 2019** 
 
@@ -485,7 +485,7 @@ Office 2016 and Office 2019 extended support ends in 2025.
 **Solution:** You can start to use the latest supported versions.
 
 ***Ref:***
-[[https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016]{.underline}](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016)
+<https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016>
 
 ## **2026 (Attention Needed: 6)** 
 
@@ -498,7 +498,7 @@ on January 13, 2026.
 Update or by manual download.
 
 ***Ref:***
-[[https://support.microsoft.com/en-us/topic/description-of-update-3-for-microsoft-advanced-threat-analytics-1-9-954cb9b7-9646-78ce-2000-2a257b64df7c]{.underline}](https://support.microsoft.com/en-us/topic/description-of-update-3-for-microsoft-advanced-threat-analytics-1-9-954cb9b7-9646-78ce-2000-2a257b64df7c)
+<https://support.microsoft.com/en-us/topic/description-of-update-3-for-microsoft-advanced-threat-analytics-1-9-954cb9b7-9646-78ce-2000-2a257b64df7c>
 
 ### **Mar 31, 2026- Deprecation of 'Require Approved Client App' Conditional Access Grant** 
 
@@ -509,7 +509,7 @@ AD) Conditional Access will be retired and no longer enforced.
 control, which has all the same capabilities
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448)
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448>
 
 ### **Apr 02, 2026- SharePoint 2013 Workflow Retirement** 
 
@@ -519,7 +519,7 @@ SharePoint 2013 workflows will no longer be supported.
 solutions.
 
 ***Ref:***
-[[https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767]{.underline}](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767)
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC542767>
 
 ### **July 14, 2026- InfoPath 2013 Client and InfoPath Forms Services in SharePoint Online will be Retired** 
 
@@ -535,7 +535,7 @@ you can initiate the migration process to modern alternatives such as
 Power Apps, Power Automate, or Forms.
 
 ***Ref:***
-[[https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-infopath-forms-services-in-microsoft-365/ba-p/3858190]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-infopath-forms-services-in-microsoft-365/ba-p/3858190)
+<https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-infopath-forms-services-in-microsoft-365/ba-p/3858190>
 
 ### **Oct 01, 2026- Retirement of Exchange Web Services in Exchange Online** 
 
@@ -549,7 +549,7 @@ Exchange Online data and gain access to the latest features and
 functionality.
 
 ***Ref***:
-[[https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-exchange-web-services-in-exchange-online/ba-p/3924440]{.underline}](https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-exchange-web-services-in-exchange-online/ba-p/3924440)
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-exchange-web-services-in-exchange-online/ba-p/3924440>
 
 ### **Oct 01, 2026- Sign-in Risk Policy and User Risk Policy Retirement from Entra ID Protection** 
 
@@ -560,7 +560,7 @@ User risk policy or Sign-in risk policy UX in Entra ID Protection
 Access.
 
 ***Ref***:
-[[https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/what-s-new-in-microsoft-entra/ba-p/3796395]{.underline}](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/what-s-new-in-microsoft-entra/ba-p/3796395)
+<https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/what-s-new-in-microsoft-entra/ba-p/3796395)>
 
 
 In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires staying informed about the changes. By proactively adapting to these changes, you can optimize your Microsoft 365 experience, maximize productivity, and effectively plan for the future. 
