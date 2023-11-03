@@ -8,14 +8,13 @@ Discover the **key changes, deprecations,** and **end-of-support** scenarios tha
 
 Here is a list of changes categorized by month and year.
 
+ 
 
-- Oct 2023 (Public Preview: 1, New features: 3, Retirements: 7, Retirement Postponed: 1, Enhancements: 2, Functionality Changes: 1, Action Required: 1)
-
-- Nov 2023 (Major update: 1, Retirements: 3)
+- Nov 2023 (General Availability: 1; New Features: 3, Retirements: 6, Enhancements: 1, Existing Functionality Change: 1, Action Needed: 1, Retirement Postponed: 1)
 
 - Dec 2023 (Deprecation: 1, Existing Feature Replacements: 2)
 
-- 2024 (Attention needed: 11)
+- 2024 (Attention needed: 16)
 
 - 2025 (Attention needed: 3)
 
@@ -23,243 +22,72 @@ Here is a list of changes categorized by month and year.
 
 ## **Retirement Postponed Announcement:** 
 
-### **Migrate to the Authentication Methods Policy in Azure Active Directory** 
+### **Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
 
-The retirement of the ability to manage authentication methods in the
-legacy Multifactor Authentication (MFA) and Self-Service Password Reset
-(SSPR) policies in Entra ID has been postponed. The new retirement date
-has been extended from September 30th, 2024, to September 30th, 2025.
+Microsoft has postponed the retirement of PowerShell cmdlets to manage
+user profile photos like: *Get-UserPhoto*, *Set-UserPhoto*, and
+*Remove-UserPhoto*.
 
-***Ref:***
-<https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-authentication-methods-manage#finish-the-migration>
-
-
-
-## Oct 2023
-
-Public Preview: 1 \| New features: 3 \| Retirements: 7 \| Retirement Postponed: 1 \| Enhancements: 2 \| Functionality Changes: 1 \| Action Needed: 1
-
-
-## **Public Preview:**
-
-### **Oct 2023- Teams Users can Transform Their Meetings into a 3D Experience.** 
-
-Immersive Spaces in Teams take your meetings to a whole new level by
-offering a 3D experience. With a simple click, you can seamlessly
-connect with your team in a pre-designed immersive environment directly
-from the Teams meetings view menu.
+The retirement is scheduled for late March 2024 (previously November 30,
+2023).
 
 ***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677830>
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC678855>
 
-## **New Features:**
 
-### **Oct 5, 2023- Town Halls in Microsoft Teams** 
-
-Microsoft is introducing Town halls in Microsoft Teams to host and
-deliver large-scale, internal events to create connections across an
-organization. Town hall will replace Teams Live Events and be available
-for Microsoft 365 and Office 365 customers
-
-***Ref:***
-<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=123148>
-  
-
-### **Mid Oct 2023- Personal Plans in Planner** 
-
-Currently, all created plans must be associated with an M365 group or a
-roster in Planner. With the introduction of the new Personal plan,
-Microsoft is introducing a new type of container known as 'user
-containers.' Personal plans are exclusively shared with the creator and
-will remain inaccessible to anyone else until explicitly shared.
-
-***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC677519>
-
-### **Mid-Oct 2023- Meet App in Microsoft Teams** 
-
-The Meet app serves as a centralized hub for all meeting activities and
-content. It allows users to prepare for upcoming meetings, catch up on
-missed content, and access meeting-related materials like agendas,
-notes, chats, and recaps, all conveniently in one place.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC660610>
-
-## **Retirements:**
-
-### **Oct 1, 2023- Azure AD Connect V1 Retirement** 
-
-From October, Azure AD cloud services will stop accepting connections
-from Azure AD Connect V1 servers, and identities will no longer
-synchronize.\
-Solution: You must migrate to Cloud sync or Azure AD Connect V2 based on
-the organization's requirement.
-
-***Ref***:
-<https://learn.microsoft.com/en-us/azure/active-directory/hybrid/decommission-connect-sync-v1>
-
-### **Oct 2023- Deprecation of Remote PowerShell (RPS) Protocol in Exchange Online PowerShell**
-
-MS will block RPS for all tenants irrespective of the tenant creation
-date, size, or opt-out status.
-
-**Solution:** You can use Exchange Online PowerShellV3 module.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-remote-powershell-in-exchange-online-re-enabling/ba-p/3779692>
-
-### **Oct 2023- Classic Search in Purview Portal Retirement** 
-
-From October 2023, Classic Search available in the Microsoft Purview
-portal will be retired.\
-Solution: Admins are encouraged to utilize the "New search" feature,
-which offers faster search times, additional search options, the ability
-to save searches, and more functionalities.
-
-***Ref:***
-<https://learn.microsoft.com/en-us/purview/audit-log-search>
-
-### **Oct 10, 2023- Older Office Versions Not Supported for Connecting to Microsoft 365 Services** 
-
-Older Office versions (Office 2016 & 2019) might still be able to
-connect to Microsoft 365 services, but that connectivity isn't
-supported.
-
-**Solution:** You can use Microsoft 365 apps.
-
-***Ref**:*
-<https://learn.microsoft.com/en-us/deployoffice/endofsupport/microsoft-365-services-connectivity>
-
-### **Oct 10, 2023- Microsoft Office 2019 for Mac** 
-
-Office 2019 for Mac reaches the end of support on October 10, 2023.
-After that, Office 2019 for Mac will no longer receive security updates,
-bug fixes, technical support, or online technical content support.
-
-**Solution**: Microsoft recommend upgrading to Microsoft 365 E3, which
-comes with Microsoft 365 Apps.
-
-***Ref***:
-<https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2019-for-mac>
-
-### **Oct 15, 2023- Classic Stream Retirement**
-
-Users are no longer able to access or use Stream (Classic) unless admin
-takes action to delay this change.
-
-**Solution:** Admins can [[extend the
-date]{.underline}](https://learn.microsoft.com/en-us/stream/streamnew/migration-settings#delay-upload-block-setting).
-This change can be delayed until April 15, 2024.
-
-***Ref:***
-<https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
-
-### **Mid Oct 2023- Files Hub retiring from the new Outlook for Windows** 
-
-Starting in mid-October 2023, Microsoft will be retiring the Files Hub
-feature in the new Outlook for Windows. The Files Hub, which
-consolidates all received attachments and files into one accessible
-location via the paperclip icon on the leftmost vertical app bar, will
-no longer be available
-
-**Solution**: Instead of using the Files Hub, you can use the "Has
-files" filter in the message list or the upcoming "Files" tab within
-search results.
-
-***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678067>
-
-## **Enhancements:** 
-
-### **Oct 2023- Limit Update in Tenant Allow/Block List per SKU** 
-
-Currently, admins can only create 500 block and 500 allow entries in
-sender, URL and file category in Tenant allow/block list. With this
-update, admins can configure up to 10,000 block entries and 5,000 allow
-entries based on the license type.
-
-***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678057>
-
-### **Oct 2023- Default Microsoft 365 Audit Logging Retention Period Doubled** 
-
-Starting from Oct 2023, the Microsoft Purview Audit supports expanded
-logging capabilities for standard customers at no additional cost. It
-includes,
-
--   The extension of the **default audit log retention period from 90 to
-    180 days** for standard customers. .
-
--   ***3*0+ new activities**, such as Mail Item Accessed, Teams message
-    read, Teams chat created, etc., have been added to the audit log,
-    which were previously exclusive to the Microsoft Purview Audit
-    (Premium) subscription.
-
-***Ref***:
-<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=171160>
-
-## **Functionality Change:** 
-
-### **Oct 2023- Web links from Microsoft Teams chats to open in Microsoft Edge** 
-
-The Microsoft Teams desktop app for Windows will open web links from
-Teams chats in Microsoft Edge to enable chat side-by-side experience. It
-won't affect the device's default browser settings for Windows. This
-Microsoft Teams change has started rolling out to Targeted Release.
-
-**Solution:** If admins don't want to open the links through Edge,
-change it via the Teams settings menu: Settings \> Files and links \>
-Link open preferences.
-
-***Ref:***
-<https://www.microsoft.com/en-us/microsoft-365/blog/2023/02/16/discover-new-ways-to-multitask-with-microsoft-365-and-edge/>
-
-## **Action Required:**
-
-### **Mid Oct 2023- Self-service Trial Experience Available for Microsoft Purview** 
-
-From mid-October, users in the M365 organization will be able to
-initiate a self-service trial of Microsoft Purview.
-
-**Solution**: You can [block self-service
-purchases](https://blog.admindroid.com/block-self-service-purchase-for-power-platform-products-using-powershell/)
-to prevent users from starting self-service trials and purchases.
-
-***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC676124>
 
 ## **November 2023** 
 
-Major update: 1 \| Retirements: 3
+General Availability: 1 \| New Features: 3 \| Retirements: 6 \| Enhancements: 1 \| Existing Functionality Change: 1 \| Action Needed: 1 
 
-## **Major Update:**
+## General Availability:
 
-### **Nov 1, 2023 -- New Requirements for SMTP Relay through Exchange Online** 
+### Nov 01, 2023 - Microsoft 365 Copilot Generally Available
 
-Effective from November 1, 2023, the matching condition for the SMTP P2
-sender domain will be removed. This means that relaying email through
-Exchange Online will require meeting the following criteria:
-
--   Accepted domain: The SMTP certificate domain on the SMTP connection
-    or the SMTP envelope sender domain in the MAIL FROM command (P1
-    sender domain) must be one of your organization's accepted domains.
-
--   Inbound Connector: The sending host's IP address or certificate
-    domain on the SMTP connection must match your organization's Inbound
-    Connector of on-premises type.
-
-Failure to meet either of these conditions after November 1, 2023, will
-result in the rejection of relay attempts from your on-premises
-environment to Exchange Online
-
-**Solution:** It is necessary to modify your Inbound Connector of the
-on-premises type and switch from using IP addresses to a certificate
-domain. Furthermore, you need to ensure that the certificate domain is
-included as an accepted domain of your organization.
+Microsoft 365 Copilot, an AI-powered tool, seamlessly integrates
+Microsoft 365 data with Microsoft Graph and M365 apps. It empowers users
+with various tasks and boost productivity in Microsoft 365 ecosystem.
 
 ***Ref:***
-<https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357>
+<https://www.microsoft.com/en-us/microsoft-365/blog/2023/09/21/announcing-microsoft-365-copilot-general-availability-and-microsoft-365-chat/>
+
+## New Features:
+
+### Nov 2023- Auto Rollout of Conditional Access Policies 
+
+Microsoft will begin automatically protecting customers with Microsoft
+managed Conditional Access policies. It includes following policies,
+
+-   MFA for admin portals
+
+-   MFA for per-user MFA users
+
+-   MFA for high-risk sign-ins
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=183905>
+
+### Nov 2023 -- Option to Disable Roaming Signatures in Outlook on the Web 
+
+Admins can disable roaming signatures themselves for their tenants for
+Outlook on the web using the PowerShell cmdlet 'Set-OrganizationConfig'.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC684213>
+
+### Nov 2023- Admin can Control Users' Inbox and Calendar Sharing in Outlook 
+
+Outlook users, whether on Outlook Web Access (OWA) or Outlook for
+Windows, have the ability to share their mail and calendar with others
+at varying permission levels. With this new feature, administrators can
+now control and disable users\' sharing capabilities through the Office
+cloud policy service
+
+**Note**: Users who have previously been granted permissions to access
+inboxes and calendars will remain unaffected by this change.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?rtc=1&searchterms=182261&filters=&searchterms=182261>
 
 ## **Retirements:**
 
@@ -276,7 +104,31 @@ notebooks, you can use the OneNote app instead of OneNote for Windows
 ***Ref***:
 <https://support.microsoft.com/en-us/office/deprecating-translation-in-onenote-for-windows-10-7a09cfa4-32de-486a-9c7f-965eeeba3439?storagetype=live>
 
-### **Nov 13, 2023 -- Exchange Transport Rules (ETRs) Stopping Support for DLP Scenarios** 
+### **Nov 2023- Classic Search in Purview Portal Retirement** 
+
+From Nov2023, Classic Search available in the Microsoft Purview portal
+will be retired.
+
+**Solution:** Admins are encouraged to utilize the "New search" feature,
+which offers faster search times, additional search options, the ability
+to save searches, and more functionalities.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC683034>
+
+### **Nov 11, 2023 -- Deprecation of Secret Groups in Viva Engage** 
+
+Private unlisted groups (secret groups) in Yammer will be **permanently
+deleted and deprecated** on November 11, 2023.
+
+**Note**: If you\'ve already received an exception approval from
+Microsoft support, your private unlisted groups won\'t be affected by
+this change.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC683925>
+
+### **Nov 13, 2023 - Exchange Transport Rules (ETRs) Stopping Support for DLP Scenarios** 
 
 Beginning mid-November, Exchange DLP-related actions and
 conditions/exceptions (predicates) will be removed from mail flow rules
@@ -288,7 +140,18 @@ devices, and more.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895>
 
-### **Nov 30, 2023- Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
+### **Nov 15, 2023 - Users will no Longer be able to Add Password SSO to Apps** 
+
+Starting from November 15, 2023, end users will no longer have the
+capability to incorporate password SSO Apps into their My Apps gallery.
+Previously added password SSO apps remain available in My Apps.
+
+**Note**: Admins can still add password SSO apps.
+
+***Ref***:
+<https://learn.microsoft.com/en-us/entra/fundamentals/whats-new>
+
+### **Nov 30, 2023- Exchange PowerShell: Retirement of Get, Set, and Remove User Photos Cmdlets** 
 
 Microsoft is phasing out the Exchange PowerShell cmdlets used by tenant
 administrators to manage user profile photos, including commands like:
@@ -299,6 +162,62 @@ or Microsoft 365 admin center to manage user photos.
 
 ***Ref***:
 <https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC678855>
+
+## **Enhancement:**
+
+### **Nov 2023- Ability to View Declined Meetings in Outlook** 
+
+A new calendar setting Preserve Declined Meeting (PDM) in Outlook will
+enable users to choose if they want their declined meetings to be
+removed or kept on their calendar. But in case, if admins want to
+disable PDM availability for their entire tenant, they can do it through
+PowerShell.
+
+***Ref:***
+<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=154056>
+
+## **Existing Functionality Change:**
+
+### **Nov 01, 2023- Pin Based Verification Process for Support Callers** 
+
+Starting November 1, 2023, enhanced verification will be required to
+open and manage a phone-initiated case with Microsoft Support.
+
+**Proactive steps:** To help an expedited Support experience, M365admins can
+update their profile contact information: *Admin center-\>Users-\>Active
+users-\>Admin Name-\>Manage contact information*.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC680788>
+
+## **Action Required:** 
+
+### **Nov 1, 2023 -- New Requirements for SMTP Relay through Exchange Online** 
+
+Effective from November 1, 2023, the matching condition for the SMTP P2
+sender domain will be removed. This means that relaying email through
+Exchange Online will require meeting the following criteria:
+
+-   Accepted domain: The SMTP certificate domain on the SMTP connection
+    or the SMTP envelope sender domain in the MAIL FROM command (P1
+    sender domain) must be one of your organization\'s accepted domains.
+
+-   Inbound Connector: The sending host\'s IP address or certificate
+    domain on the SMTP connection must match your organization\'s
+    Inbound Connector of on-premises type.
+
+Failure to meet either of these conditions after November 1, 2023, will
+result in the rejection of relay attempts from your on-premises
+environment to Exchange Online
+
+**Solution:** It is necessary to modify your Inbound Connector of the
+on-premises type and switch from using IP addresses to a certificate
+domain. Furthermore, you need to ensure that the certificate domain is
+included as an accepted domain of your organization.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357>
+
 
 ## **December 2023** 
 
@@ -356,6 +275,34 @@ SharePoint.
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248>
 
+### **Jan 01, 2024 -- Social Rating App Retirement in SharePoint**
+
+Microsoft will start retiring the number of social rating APIs starting
+January 2024, including *CountRatingsOnUrl, GetRatingsOfUser.*
+
+**Solution:** You can use the *SetRating (string URL, int rating, string
+title, FeedbackData analysisDataEntry), PropagateRating (string URL) ,
+and GetRatingAverageOnUrl (string URL)* as a replacement.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC683665>
+
+### **Jan 08, 2024 - Business Connectivity Services retirement in Microsoft 365**
+
+As part of Business Connectivity Services retirement in Microsoft 365,
+Microsoft will block Business Connectivity Services features in new
+Microsoft 365 tenants by default from Jan 08, 2024.
+
+**Note:** From Sep 30, 2024, Business Connectivity Services will be
+fully retired.
+
+**Solution:** Microsoft encourages customers to use Power Apps to
+replace their Business Connectivity Services solutions in SharePoint in
+Microsoft 365.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-business-connectivity-services-in-microsoft/ba-p/3938773>
+
 ### **Jan 30, 2024 -- Retirement of Stream Live Events** 
 
 This affects customers who use Stream (Classic) or Yammer to create and
@@ -365,6 +312,26 @@ host Stream live events
 
 ***Ref:***
 <https://learn.microsoft.com/en-us/stream/streamnew/stream-classic-to-new-migration-overview#upcoming>
+
+### **Feb 2024- Microsoft Teams: Forward Messages Between Chat Conversations** 
+
+Microsoft Teams will allow users to forward messages to 1:1 chats,
+meeting chats, and group chats. The forward messages feature simplifies
+the sharing of important information and facilitates tracking of
+discussions for future reference.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=90585>
+
+### **Mar 2024- Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
+
+Microsoft is phasing out the Exchange PowerShell cmdlets used by tenant
+administrators to manage user profile photos, including commands like:
+*Get-UserPhoto*, *Set-UserPhoto*, and *Remove-UserPhoto*.
+
+**Solution**: As an alternative admins can utilize MS Graph PowerShell
+or Microsoft 365 admin center to manage user photos.
+
 
 ### **Mar 30, 2024 -- Azure AD Graph Retirement and PowerShell Module Deprecation** 
 
@@ -376,6 +343,21 @@ scripts to MS Graph.
 
 ***Ref***:
 <https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270>
+
+### **Mar 31, 2024- Classic Teams Users Will be Automatically Updated to New Teams**
+
+Classic Teams users will be automatically updated to the new Teams
+client after March 31, 2024. If you are still using Teams classic by
+that date. New Teams is [up to 2x faster and use 50% less
+memory](https://research.gigaom.com/report/new-microsoft-teams-performance-benchmark).
+There is no major impact to the user experience for new Teams.
+
+**Tip:** You can deploy the new Teams client in your organization by
+updating Teams Update policy in Microsoft Teams admin center.
+
+***Ref:***
+https://learn.microsoft.com/en-us/MicrosoftTeams/new-teams-automatic-upgrade-announced
+
 
 ### **Apr 02, 2024- SharePoint 2013 Workflow Retirement** 
 
@@ -421,6 +403,17 @@ data to the cloud-based Azure MFA service
 
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-september-2022-train/ba-p/2967454>
+
+### **Sep 30, 2024 - Business Connectivity Services retirement in Microsoft 365**
+
+Microsoft will retire Business Connectivity Services features in
+Microsoft 365 from Jan 08, 2024.
+
+**Solution:** Microsoft recommends using Power Apps to replace their
+Business Connectivity Services solutions in SharePoint in Microsoft 365.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-business-connectivity-services-in-microsoft/ba-p/3938773>
 
 ### **Oct 14, 2024 -- Office 2016 End of Support** 
 
