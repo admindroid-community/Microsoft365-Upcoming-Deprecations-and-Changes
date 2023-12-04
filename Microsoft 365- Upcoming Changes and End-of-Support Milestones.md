@@ -10,220 +10,111 @@ Here is a list of changes categorized by month and year.
 
  
 
-- Nov 2023 (General Availability: 1; New Features: 3, Retirements: 6, Enhancements: 1, Existing Functionality Change: 1, Action Needed: 1, Retirement Postponed: 1)
+- Dec 2023 (Public Preview: 1; New Features: 3, Retirements: 4, Enhancements: 3, Existing Functionality Change: 1, Action Needed: 1) 
 
-- Dec 2023 (Deprecation: 1, Existing Feature Replacements: 2)
-
-- 2024 (Attention needed: 16)
+- 2024 (Attention needed: 25)
 
 - 2025 (Attention needed: 3)
 
 - 2026 (Attention needed: 6)
 
-## **Retirement Postponed Announcement:** 
 
-### **Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
-
-Microsoft has postponed the retirement of PowerShell cmdlets to manage
-user profile photos like: *Get-UserPhoto*, *Set-UserPhoto*, and
-*Remove-UserPhoto*.
-
-The retirement is scheduled for late March 2024 (previously November 30,
-2023).
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC678855>
-
-
-
-## **November 2023** 
-
-General Availability: 1 \| New Features: 3 \| Retirements: 6 \| Enhancements: 1 \| Existing Functionality Change: 1 \| Action Needed: 1 
-
-## General Availability:
-
-### Nov 01, 2023 - Microsoft 365 Copilot Generally Available
-
-Microsoft 365 Copilot, an AI-powered tool, seamlessly integrates
-Microsoft 365 data with Microsoft Graph and M365 apps. It empowers users
-with various tasks and boost productivity in Microsoft 365 ecosystem.
-
-***Ref:***
-<https://www.microsoft.com/en-us/microsoft-365/blog/2023/09/21/announcing-microsoft-365-copilot-general-availability-and-microsoft-365-chat/>
-
-## New Features:
-
-### Nov 2023- Auto Rollout of Conditional Access Policies 
-
-Microsoft will begin automatically protecting customers with Microsoft
-managed Conditional Access policies. It includes following policies,
-
--   MFA for admin portals
-
--   MFA for per-user MFA users
-
--   MFA for high-risk sign-ins
-
-***Ref:***
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=183905>
-
-### Nov 2023 -- Option to Disable Roaming Signatures in Outlook on the Web 
-
-Admins can disable roaming signatures themselves for their tenants for
-Outlook on the web using the PowerShell cmdlet 'Set-OrganizationConfig'.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC684213>
-
-### Nov 2023- Admin can Control Users' Inbox and Calendar Sharing in Outlook 
-
-Outlook users, whether on Outlook Web Access (OWA) or Outlook for
-Windows, have the ability to share their mail and calendar with others
-at varying permission levels. With this new feature, administrators can
-now control and disable users\' sharing capabilities through the Office
-cloud policy service
-
-**Note**: Users who have previously been granted permissions to access
-inboxes and calendars will remain unaffected by this change.
-
-***Ref:***
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?rtc=1&searchterms=182261&filters=&searchterms=182261>
-
-## **Retirements:**
-
-### **Nov 2023- Translation Feature Retirement in OneNote for Windows 10** 
-
-After this date, OneNote for Windows 10 will continue to be supported,
-and the translation feature will remain visible but will show an error
-when used.
-
-**Solution**: If you wish to continue translating content in your
-notebooks, you can use the OneNote app instead of OneNote for Windows
-10.
-
-***Ref***:
-<https://support.microsoft.com/en-us/office/deprecating-translation-in-onenote-for-windows-10-7a09cfa4-32de-486a-9c7f-965eeeba3439?storagetype=live>
-
-### **Nov 2023- Classic Search in Purview Portal Retirement** 
-
-From Nov2023, Classic Search available in the Microsoft Purview portal
-will be retired.
-
-**Solution:** Admins are encouraged to utilize the "New search" feature,
-which offers faster search times, additional search options, the ability
-to save searches, and more functionalities.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC683034>
-
-### **Nov 11, 2023 -- Deprecation of Secret Groups in Viva Engage** 
-
-Private unlisted groups (secret groups) in Yammer will be **permanently
-deleted and deprecated** on November 11, 2023.
-
-**Note**: If you\'ve already received an exception approval from
-Microsoft support, your private unlisted groups won\'t be affected by
-this change.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC683925>
-
-### **Nov 13, 2023 - Exchange Transport Rules (ETRs) Stopping Support for DLP Scenarios** 
-
-Beginning mid-November, Exchange DLP-related actions and
-conditions/exceptions (predicates) will be removed from mail flow rules
-
-**Solution:** You use Microsoft Purview Unified DLP, which provides DLP
-protection to SharePoint Online, OneDrive for Business, Teams chats,
-devices, and more.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC670895>
-
-### **Nov 15, 2023 - Users will no Longer be able to Add Password SSO to Apps** 
-
-Starting from November 15, 2023, end users will no longer have the
-capability to incorporate password SSO Apps into their My Apps gallery.
-Previously added password SSO apps remain available in My Apps.
-
-**Note**: Admins can still add password SSO apps.
-
-***Ref***:
-<https://learn.microsoft.com/en-us/entra/fundamentals/whats-new>
-
-### **Nov 30, 2023- Exchange PowerShell: Retirement of Get, Set, and Remove User Photos Cmdlets** 
-
-Microsoft is phasing out the Exchange PowerShell cmdlets used by tenant
-administrators to manage user profile photos, including commands like:
-*Get-UserPhoto*, *Set-UserPhoto*, and *Remove-UserPhoto*.
-
-**Solution**: As an alternative admins can utilize MS Graph PowerShell
-or Microsoft 365 admin center to manage user photos.
-
-***Ref***:
-<https://admin.microsoft.com/AdminPortal/Home?ref=MessageCenter/:/messages/MC678855>
-
-## **Enhancement:**
-
-### **Nov 2023- Ability to View Declined Meetings in Outlook** 
-
-A new calendar setting Preserve Declined Meeting (PDM) in Outlook will
-enable users to choose if they want their declined meetings to be
-removed or kept on their calendar. But in case, if admins want to
-disable PDM availability for their entire tenant, they can do it through
-PowerShell.
-
-***Ref:***
-<https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=154056>
-
-## **Existing Functionality Change:**
-
-### **Nov 01, 2023- Pin Based Verification Process for Support Callers** 
-
-Starting November 1, 2023, enhanced verification will be required to
-open and manage a phone-initiated case with Microsoft Support.
-
-**Proactive steps:** To help an expedited Support experience, M365admins can
-update their profile contact information: *Admin center-\>Users-\>Active
-users-\>Admin Name-\>Manage contact information*.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC680788>
-
-## **Action Required:** 
-
-### **Nov 1, 2023 -- New Requirements for SMTP Relay through Exchange Online** 
-
-Effective from November 1, 2023, the matching condition for the SMTP P2
-sender domain will be removed. This means that relaying email through
-Exchange Online will require meeting the following criteria:
-
--   Accepted domain: The SMTP certificate domain on the SMTP connection
-    or the SMTP envelope sender domain in the MAIL FROM command (P1
-    sender domain) must be one of your organization\'s accepted domains.
-
--   Inbound Connector: The sending host\'s IP address or certificate
-    domain on the SMTP connection must match your organization\'s
-    Inbound Connector of on-premises type.
-
-Failure to meet either of these conditions after November 1, 2023, will
-result in the rejection of relay attempts from your on-premises
-environment to Exchange Online
-
-**Solution:** It is necessary to modify your Inbound Connector of the
-on-premises type and switch from using IP addresses to a certificate
-domain. Furthermore, you need to ensure that the certificate domain is
-included as an accepted domain of your organization.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/exchange-team-blog/updated-requirements-for-smtp-relay-through-exchange-online/ba-p/3851357>
 
 
 ## **December 2023** 
 
-Retirement: 1 \| Existing Features Replacement: 2
+Public Preview: 1 \| New Features: 3 \| Retirements: 4 \| Enhancements: 3 \| Existing Functionality Change: 1 \| Action Needed: 1
 
-## **Retirement:**
+## Public Preview 
+
+### **Microsoft 365 Backup** 
+
+Microsoft 365 backup is a new storage architecture for backup and data
+protection inside Microsoft 365. It's helpful to recover M365 data from
+cataclysmic events such as: at scale ransomware attacks, or
+malicious/accidental data deletion/corruption by end users.
+
+It has the capability to
+
+-   Backup all or select SharePoint sites, OneDrive accounts, and
+    Exchange mailboxes in your tenant.     
+
+-   Restore OneDrive accounts, SharePoint sites, and mailbox items to a
+    prior point in time for your entire tenant.  
+
+The paid public preview of Microsoft 365 Backup will begin in Dec 2023.
+
+***Ref:***
+https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-backup-and-microsoft-365-backup-storage-at-ignite/ba-p/3981049
+
+## **New Features:** 
+
+### **Mid Dec- MS Teams Users can Delete/Remove Items from Activity Feed** 
+
+Microsoft Teams users can delete unwanted items from their activity
+feed. The feature \[provides clutter-free experience and allows users to
+focus on the most relevant and important information in their feed.
+
+Targeted release will begin rolling out mid-Dec 2023.
+
+***Ref:***
+https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC692466
+
+### **Dec 2023- Stream Videos can be Watched Inline in Outlook** 
+
+Users will have the ability to watch Stream videos inline in Outlook on
+the web and the new Outlook for Windows. If someone pastes a Stream
+video link in a supported Outlook app and sends it to you, you will be
+able to watch it directly in your inbox.
+
+***Ref:***
+https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=185389
+
+### **Dec 2023- Integrated Apps in Microsoft 365 Admin Center** 
+
+Integrated Apps in M365 admin center allows admins to discover, deploy
+and manage apps across various M365 suite products.
+
+***Ref:***
+https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=164079
+
+## **Retirements:**
+
+### **Dec 01, 2023 -- Outlook Browser Extension Retirement** 
+
+Microsoft is retiring the Outlook browser extension. and it will not be
+accessible from Dec 01, 2023.
+
+**Solution:** Users should transition to use the Outlook on Edge
+sidebar, the Outlook app or Outlook web on their browser (Edge or
+Chrome).
+
+***Ref:***
+https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC688629
+
+### **Mid Dec -- Who bot in Microsoft Teams Retirement** 
+
+*Who* is a bot in Teams that's designed to help you find information
+about anyone in your organization. Microsoft retiring Who bot in
+mid-December 2023.\
+Note: This functionality will transition to Microsoft Copilot in the
+future.
+
+***Ref:***
+https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC687849
+
+### **Late December -- Microsoft Retiring Mail Flow Rules for Tracking End User Reporting** 
+
+Microsoft will be retiring the mail flow rule which helps you track end
+user reporting.
+
+**Solution:** If you want to route messages to a mailbox, you can
+configure them in the [[user reported
+settings]{.underline}](https://security.microsoft.com/securitysettings/userSubmission)
+in the Microsoft Defender.
+
+***Ref:***
+https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC690173
 
 ### **Dec 31, 2023 -- Retirement of OMEv1 (Office 365 Message Encryption)** 
 
@@ -234,7 +125,38 @@ flow rules that currently applies OME protection to Microsoft Purview
 Message Encryption protection.
 
 ***Ref:***
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516>
+https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC455516
+
+## **Enhancements:** 
+
+### **Dec 2023 -- Microsoft Teams: Improved In-caller Experience** 
+
+This update enables users in a call to easily Transfer, Share, and Hold
+the call, making access to various calling capabilities.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC690922>
+
+### **Mid-Dec 2023 -- Guest Users can Manage Tags in MS Teams** 
+
+Microsoft introducing guest setting option in Tag management settings.
+If you wish to allow guests to manage tags, update your tag management
+settings to "*Team owners, members and guests*" option.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC694644>
+
+### **Late Dec 2023 -- View-only Mode for DLP and Information Protection Policies** 
+
+This feature enables administrators with view-only restricted
+permissions to examine the configuration details of Data Loss Prevention
+(DLP) and Information Protection policies. configuration details without
+editing the policies or label configurations. The access is limited to
+viewing the settings and does not grant the ability to make changes to
+the policies or label configurations.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=186527>
 
 ## **Existing Features Replacement:**
 
@@ -248,18 +170,19 @@ experience.
 ***Ref***:
 <https://techcommunity.microsoft.com/t5/microsoft-forms-blog/ultimate-polling-and-quiz-experience-with-polls-app-the/ba-p/3731630>
 
-### **Dec 2023- Activity-Based Authentication Timeout for OWA Replacement** 
+## **Action Required**
 
-The Activity-Based Authentication Timeout for Outlook on the web will be
-replaced by Idle Session Timeout for Microsoft 365.
+### **Auto-rollout of Conditional Access Policy** 
 
-When Idle Session Timeout is enabled, users receive a notification when
-they reach the configured idle session duration. They can choose to
-either stay signed in or be automatically signed out of Microsoft 365
-web apps, including Outlook on the web.
+Microsoft has started pushing auto-rollout of Conditional Access
+Policies to automatically protect tenants. Once the policies are visible
+in your tenant, you'll have 90 days to review and customize or disable
+them before Microsoft turns them on. For those 90 days, the policies
+will be in report-only mode. So, take action based on your
+organization's needs.
 
 ***Ref***:
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC674426>
+<https://www.microsoft.com/en-us/security/blog/2023/11/06/automatic-conditional-access-policies-in-microsoft-entra-streamline-identity-protection>
 
 ## **2024 (Attention Needed: 11)** 
 
@@ -274,6 +197,34 @@ SharePoint.
 
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC496248>
+
+### **Jan 2024 -- Device-bound Passkeys in Microsoft Entra** 
+
+Microsoft Entra ID will support device-bound passkeys stored on
+computers and mobile devices as an authentication method.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC690185>
+
+### **Jan 2024 -- New & Improved Design for Microsoft 365 Admin Center Usage Report** 
+
+The Microsoft 365 admin center Usage report Overview page has been
+revamped for improved navigation of vital usage insights. The redesign
+includes new metrics like enabled and active users, user state
+compositions (e.g., distinguishing first-time from returning users),
+storage by product, and key usage metrics for Microsoft 365 products.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC692467>
+
+### **Jan 2024 -- New Recommendations for Microsoft Purview Insider Risk Management** 
+
+Microsoft will introduce additional recommended actions for fine-tuning
+insider risk policies and implementing advanced configurations in
+Microsoft Purview Insider Risk Management.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC692019>
 
 ### **Jan 01, 2024 -- Social Rating App Retirement in SharePoint**
 
@@ -303,6 +254,35 @@ Microsoft 365.
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-business-connectivity-services-in-microsoft/ba-p/3938773>
 
+### **Jan 15 -- Microsoft 365 Browser Extension Retirement** 
+
+The Microsoft 365 browser extension, previously known as the Office
+browser extension, is a free add-on accessible on Microsoft Edge and
+Google Chrome. It allows users to access their Microsoft 365
+applications and documents directly through the web browser. This
+extension will reach retirement and end of support on January 15th,
+2024.
+
+**Proactive step**: Remove the Microsoft 365 browser extension from
+Microsoft Edge and Chrome.
+
+***Ref***:
+<https://support.microsoft.com/en-au/office/end-of-support-for-the-microsoft-365-browser-extension-dc1024b4-92be-46eb-81a7-aea85368baa0>
+
+### **Mid Jan 2024 -- Activity-Based Authentication Timeout for OWA Replacement** 
+
+The Activity-Based Authentication Timeout for Outlook on the web will be
+replaced by Idle Session Timeout for Microsoft 365.
+
+When Idle Session Timeout is enabled, users receive a notification when
+they reach the configured idle session duration. They can choose to
+either stay signed in or be automatically signed out of Microsoft 365
+web apps, including Outlook on the web.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC694387>
+
+
 ### **Jan 30, 2024 -- Retirement of Stream Live Events** 
 
 This affects customers who use Stream (Classic) or Yammer to create and
@@ -322,6 +302,33 @@ discussions for future reference.
 
 ***Ref:***
 <https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=90585>
+
+### **Feb 2023 -- MS Teams Users can Delete/Remove Items from Activity Feed** 
+
+Microsoft Teams users can delete unwanted items from their activity
+feed. The feature \[provides clutter-free experience and allows users to
+focus on the most relevant and important information in their feed.
+
+Standard release will begin rolling out early-Feb 2024.
+
+***Ref***:
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=181794>
+
+### **Feb 02 -- Managing Audit Permission from EAC Retirement** 
+
+Starting February 2, 2024, you will no longer be able to manage Audit
+permissions using the Exchange Admin Center.
+
+**Solution**: You can use the Purview Compliance portal to manage Audit
+permissions.
+
+*Note*: Audit permission assigned in the EAC will be automatically
+replicated into the permissions tab of the Microsoft Purview Compliance
+portal on February 2, 2024.
+
+***Ref***:
+<https://learn.microsoft.com/en-us/purview/audit-standard-setup#step-2-assign-permissions-to-search-the-audit-log>
+
 
 ### **Mar 2024- Exchange PowerShell: Retirement of Get, Set, and Remove UserPhotos Cmdlets** 
 
@@ -426,6 +433,35 @@ comes with Microsoft 365 Apps.
 
 ***Ref***:
 <https://learn.microsoft.com/en-us/deployoffice/endofsupport/plan-upgrade-older-versions-office>
+
+### **Nov 01, 2024- Azure ACS Retirement in Microsoft 365** 
+
+Microsoft is retiring the use of Azure ACS as auth platform for
+SharePoint Online. Starting November 1st, 2024, new tenants will not be
+able use Azure ACS. For existing tenants that currently rely on Azure
+ACS to provide custom-developed or third-party applications access to
+SharePoint Online, this functionality will cease to work after April 2,
+2026.
+
+**Solution**: Admins can utilize the Microsoft 365 Assessment tool to
+scan the tenants for any usage of Azure Access Control Service (ACS) and
+[[migrating from Azure ACS to Microsoft Entra
+ID]{.underline}](https://aka.ms/retirement/acs/guidance).
+
+***Ref***:
+<https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs>
+
+### **Nov 01, 2024- SharePoint Add-in Retirement** 
+
+SharePoint Add-Ins will stop working for new tenants as of November 1,
+2024, and they will be fully retired as of April 2nd, 2026.
+
+**Solution**: Admins can run the [[Microsoft 365 Assessment
+tool]{.underline}](https://aka.ms/assessment/addinsacs) to scan their
+tenants for SharePoint Add-In usage.
+
+***Ref***:
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC693865>
 
 ###  **Dec 31, 2024- Microsoft Teams Live Event Retirement** 
 
