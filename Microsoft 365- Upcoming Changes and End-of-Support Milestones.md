@@ -10,7 +10,7 @@ Here is a list of changes categorized by month and year.
 
  
 
-- Mar 2024 (Most Expected Feature: 1, In the Spotlight: 2, New Features: 4, Retirements: 7, Enhancements: 2, Existing Functionality Change: 1 )
+- Mar 2024 (Most Expected Feature: 1, In the Spotlight: 2, New Features: 4, Retirements: 7, Enhancements: 2, Existing Feature Change: 1 )
 
 - Apr 2024 (Attention needed: 6)
 
@@ -28,12 +28,11 @@ Here is a list of changes categorized by month and year.
 
 
 
-## **February 2024**
-Most Expected Feature: 1 \| In the Spotlight: 2 \| New Features: 4 \| Retirements: 7 \| Enhancements: 2 \| Existing Functionality Change: 1
 
 
 
 ## **March 2024**
+Most Expected Feature: 1 \| In the Spotlight: 2 \| New Features: 4 \| Retirements: 7 \| Enhancements: 2 \| Existing Feature Change: 1
 
 ## **Most Expected Feature:** 
 
