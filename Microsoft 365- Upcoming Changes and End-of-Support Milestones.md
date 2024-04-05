@@ -11,7 +11,7 @@ Here is a list of changes categorized by month and year.
  
 
 
-- Apr 2024 (Important Updates: 2, New Features: 3, Retirements: 6, Enhancements: 2, Existing Functionality Change: 3, Action Required: 1 )
+- Apr 2024 (Important Updates: 3, New Features: 3, Retirements: 6, Enhancements: 2, Existing Functionality Change: 3, Action Required: 2 )
 
 - May 2024 (Attention needed: 9)
 
@@ -29,7 +29,7 @@ Here is a list of changes categorized by month and year.
 
 
 ## April 2024
-Important Updates: 2 \| New Features: 3 \| Retirements: 6 \| Enhancements: 2 \| Existing Feature Changes: 3 \| Action Required: 1
+Important Updates: 3 \| New Features: 3 \| Retirements: 6 \| Enhancements: 2 \| Existing Feature Changes: 3 \| Action Required: 2
 
 ## Important Updates: 
 ### Azure AD and MSOnline PowerShell Modules to Continue Working
@@ -54,6 +54,17 @@ encountered.
 
 ***Ref:***
 <https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability>
+
+### **Azure AD Graph API Retirement**
+
+The initial phase of Azure AD Graph API retirement begins on June 30,
+2024. Entra ID apps created after this date and trying to use the Azure
+AD Graph API will face errors. Applications that are created *before
+June 30, 2024* will not be impacted at this stage.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-azure-ad-graph-api-retirement/ba-p/4090534>
+
 
 ## New Features:
 
@@ -230,6 +241,16 @@ unlicensed users will also be included.
 
 ## Action Required:
 
+### New Products available for Self-Service Purchase
+
+Microsoft has introduced the self-service purchase capability for
+several additional products, such as Dynamics 365 Marketing and
+Microsoft 365 F3.
+
+**Solution**: Consider disabling the self-service purchase
+capability for these new additions, if necessary.
+
+
 ### Apr 17, 2024- MSCommerce PowerShell Module Requires to Update
 
 Microsoft recently released MSCommerce PowerShell module 2.2 version
@@ -399,6 +420,16 @@ Calls -\> Configure Voicemail:
 
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC727450>
+
+### June 30, 2024- Azure AD Graph API Retirement
+
+The initial phase of Azure AD Graph API retirement begins on June 30,
+2024. Entra ID apps created after this date and trying to use the Azure
+AD Graph API will face errors. Applications that are created *before
+June 30, 2024* will not be impacted at this stage.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-azure-ad-graph-api-retirement/ba-p/4090534>
 
 
 ### June 30, 2024- Retirement of Classic Teams for VDI 
