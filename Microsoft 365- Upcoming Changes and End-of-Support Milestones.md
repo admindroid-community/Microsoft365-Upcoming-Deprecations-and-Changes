@@ -11,7 +11,7 @@ Here is a list of changes categorized by month and year.
  
 
 
-- Apr 2024 (Important Update: 1, New Features: 3, Retirements: 6, Enhancements: 2, Existing Functionality Change: 3, Action Required: 1 )
+- Apr 2024 (Important Updates: 2, New Features: 3, Retirements: 6, Enhancements: 2, Existing Functionality Change: 3, Action Required: 1 )
 
 - May 2024 (Attention needed: 9)
 
@@ -29,9 +29,9 @@ Here is a list of changes categorized by month and year.
 
 
 ## April 2024
-Important Update: 1 \| New Features: 3 \| Retirements: 6 \| Enhancements: 2 \| Existing Feature Changes: 3 \| Action Required: 1
+Important Updates: 2 \| New Features: 3 \| Retirements: 6 \| Enhancements: 2 \| Existing Feature Changes: 3 \| Action Required: 1
 
-## Important Update: 
+## Important Updates: 
 ### Azure AD and MSOnline PowerShell Modules to Continue Working
 
 Microsoft has officially deprecated the Azure AD and MSOnline PowerShell
@@ -43,6 +43,17 @@ guaranteed to function as expected.
 
 ***Ref:***
 https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-deprecation-of-azure-ad-powershell-and-msonline/ba-p/4094536
+
+### End of Availability for Classic Teams Client
+
+Users of Classic Teams facing migration challenges or lacking the
+necessary prerequisites for the upgrade will retain access to the
+classic Teams client until at least July 1, 2024. This extension
+provides administrators with additional time to resolve any issues
+encountered.
+
+***Ref:***
+<https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability>
 
 ## New Features:
 
