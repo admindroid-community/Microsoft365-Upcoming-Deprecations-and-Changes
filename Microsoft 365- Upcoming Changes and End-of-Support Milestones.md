@@ -11,7 +11,7 @@ Here is a list of changes categorized by month and year.
  
 
 
-- May 2024 (Spotlight Features: 3, Deprecation Postponed: 1, New Features: 6, Retirements: 7, Enhancements: 3, Action Required: 1 )
+- May 2024 (Spotlight Features: 3, Deprecation Postponed: 1, New Features: 7, Retirements: 7, Enhancements: 3, Action Required: 1 )
 
 - June 2024 (Attention needed: 8)
 
@@ -27,7 +27,7 @@ Here is a list of changes categorized by month and year.
 
 
 ## May 2024
-Spotlight Features: 3 \| Deprecation Postponed: 1\| New Features: 6 \| Retirements: 7 \| Enhancements: 3  \| Action Required: 1
+Spotlight Features: 3 \| Deprecation Postponed: 1\| New Features: 7 \| Retirements: 7 \| Enhancements: 3  \| Action Required: 1
 
 ## In the Spotlight:
 
@@ -143,6 +143,15 @@ boundaries.
 ***Ref:***
 <https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC711026>
 
+### Late-May 2024- Microsoft Syntex: Sensitive Information Processing Model
+
+SharePoint Premium users can apply a prebuilt sensitive information
+processing model to SharePoint libraries. This model is designed to
+detect and potentially extract sensitive information from documents
+within their library.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC791115>
 
 
 ## Retirements:
@@ -349,7 +358,7 @@ storage by product, and key usage metrics for Microsoft 365 products.
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC692467>
 
-##Retirements
+## Retirements
 
 ### June 2024- Voicemail: Retirement of Automatic activation of OOF greetings based on OOF Calendar events
 
@@ -378,7 +387,7 @@ June 30, 2024* will not be impacted at this stage.
 <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-azure-ad-graph-api-retirement/ba-p/4090534>
 
 
-##Existing Functionality Changes
+## Existing Functionality Changes
 
 ### Early-June 2024- Teams Meeting Recordings will be Saved in Organizer's OneDrive
 
@@ -411,7 +420,7 @@ type available in the 'New Meeting' drop down in Teams Calendar.
 
 ## July 2024
 
-##Retirements
+## Retirements
 
 ### July 1, 2024- Classic Teams End of Support
 
@@ -483,7 +492,7 @@ increase](https://learn.microsoft.com/en-us/defender-cloud-apps/tutorial-ueba)"
 support from Microsoft Defender for cloud apps will be retired from July
 2024.
 
-##Enhancements
+## Enhancements
 
 ### Mid-July 2024- New cmdlet for Content Explorer
 
@@ -512,7 +521,7 @@ Website tab will open in a new browser tab.
 ***Ref:***
 <https://devblogs.microsoft.com/microsoft365dev/upcoming-updates-to-loading-websites-in-teams-tabs>
 
-##Action Required
+## Action Required
 
 ### July 10, 2024 -- Intune: Migrate Classic Conditional Access Policies
 
