@@ -11,11 +11,14 @@ Here is a list of changes categorized by month and year.
  
 
 
-- May 2024 (Spotlight Features: 3, Deprecation Postponed: 1, New Features: 7, Retirements: 7, Enhancements: 3, Action Required: 1 )
 
-- June 2024 (Attention needed: 8)
+- June 2024 (Deprecation Postponed: 1, New Features: 6, Retirements: 5, Enhancements: 4, Action Required: 3 )
 
-- Q3-2024 (Attention needed: 12)
+- July 2024 (Attention needed:12)
+
+- Aug 2024 (Attention needed: 4)
+
+- Sep 2024 (Attention needed: 3)
 
 - Q4-2024 (Attention needed: 7)
 
@@ -26,306 +29,39 @@ Here is a list of changes categorized by month and year.
 
 
 
-## May 2024
-Spotlight Features: 3 \| Deprecation Postponed: 1\| New Features: 7 \| Retirements: 7 \| Enhancements: 3  \| Action Required: 1
-
-## In the Spotlight:
-
-### Platform SSO for macOS
-
-Platform SSO is an advancement of the current SSO Extension
-functionalities designed for macOS. It grants users the ability to
-access their Macs without entering traditional passwords. Instead, they
-can use passwordless login or synchronize their local credentials with
-their Entra ID credentials.
-
-Currently, this feature is in Public Preview.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/platform-sso-for-macos-now-in-public-preview/ba-p/4051574>
-
-### Organizational Messages in Microsoft 365 Admin Center
-
-Organizational messages enable you to create and deliver short-form
-communications to people in your organization through the Microsoft
-products they use every day, like Microsoft Windows 11 or Microsoft 365
-apps.
-
-Currently, this feature is in Public Preview and available for all
-licenses.
-
-***Ref:*** <https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-organizational-messages-preview-in-the-microsoft-365/ba-p/4123890>
-
-### General Availability of Microsoft Entra External ID
-
-The Microsoft Entra External ID feature is an advanced customer identity
-and access management (CIAM) solution designed to handle external
-identities comprehensively. It offers a unified platform to manage
-various types of external identities, including customers, partners,
-suppliers, and contractors.
-
-***Ref:*** <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/announcing-general-availability-of-microsoft-entra-external-id/ba-p/3974961>
-
-
-
-## Deprecation Postponed:
-
-### Retirement of Search-AdminAuditLog and MailboxAuditLog Cmdlets Postponed
-
-Microsoft scheduled to deprecate Search-MailboxAuditLog and
-Search-AdminAuditLog, and they were supposed to stop working from May
-2024. However, according to the latest announcement, Microsoft has
-postponed the retirement of these cmdlets without announcing a new date.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/security-compliance-and-identity/important-announcement-deprecation-of-adminauditlog-and/ba-p/4036537>
-
-
-## New Features:
-
-### May 2024- Microsoft 365: Archive Feature for Inactive Sites on SharePoint
-
-The feature enables admins to save on costs of storage exceeding the
-quota limit by archiving the inactive sites in SharePoint.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC789317>
-
-### May 2024 -- Contact De-duplication Feature in OWA 
-
-Maintaining a clean, updated contact list is crucial for enhanced
-collaboration and productivity. Microsoft introducing a new feature to
-cleaning up duplicate contacts with the de-duplication feature in
-Outlook Web App (OWA)
-
-***Ref***:
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=In%20development&searchterms=98124>
-
-### May 2024: Change SharePoint Domain Name for Larger Environments
-
-With Advanced Tenant Rename, organizations with up to 100,000 total
-sites can change their domain name. It would be helpful in cases like
-rebranding, mergers, acquisitions, etc.
-
-Note: Advanced Tenant Rename is a part of SharePoint Advanced
-Management.
-
-***Ref:***
-<https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC789608>
-
-### May 2024- Microsoft Purview: Audit Search with Microsoft Graph API
-
-Admins can programmatically query and retrieve the activity log through
-the new Audit Log Query Graph API.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC720778>
-
-### Mid-May 2024- Data Loss Prevention for Endpoint: Optical Character Recognition (OCR) for Mac Devices
-
-Microsoft is introducing Optical Character Recognition (OCR) support on
-Mac devices to detect sensitive content in images and apply policies to
-protect these images.
-
-To utilize this feature, Global admin must set up pay-as-you-go billing
-to enable OCR. The charge for using OCR is \$1.00 for every 1,000 items
-scanned.
-
-***Ref:***
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=392840>
-
-### Mid-May 2024- MTO in Microsoft Teams
-
-MTO capabilities in MS Teams cover search, chat, calling, meetings,
-content sharing, and facilitating collaboration across tenant
-boundaries.
-
-***Ref:***
-<https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC711026>
-
-### Late-May 2024- Microsoft Syntex: Sensitive Information Processing Model
-
-SharePoint Premium users can apply a prebuilt sensitive information
-processing model to SharePoint libraries. This model is designed to
-detect and potentially extract sensitive information from documents
-within their library.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC791115>
-
-
-## Retirements:
-
-### May 2024- Retirement of the ApplicationImpersonation Role Based Access Control (RBAC) Role in Exchange Online. 
-
-Starting May 2024, Microsoft will block the assignment of the
-ApplicationImpersonation role in Exchange Online to accounts.
-
-**Solution:** To comply with these upcoming changes, apps must undergo
-an App Registration, utilize Application permissions (not Delegated),
-and implement secure credentials for access.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-rbac-application-impersonation-in-exchange-online/ba-p/4062671>
-
-### May 2024 -- Custom Script Settings Removal from OneDrive and SharePoint Web 
-
-The Custom Script setting in OneDrive and SharePoint web will be removed
-in early-May 2024. After that, users cannot change the look, feel, and
-behavior of sites and pages to meet their organizational objectives or
-individual needs.
-
-**Proactive step:** A new PowerShell command property
-*DelayDenyAddAndCustomizePagesEnforcement*, has been introduced to delay
-the change to custom script set on the Tenant until mod-November 2024.
-
-Set-SPOTenant DelayDenyAddAndCustomizePagesEnforcement \$True
-
-**Note:** This property is available in the SharePoint Online Management
-Shell version 16.0.24524.12000, or above.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC714186>
-
-
-
-### May 1, 2024: Azure Information Protection Add-in for Office Retirement
-
-From May 1st, 2024, AIP Unified Labeling add-in permanently disabled in
-Office.
-
-**Solution:** If you are using AIP Add-in for Office, you can use
-<playbook>(https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook/)
-to plan and execute the transition to built-in labeling in Office apps.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908>
-
-### May 1, 2024- Legacy PowerBI Apps Retirement
-
-Starting May 1, 2024, legacy Power BI apps (pre-audiences) will no
-longer receive support. While these apps may continue to function, they
-will no longer receive technical assistance beyond May 2024.
-
-**Solution:** Upgrade legacy Power BI apps directly from the workspace
-your app is in or from the **Update app** option in the authoring view.
-
-***Ref:***
-<https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-legacy-power-bi-apps-pre-audiences/>
-
-### May 1, 2024 - Retirement for Risk-Based Policies in Entra ID Protection
-
-Beginning May 1, 2024, the creation of new legacy user risk policies or
-sign-in risk policies in Entra ID Protection will no longer be
-supported.
-
-**Solution:** To create and enable new risk-based policies, please
-utilize Conditional Access.
-
-***Ref:***
-https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra/ba-p/3796391
-
-### Mid-May 2024- Retirement of Entity-based Contextual Outlook Add-ins
-
-After retirement, contextual add-ins won\'t detect entities in mail
-items to perform tasks. Support for Microsoft add-ins reliant on this,
-like Bing Maps, Action Items, and Suggested Meetings, will be
-discontinued.
-
-**Solution:** You can configure add-in with regular expression rules as
-an alternative solution.
-
-***Ref:***
-<https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins/>
-
-### May 31, 2024 - Test Base for Microsoft 365 Retirement
-
-Microsoft is retiring Test Base, the platform crucial for data-driven
-application testing worldwide. As of May 31, 2024, all customer
-environments and associated data will undergo permanent deletion.
-
-***Ref:***
-<https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-end-of-life-announcement/ba-p/4094588>
-
-## Enhancements:
-
-### Early May 2024- Microsoft SharePoint Document Libraries: Improved Version History Controls (Public Preview)
-
-Microsoft is introducing new version controls to assist tenant and site
-admins, as well as document library owners, in reducing storage
-consumption caused by low-value file versions. With this update, admins
-can configure two version history settings.
-
-1.  Automatic Mode: This mode automatically expires both new and
-    existing versions based on their age and the probability of
-    restoration.
-
-2.  Manual Mode: In this mode, admins can set time-based version
-    expiration and count limits for both new and existing versions
-    according to their preferences.
-
-Admins can opt into the Public Preview by running the SharePoint Online
-Management PowerShell cmdlet.
-
-Set-SPOTenant -EnableVersionExpirationSetting \$true
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC789209>
-
-### Mid-May 2024- Global Reader Role for Teams Devices in Teams Admin Center 
-
-The Global reader role in Microsoft 365 provides admins with the ability
-to view all administrative features and settings without the ability to
-edit or modify them. With this update, Global readers will now have
-read-only access to the Teams devices section within the Teams admin
-center.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC711015>
-
-### Late May 2024- Microsoft Purview: New logs for audit activities
-
-Microsoft Purview will now log activities such as submitting an Audit
-search query, viewing and exporting Audit logs, and deleting search
-history within the Purview Audit feature.
-
-Preview available from May 2024 and Rollout starts from June 2024.
-
-***Ref:***
-<https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=385346>
-
-## Action Required:
-
-### May 17, 2024- MSCommerce PowerShell Module Requires to Update 
-
-Microsoft recently released MSCommerce PowerShell module 2.2 version
-with critical security updates. Starting May 17, 2024, all previous
-versions of the module will not work.
-
-**Solution:** Users must install the new version to manage self-service
-purchases and trials.
-
-Note: Existing policies will remain valid, but new changes require the
-updated module.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC767477>
-
-
 ## June 2024
+
+Deprecation Postponed: 1\| New Features: 6 \| Retirements: 5 \| Enhancements: 4  \| Existing Functionality Changes: 3
+
+## Retirement Postponed Update: 
+
+### Microsoft Teams Live Event Retirement Postponed:
+
+Microsoft Teams Live Events were originally planned to be deprecated on
+September 30, 2024. Microsoft recommended that customers transition to
+using Teams Town Hall. However, based on customer feedback, Microsoft
+has postponed the Microsoft Teams Live Event retirement without
+announcing a new date.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC678003>
+
 
 ## New Features
 
-### June 2024- Microsoft Teams: Workspace Management 
+### June 2024- Microsoft Teams: Custom Emoji and Reactions
 
-Workspace management offers a unified perspective of Teams devices and
-peripherals, categorized by location, accompanied by insightful details.
-IT admins can now efficiently oversee connected devices, monitor
-workspace health, assess utilization, and ensure adherence to standards
-across all locations.
+Starting late-June 2024, users will be able to add their own custom
+emojis and reactions by uploading an image or GIF file. The newly added
+emojis will be accessible to all users within the organization. An
+organization can have up to 5000 custom emojis.
 
-***Ref***:
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=In%20development&searchterms=88326>
+Admins can turn off this feature or restrict which users can create new
+emojis via the Teams Admin Center.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC795750>
+
 
 ### June 2024- Microsoft Teams: Loop components in Teams Chat for GCC 
 
@@ -347,6 +83,16 @@ while participants can only view it.
 ***Ref:***
 <https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=332800>
 
+### June 2024- Contact De-duplication Feature in OWA 
+
+Maintaining a clean, updated contact list is crucial for enhanced
+collaboration and productivity. Microsoft is introducing a new feature
+to clean up duplicate contacts with the de-duplication feature in
+Outlook Web App (OWA).
+
+***Ref***:
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=In%20development&searchterms=98124>
+
 ### Mid-June 2024 - New & Improved Design for Microsoft 365 Admin Center Usage Report
 
 The Microsoft 365 admin center Usage report Overview page has been
@@ -357,6 +103,19 @@ storage by product, and key usage metrics for Microsoft 365 products.
 
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC692467>
+
+### Mid-June 2024- Microsoft Stream: Engagement Metrics for Interactive Videos
+
+With this feature, users with edit access to Stream interactive videos
+(containing links, polls, or callouts) will be able to see unique viewer
+counts, average attention time, and the percentage of viewers who
+clicked the links, etc.
+
+These metrics help video owners understand which content is most
+engaging.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=396732>
 
 ## Retirements
 
@@ -376,6 +135,38 @@ Calls -\> Configure Voicemail:
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC727450>
 
+### June 2024- OneNote Feed Retirement in OneNote on Windows
+
+Microsoft is retiring the OneNote feed in OneNote for Windows, replacing
+it with Sticky Notes. This transition will be completed by early June
+2024.
+
+Note: This update will not affect OneNote on Web or Outlook on Web.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC696853>
+
+### June 15, 2024- Retirement of Office 365 Connectors from SPO Webparts
+
+As part of the Office 365 connectors retirement, users cannot create new
+connections in SharePoint Online sites starting June 15, 2024.
+
+**Note:** From August 1, 2024, users also cannot update or manage
+existing connections.
+
+***Ref:***
+<https://support.microsoft.com/en-us/office/use-the-connector-web-part-db0756aa-f78f-4b74-8b19-be5dca0420e1>
+
+###  Mid-June 2024- All Components of Classic EAC will be Retired
+
+With the recent addition of the 'View another mailbox' feature in the
+modern Exchange Admin Center, Microsoft has announced that all
+components of the Classic EAC will be retired starting mid-June 2024.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC795354>
+
+
 ### June 30, 2024- Azure AD Graph API Retirement
 
 The initial phase of Azure AD Graph API retirement begins on June 30,
@@ -385,6 +176,53 @@ June 30, 2024* will not be impacted at this stage.
 
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-azure-ad-graph-api-retirement/ba-p/4090534>
+
+## Enhancements:
+
+### June 2024- Microsoft Purview: New Logs for Audit Activities 
+
+Microsoft Purview will now log activities such as submitting an Audit
+search query, viewing and exporting Audit logs, and deleting search
+history within the Purview Audit feature.
+
+Rollout starts from June 2024.
+
+***Ref:***
+<https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=385346>
+
+### June 2024- New Exchange, SharePoint, and Teams Logs for Microsoft Purview Audit Standard Users
+
+Standard users of Purview Audit will soon begin to generate new audit
+events for Microsoft Exchange (3), Teams (15), and SharePoint (1). These
+events were previously available only to Audit Premium licensed users
+and are being added to enhance cloud security.
+
+**Note:** The preview was available from March 2024, and the rollout
+begins in June 2024.
+
+***Ref:***:
+<https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=182259>
+
+### June 2024- Communication Compliance: Reduce Detection to Investigation Time from 24 Hours to 1 Hour
+
+With this feature, your organization can respond promptly to policy
+violations in under an hour. It aids in detecting regulatory compliance
+violations, such as the presence of sensitive or confidential
+information, harassing or threatening language, and more.
+
+### Mid-June 2024 - OneDrive for Business: Shortened URLs in OneDrive web
+
+OneDrive for Business is simplifying web URLs to make navigation easier.
+You will notice that the current URL format
+"*tenant-my.sharepoint.com/personal/alias/\_layouts/15/onedrive.aspx?view=1*"
+will be changed to "*tenant-my.sharepoint.com*".
+
+**Note:** This change will not impact any existing scenarios. Any
+attempts to access the old URL format will automatically be redirected
+to the new URL.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC796476>
 
 
 ## Existing Functionality Changes
@@ -399,6 +237,18 @@ policy *TeamsRecordingRollOutPolicy*.
 
 ***Ref:***
 <https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC772558>
+
+### Mid-June 2024- Save screenshots to OneDrive in macOS Discontinued
+
+Starting in mid-June 2024, the OneDrive Sync setting to save screenshots
+directly to OneDrive will be removed. Instead, screenshots will be
+stored on the Desktop.
+
+**Solution:** Admins can implement Known Folder Move (KFM) settings to
+automatically back up the Desktop folder where screenshots are stored.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC793012>
 
 
 ### June 30, 2024 -- AllowMeetingRegistration in Set-CsTeamsMeetingPolicy will not work
@@ -419,6 +269,21 @@ type available in the 'New Meeting' drop down in Teams Calendar.
 
 
 ## July 2024
+
+## New Features:
+
+### July 2024 -- Microsoft will Require MFA for All Azure Users
+
+Starting in July 2024, all users signing into the Azure portal, CLI,
+PowerShell, or Terraform to administer Azure resources will be required
+to use MFA (Multi-Factor Authentication).
+
+**Note:** The enforcement will begin with a gradual rollout for the
+Azure portal. After the portal rollout is complete, a similar gradual
+rollout will start for CLI, PowerShell, and Terraform.
+
+***Ref:***
+<https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-will-require-mfa-for-all-azure-users/ba-p/4140391>
 
 ## Retirements
 
@@ -494,6 +359,16 @@ support from Microsoft Defender for cloud apps will be retired from July
 
 ## Enhancements
 
+### July 2024 - Breakout Rooms Support for Microsoft Teams Rooms on Windows
+
+With breakout room support, Teams Rooms on Windows can be seamlessly
+integrated into breakout sessions and transitioned in and out of the
+main room.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?&filters=&searchterms=95680>
+
+
 ### Mid-July 2024- New cmdlet for Content Explorer
 
 Currently, the Content Explorer Export feature has a limitation of
@@ -509,6 +384,14 @@ PowerShell.
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698421>
 
 ## Existing Functionality Changes
+
+### July 2024- DLP Admin can Rename the existing DLP Policies
+
+Starting from July 2024, DLP Admins can rename existing policies or
+rules without recreating them from scratch.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=95680>
 
 ### Mid-July 2024: View Websites in New Teams Client 
 
@@ -553,6 +436,32 @@ Portal version prior to July 10, 2024.
 
 ## August 2024
 
+## New Features:
+
+### Mid-Aug 2024 - Outlook: Folder/Subfolder Recursive Search
+
+With this feature, when a user searches for content in an Outlook
+folder, all its subfolders are also searched, and the results are
+displayed.
+
+***Ref:***
+<https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=151025>
+
+
+## Retirements
+
+### Aug 20, 2024 -- All Contents from Stream (Classic) will be Deleted
+
+With the retirement of Stream Classic on April 15, 2024, all content
+will be deleted starting August 20, 2024.
+
+**Solution:** Migrate your Stream (Classic) content to Stream (on
+SharePoint) to ensure continued access.
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC764452>
+
+
 ### Aug 30, 2024 -- Intune Ending Support for Android Device Administrator on GMS Access Devices
 
 After Intune ends support for Android device administrator, devices with
@@ -566,7 +475,44 @@ access to GMS will be impacted in the following ways:
 ***Ref***:
 <https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-ending-support-for-android-device-administrator/ba-p/3915443>
 
+## Enhancements:
+
+### Aug 2024- Microsoft SharePoint Document Libraries: Improved Version History Controls 
+
+### Microsoft is introducing new version controls to assist tenant and site admins, as well as document library owners, in reducing storage consumption caused by low-value file versions. With this update, admins can configure two version history settings. 
+
+1.  ***Automatic Mode:*** This mode automatically expires both new and
+    existing versions based on their age and the probability of
+    restoration.
+
+2.  ***Manual Mode:*** In this mode, admins can set time-based version
+    expiration and count limits for both new and existing versions
+    according to their preferences.
+
+Admins can opt into the Public Preview by running the SharePoint Online
+Management PowerShell cmdlet.
+
+Set-SPOTenant -EnableVersionExpirationSetting \$true
+
+Note: Public preview for this feature was released in May 2024, and the
+General Availability is scheduled for August 2024,
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC789209>
+
+
 ## September 2024
+
+### Sep 2024 -- Exchange: High Volume Email for Microsoft 365 (General Availability)
+
+High Volume Email (HVE) is designed for large-scale internal
+communications, facilitating mass mailing needs.\
+Note: In public preview, you can send emails to up to 100k recipients
+per 24 hours, with a maximum of 2,000 external users.
+
+***Ref:***
+<https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/high-volume-mails-m365>
+
 
 ### Sep 30, 2024- Azure Multi-Factor Authentication Server 
 
@@ -685,17 +631,6 @@ now available and improved in other Microsoft 365 experiences.
 ***Ref***:
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698136>
 
-### **Dec 31, 2024- Microsoft Teams Live Event Retirement** 
-
-As part of MS Teams live event retirement (planned on Sep 30, 2024),
-existing recordings will be accessible till Dec 31, 2024. If you want to
-keep the recording, download and upload them to a different location
-before December 31.
-
-**Solution**: You can start to use town halls.
-
-***Ref***:
-<https://admin.microsoft.com/adminportal/home?ref=MessageCenter/:/messages/MC678003>
 
 ### **End of 2024- Retirement of Mail and Calendar Apps in Windows** 
 
@@ -766,6 +701,19 @@ guaranteed to function as expected.
 
 ***Ref:***
 <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-update-deprecation-of-azure-ad-powershell-and-msonline/ba-p/4094536>
+
+### Apr 02, 2025 -- Retirement of Domain Isolated Web Part in SharePoint Framework
+
+As part of the SharePoint Framework domain isolated web parts
+retirement, this feature will be turned off for newly created tenants
+starting from Apr 02, 2025.
+
+**Note:** From Apr 02, 2026, existing tenants will no longer be able to
+use this feature.
+
+***Ref:***:
+<https://devblogs.microsoft.com/microsoft365dev/retiring-sharepoint-framework-domain-isolated-web-parts-for-sharepoint-online/>
+
 
 ### H2 2025- External Recipient Rate Limit in Exchange Online
 
@@ -887,6 +835,18 @@ ID.
 
 ***Ref:***
 <https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs>
+
+### Apr 02, 2026 - Retirement of Domain Isolated Web Part in SharePoint Framework
+
+From Apr 02, 2026, the domain isolated web part feature will be fully
+retired. Organizations using this feature will receive an error message.
+
+**Solution:** Update your domain isolated web parts to regular web parts
+and redeploy them to ensure continued functionality.
+
+***Ref:***
+<https://devblogs.microsoft.com/microsoft365dev/retiring-sharepoint-framework-domain-isolated-web-parts-for-sharepoint-online/>
+
 
 
 ### **July 14, 2026- InfoPath 2013 Client and InfoPath Forms Services in SharePoint Online will be Retired** 
