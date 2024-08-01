@@ -8,257 +8,81 @@ Discover the **key changes, deprecations**, and **end-of-support** scenarios tha
 
 Here is a list of changes categorized by month and year.
 
-- July 2024 (New Features: 4, Retirements: 9, Enhancements: 2, Existing Functionality Changes: 3, Action Required: 4)
-- Aug 2024 (Attention needed: 12)
-- Sep 2024 (Attention needed: 5)
-- Q4-2024 (Attention needed: 7)
-- 2025 (Attention needed: 13)
+- Aug 2024 (New Features: 6, Retirements: 7, Enhancements: 8, Existing Functionality Changes: 2, Action Required: 1)
+- Sep 2024 (Attention needed: 11)
+- Oct 2024 (Attention needed: 4)
+- Nov 2024 (Attention needed: 5)
+- Dec 2024 (Attention needed: 5)
+- 2025 (Attention needed: 15)
 - 2026 (Attention needed: 9)
 
 
 
 
 
-## July 2024
-
-New Features: 4 | Retirements: 9 | Enhancements: 2 | Existing Functionality Changes: 3 | Action Needed: 4
-
-## New Features
-
-### July 2024 – Microsoft will Require MFA for All Azure Users
-
-Starting in July 2024, all users signing into the Azure portal, CLI, PowerShell, or Terraform to administer Azure resources will be required to use MFA (Multi-Factor Authentication).  
-
-**Note:** The enforcement will begin with a gradual rollout for the Azure portal by early July 2024. After the portal rollout is complete, a similar gradual rollout will start for CLI, PowerShell, and Terraform. 
-
-***Ref:*** 
-<https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-will-require-mfa-for-all-azure-users/ba-p/4140391>  
-
-### Early-July 2024 - Adaptive Protection + Conditional Access in General Availability
-
-The Adaptive Protection integrated with Conditional Access, currently in public preview, will become generally available from early July 2024. After this rollout, you will be able to set up or view Conditional Access policies with the Insider Risk Condition in Purview > *Insider risk management > Adaptive Protection.*
-
-**Note:** 
-
-- With this rollout, Microsoft also changes the default Insider Risk Conditional Access policy to block elevated risk users *from all Microsoft 365 applications instead of all applications*. If you configured the default Insider Risk Conditional Access policy during the public preview, your policy would remain unchanged.
-
-- Also, you need an Entra ID P2 license to use Adaptive Protection integrated with Conditional Access policies.
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC802699>
-
-
-### Mid-July 2024 - Automatically Hide Inactive Channels in Microsoft Teams
-
-Microsoft Teams will automatically identify and hide channels that you haven't interacted with recently, starting mid-July 2024 (Targeted release). Once hidden, you'll receive a notification that says, "We're hiding some inactive channels for you." 
-This feature is ON by default. If you want to keep all the channels visible, just navigate to Teams > Settings > Chats and channels > Hide inactive channels and toggle it off.
-
-**Note:** Users with EDU licenses assigned will not receive this change.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC804771>
-###
-### Mid-July 2024 – Microsoft Teams: Custom Emoji and Reactions
-
-Users will be able to add their own custom emojis and reactions by uploading an image or GIF file starting from mid-July 2024. The newly added emojis will be accessible to all users within the organization. An organization can have up to 5000 custom emojis. 
-
-Admins can turn off this feature or restrict which users can create new emojis via the Teams Admin Center. 
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC795750>
-
-## Retirements
-
-### July 01, 2024 - SharePoint Add-in Retirement    
-
-As part of SharePoint add-in retirement, starting July 01, 2024, you can’t install them from public marketplace. SharePoint add-Ins will stop working for new tenants as of November 1, 2024, and they will be fully retired as of April 2nd, 2026.   
-
-**Solution**: Admins can run the [Microsoft 365 Assessment tool](https://aka.ms/assessment/addinsacs) to scan their tenants for SharePoint Add-In usage.   
-
-***Ref***: 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC693865> 
-
-### July 1, 2024 - Retirement for Risk-Based Policies in Entra ID Protection 
-
-Starting July 1, 2024, existing legacy user risk policies or sign-in risk policies in Entra ID Protection will become uneditable. 
-
-**Solution:** To modify them, please migrate them to Conditional Access. 
-
-***Ref:*** 
-<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra/ba-p/3796391> 
-
-### July 1, 2024 - Classic Teams End of Support 
-
-Beginning July 1, 2024, classic Teams will no longer receive support. Users using classic Teams will receive in-app notifications indicating the end of support. These notifications can be dismissed but will reappear at intervals. 
-
-Note: The end of availability for the classic Teams client starts July 1, 2025. 
-
-**Solution:** Upgrade to new Teams. 
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC783985> 
-
-### July 01, 2024- Stream Mobile App Retirement 
-
-Starting July 01, 2024, Microsoft is retiring the Stream Mobile App. Users can switch to using the OneDrive and Microsoft 365 mobile apps instead. However, it's important to note that if the block download policy is enabled in OneDrive, users will only be able to play videos online. 
-
-***Ref:*** 
-<https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC789607> 
-
-### July 2024 - Cloud Discovery Anomaly Detection Policy Retirement 
-
-Microsoft retiring the "Cloud Discovery anomaly" support from Microsoft Defender for Cloud Apps by July 2024 due to high rate of false positive alerts. 
-
-**Solution:** You can use the "*App discovery policy*" and create dedicated policies, under "*Trigger a policy match if all the following occur on the same day*" set the filters accordingly. 
-
-***Ref:***
-<https://learn.microsoft.com/en-us/defender-cloud-apps/cloud-discovery-anomaly-detection-policy>  
-
-Note: Similarly, “[Investigation priority score increase](https://learn.microsoft.com/en-us/defender-cloud-apps/tutorial-ueba)” support from Microsoft Defender for cloud apps will be retired from July 2024. 
-
-### Mid-July 2024 - Legacy Outlook Clients Retirement Plan
-
-Microsoft will retire legacy Outlook clients across various platforms, starting mid-July 2024. This change will affect users running outdated versions on iOS, Android, Mac, and Windows Mail and Calendar applications. Beginning mid-August 2024, users with outdated browsers will encounter errors when accessing Outlook on the web.
-
-**Solution:** Switch to the new Outlook for Windows, and update to the latest versions of Outlook on iOS, Android, and Mac.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC801980>
-
-### July 22, 2024 - Microsoft Teams Extended Directory Retirement
-
-Due to low usage, Microsoft will retire the extended directory (Preview) in Teams starting July 22, 2024. After retirement, users won't be able to search external users by name or establish 1:1 group chat with them. Chats initiated with an Extended Directory contact will continue to function as long as external access policies are enabled..
-
-**Solution:** Instead, admins can use Teams connect chat supported by external access.
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC805189>
-
-
-
-
-
-
-
-### July 22, 2024 - SharePoint News Connectors Retirement in Microsoft Teams
-
-The SharePoint news connector is going to be retired. Starting July 22, 2024, users will not be able to create SPO news connectors and the existing ones will retire by August 26, 2024.
-
-**Solution:** Move to alternatives like Viva Connections News notifications, Viva Amplify, or Teams Workflow. 
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803508>
-
-
-
-### July 29, 2024 - Retirement of "Remove-SPOExternalUser" PowerShell Cmdlet
-
-Microsoft plans to retire the SharePoint Online PowerShell cmdlet "Remove-SPOExternalUser" starting July 29, 2024. This decision aims to enhance security, streamline scope and permissions for external users.
-
-**Solution:** Admins can use the "Remove-MgUser" cmdlet for Entra ID user management. 
-
-**Ref:**
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC806103>
-
-## Enhancements 
-
-### July 2024 - Breakout Rooms Support for Microsoft Teams Rooms on Windows
-
-With breakout room support, Teams Rooms on Windows can be seamlessly integrated into breakout sessions and transitioned in and out of the main room. 
-
-***Ref:*** 
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?&filters=&searchterms=95680>  
-
-### Mid-July 2024- New Cmdlet for Content Explorer 
-
-Currently, the Content Explorer Export feature has a limitation of exporting data only after drilling down to a specific location. With this update, admins can use a new cmdlet, ***Export-ContentExplorerData***, to export all rows of data for the content on the Content Explorer. 
-
-Note: The new cmdlet is available in Security & Compliance PowerShell. 
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698421>  
-
-## Existing Functionality Changes
-
-### July 2024- DLP Admin can Rename the existing DLP Policies 
-
-Starting from July 2024, DLP Admins can rename existing policies or rules without recreating them from scratch. 
-
-***Ref:*** 
-<https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=95680>  
-
-### Mid-July 2024: View Websites in New Teams Client  
-
-From July 2024, Microsoft Teams will no longer support loading websites within the new Teams client when using the Website tab. Instead, the Website tab will open in a new browser tab.  
-
-**Note**: This update won’t affect EDU customers.  
-
-***Ref:*** 
-<https://devblogs.microsoft.com/microsoft365dev/upcoming-updates-to-loading-websites-in-teams-tabs/> 
-
-### Late-July 2024 - Changes to OneDrive Shared Folder Experience
-
-Currently, opening a shared folder in OneDrive directs users to the sharer's OneDrive view. Starting late July 2024, opening a shared folder will direct users to the "People" view section in their own OneDrive. Alternatively, users can view the shared folder directly from the "People" section of their OneDrive.
-
-***Ref**:*
-<https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC806523>
-
-## Action Required 
-
-### July 10, 2024 – Intune: Migrate Classic Conditional Access Policies 
-
-In the transition from Azure AD Graph to MS Graph, Microsoft is shifting the Intune Company Portal infrastructure to MS Graph. Admins are required to migrate classic Conditional Access policies to the new by July 10, 2024, to ensure uninterrupted functionality. 
-
-If the policies are not migrated, users can’t enroll new devices or make non-compliant devices compliant via the Company Portal. 
-
-**Solution:** Migrate from a classic policy for uninterrupted service. 
-
-***Ref:*** 
-<https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC781581> 
-
-### July 10, 2024- Microsoft Intune: Update to the latest Company Portal for All Platforms
-As part of an Intune Company Portal infrastructure update, users must update to the minimum Company Portal app version by July 10, 2024, or lose access to the app. 
-
-**Proactive step:** Notify your users to update to the latest Company Portal version prior to July 10, 2024. 
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC783213> 
-
-### Late-July 2024 - New Outlook for Windows will Open Web Links in Edge Side-by-side
-
-Starting late July 2024, the New Outlook for Windows will open web links in Microsoft Edge side-by-side, like how this feature works for Teams chat web links. This update applies to Outlook web links from Azure Active Directory accounts and Microsoft accounts. Importantly, links will open in Microsoft Edge even if it is not the system default browser in Windows.
-
-**Solution:** To manage this change and ensure web links open in users’ preferred browser, you will need to configure the "Choose which browser opens web links" policy. This policy can be configured through the [Microsoft 365 Apps admin center.](https://config.office.com/)
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803892>
-
-### Late-July 2024 - Replace COM Add-ins with Web add-ins in New Outlook for Windows
-
-Microsoft is encouraging users to transition to the new Outlook for Windows. During this transition, users will be prompted to consent to installing equivalent web add-ins for COM add-ins (which are not supported in the new Outlook). If you need add-ins in your new Outlook for Windows, you need to install the equivalent web add-ins using the prompt. This consent process will begin rolling out in late July 2024.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC804770>
-
 ## August 2024
 
+New Features: 6 | Retirements: 7 | Enhancements: 8 | Existing Functionality Changes: 2 | Action Needed: 1
 ## New Features
 
-### Early-August 2024 - Public Preview of Progressive Alert Scoring
+### Early-Aug 2024 - Public Preview of Progressive Alert Scoring
 
 Microsoft is rolling out a new feature -" Progressive alert scoring" in public review, starting in early August 2024. Currently, user activities that could potentially result in data security incidents will be assessed once every 24 hours. After this rollout, the assessment of user activities will be done more frequently within a 24- hour period, along with alert insights.
 
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC707653>
 
-### Mid-Aug 2024 - Outlook: Folder/Subfolder Recursive Search 
-
-With this feature, when a user searches for content in an Outlook folder, all its subfolders are also searched, and the results are displayed. 
-
-***Ref:***  <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC802699>
+### Early-Aug 2024 - New Administrative Units for Microsoft Teams Administration
 
 
+Microsoft will start rolling out new Administrative Units in the Teams admin center by early August 2024. After the rollout, admins can facilitate delegation administration by assigning the following roles to the AUs.
+
+- Teams Administrator
+- Teams Device Administrator
+- Teams Communication Administrator
+- Teams Communication Support Engineer
+- Teams Communication Support Specialist
+- Teams Telephony Administrator
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC810173>
 
 
 
+### Mid-Aug 2024 - New Recommendations for Microsoft Secure Score
+
+
+Microsoft Defender XDR is enhancing its security capabilities by introducing four new recommendations focused on Azure Single Sign-On (SSO) account configurations and Microsoft Entra Connect accounts.
+
+These new recommendations will be visible in Microsoft Defender XDR from mid-August 2024.
+
+- Azure SSO account configuration: Password last set more than 90 days ago
+- Azure SSO account configuration: Resource-Based Constrained Delegation configured
+- Remove unnecessary replication permissions for Microsoft Entra Connect accounts
+- Rotate password for Entra Connect connector users
+
+
+
+**Note:** By default, it will be available only to customers who have installed an MDI sensor on the Entra Connect server.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC816173>
+
+
+
+
+
+
+
+
+### Late-Aug 2024 - General Availability of Adaptive Protection for GCC, GCCH, DoD
+
+
+By late August 2024, the Adaptive Protection integration with Microsoft Purview Data Loss Prevention will be generally available for government clouds (GCC, GCC High, DoD). Following this, admins will be able to manage policies more effectively based on insider risk levels.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803011>
 
 ### Aug 2024 - New Authentication Method "QR Code Sign-in"
 
@@ -266,6 +90,17 @@ Microsoft is introducing a new authentication method, "QR code sign-in," in a pr
 
 **Ref:**
 <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/>
+
+
+### Aug 2024 - Conditional Access What If API in Preview
+
+
+The Conditional Access What If API, which is used to analyze the impact of Configured CA policies, will enter preview by August 2024.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=In%20development&searchterms=406760>
+
 
 ## Retirements
 
@@ -278,6 +113,50 @@ Microsoft 365 group connectors, which deliver notifications from online tools an
 **Ref:**
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC798683>
 
+### Aug 15, 2024 - Office 365 Connectors Retirement
+
+Users will no longer be able to create new Office 365 Connectors from Aug 15, 2025. However, all the existing connectors will continue to work until December 2025, unless you undergo a URL update.
+
+
+
+**Solution:** Migrate to alternate solutions such as Power Automate or Microsoft Graph.
+
+
+
+***Ref:*** <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>
+
+
+
+### Aug 18, 2024 - Retirement of Four Override Alerts in Microsoft Defender for Office 365
+
+
+Microsoft Defender for Office 365 plans to remove four legacy override alerts starting August 18, 2024. This decision is due to the 'Secure by default' feature with ZAP (Zero-Hour Auto Purge), which will automatically block high-confidence phishing emails. As a result, these four alerts will no longer be needed.
+
+1. Phish not zapped because ZAP is disabled
+1. Malware not zapped because ZAP is disabled
+1. Phish delivered due to ETR override
+1. Phish delivered due to IP allow
+
+
+
+***Ref:*** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC822720
+](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC822720)
+
+
+### Aug 19, 2024 - “Publish to Power BI” Feature Retirement in Microsoft Excel
+
+
+The "Publish to Power BI' feature in Microsoft Excel will retire by Aug 19, 2024. So, users will no longer be able to publish the data directly from Excel to Power BI.
+
+
+
+**Solution:** Move to Power BI service (Power BI on the web), which offers additional capabilities that are not found in Excel publishing including, non-default workspaces, workspace folders, and modern format data models.
+
+
+
+***Ref:*** <https://learn.microsoft.com/en-us/power-bi/connect-data/service-publish-from-excel>
+
+
 ### Aug 20, 2024 – All Contents from Stream (Classic) will be Deleted 
 
 With the retirement of Stream Classic on April 15, 2024, all content will be deleted starting August 20, 2024. 
@@ -287,7 +166,7 @@ With the retirement of Stream Classic on April 15, 2024, all content will be del
 ***Ref:*** 
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC764452> 
 
-### August 26, 2024 – Existing SharePoint News Connectors Retirement
+### Aug 26, 2024 – Existing SharePoint News Connectors Retirement
 
 All existing SPO news connectors will be retired by August 26, 2024. Also, users can’t create new SPO news connectors from July 22, 2024.
 
@@ -296,21 +175,6 @@ All existing SPO news connectors will be retired by August 26, 2024. Also, users
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803508>
 
-### Aug 30, 2024 - Intune Ending Support for Android Device Administrator on GMS Access Devices
-
-After Intune ends support for Android device administrator, devices with access to GMS will be impacted in the following ways: 
-
-- Users will not be able to enroll devices with Android device administrator. 
-- Intune technical support will no longer support these devices. 
-
-***Ref***: 
-<https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-ending-support-for-android-device-administrator/ba-p/3915443> 
-
-### Aug 31, 2024 - Retiring Support for Older Browsers by August 31, 2024
-
-Microsoft Power BI is retiring support for older browsers on September 1, 2024. To avoid interruptions in functionality, users should upgrade their browsers by August 31, 2024.
-
-**Ref:** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC802696>
 
 
 ### Aug 31, 2024 - Azure AD Graph API Retirement
@@ -338,6 +202,29 @@ Note: Public preview for this feature was released in May 2024, and the General 
 ***Ref:*** 
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC789209> 
 
+### Mid-Aug 2024 - Outlook: Folder/Subfolder Recursive Search 
+
+With this feature, when a user searches for content in an Outlook folder, all its subfolders are also searched, and the results are displayed. 
+
+***Ref:***  <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC802699>
+
+### **Mid-Aug 2024 - New Filters in Microsoft Purview Audit Search**
+
+Four new filters will be available in the public preview for unified audit log search by mid-August 2024. The four additional fields in the audit search UI are UserType, UserKey, ClientIP, and Id.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC789312>
+
+
+### Mid-Aug 2024 - New eDiscovery Hold Reports in Microsoft Purview
+
+The new tenant-wide "eDiscovery Hold reports" will be generally available under the *Reports* tab in eDiscovery (Premium). Starting mid-August 2024, admins can access this report to review all hold policies with eDiscovery cases in the Microsoft Purview compliance portal.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC776192>
+
 ### Mid-August 2024 - Audit: New Cloud Policy Service Audit Logs for Policy Changes
 
 
@@ -353,9 +240,85 @@ Microsoft's SharePoint eSignature service, initially launched in the US in late 
 **Ref:**
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC800502>
 
+### **Late-Aug 2024 - Microsoft 365 Groups Scoping in Teams DLP Policy Extend Protection to 1:1/n Chats**
+
+
+Starting late August 2024, DLP policies for Microsoft 365 Groups in Teams will automatically protect all 1:1/n (non-channel) chats, in addition to standard and shared channel chats. So, manually adding users or groups is no longer required, except for those using OCR in Teams chat.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC837079>
+
+
+### **Aug 2024 - Enhanced Alert and User Investigation with Copilot for Security**
+
+
+Starting in August, Copilot for Security will assist in investigating alerts within Microsoft Purview Insider Risk Management. It will provide concise summaries of alerts and important details, such as the user's risk profile and other relevant information.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=In%20development&searchterms=407864>
+
+## Existing Functionality Changes
+
+### Early-Aug 2024 - Changes in Handling of Documents in MS Outlook for iOS and Android.
+
+
+Currently, Microsoft prioritizes opening documents in the Microsoft 365 app when users have both the Microsoft 365 app and standalone apps for Word, Excel, or PowerPoint. However, starting early-August 2024, users will be prompted to use the standalone apps instead of the Microsoft 365 app.
+
+
+
+**Note**: It is advised to review your organization's app management policies to ensure that users are not restricted to using only the Microsoft 365 app for document handling.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC788952>
+
+
+
+
+### Aug 30, 2024 - Admins Can No Longer Receive User Passwords in Email
+
+
+Starting August 30, 2024, the 'Send Password in Email' feature will be retired from the Microsoft 365 admin center. Admins will no longer be able to receive usernames and passwords via email after this date. Instead, it is advised to use the "Print" option in the Microsoft admin center to save the account credentials and share them with respective users.
+
+
+
+***Ref***: <https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/reset-passwords?view=o365-worldwide>
+
+
+## Action Required
+
+### Aug 31, 2024 – PowerBI Retiring Support for Older Browsers by August 31, 2024
+
+Microsoft PowerBI is retiring support for older browsers on September 1, 2024. 
+
+**Solution:** To avoid interruptions in functionality, users should upgrade their browsers by August 31, 2024.
+
+***Ref:*** <https://powerbi.microsoft.com/en-us/blog/power-bi-june-2024-feature-summary/>
+
+
 ## September 2024
 
 ## New Features
+
+### Mid-Sep 2024 - New Workflow Builder Feature in Microsoft Teams
+
+
+Starting mid-September 2024, Microsoft Teams will introduce a new 'Workflow Builder' feature. This feature allows you to describe the automation you need and find matching workflows. Initially, it will be available under the 'Workflows' app in the Teams chat and channel overflow menu, with plans to expand its availability to other entry points in the future.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC718250>
+
+### Mid-Sep 2024 - General Availability of New Teams Onboarding Process
+
+
+The new onboarding process which gives Teams owners the ability to recommend Teams members to join the needed channels will be generally available by mid-September 2024.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC790796>
 
 ### Sep 2024 – Exchange - High Volume Email for Microsoft 365 (General Availability) 
 
@@ -378,6 +341,33 @@ Microsoft Entra Conditional Access will streamline the "Target resources" assign
 
 ## Retirements
 
+
+### Sep 1, 2024 - File Pages in Microsoft Defender for Cloud Apps Retirement
+
+
+Microsoft will start deprecating the Files page from Microsoft Defender for Cloud Apps from September 1, 2024. Additionally, Microsoft will also be removing the Files and Insights tabs found under Microsoft Defender > Settings > Cloud Apps > App Connectors.
+
+
+
+**Solution:** Use the Policy Management Page to create/modify/explore Information Protection policies and malware files.
+
+
+
+***Ref:*** <https://learn.microsoft.com/en-us/defender-cloud-apps/file-filters>
+
+### Early - Sep 2024 - Retirement of Dictation Feature in Microsoft Outlook for iOS and Android.
+
+
+Microsoft will be removing the dedicated Dictation feature from Outlook for iOS and Android due to redundancy with the system microphone. This change will take effect starting in early September 2024.
+
+
+
+**Solution**: Use the system microphone itself for dictation in Outlook for iOS and Android.
+
+
+
+***Ref:*** <https://support.microsoft.com/en-us/office/dictate-your-emails-in-outlook-mobile-fe39a8bc-ea2b-45b9-83cc-e71b8e8c7d93>
+
 ### Sep 30, 2024- Azure Multi-Factor Authentication Server   
 
 Azure MFA Server deployments will no longer service MFA requests, which could cause authentications to fail for your organization.  
@@ -395,6 +385,32 @@ Microsoft will retire Business Connectivity Services features in Microsoft 365.
 
 ***Ref***: 
 <https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-business-connectivity-services-in-microsoft/ba-p/3938773>  
+
+## Enhancements
+### Early-Sep 2024 - General Availability of Inbound SMTP DANE with DNSSEC
+
+
+Exchange Online has begun supporting DNS-based Authentication of Named Entities (DANE) for SMTP and Domain Name System Security Extensions (DNSSEC) for securing inbound mail. This feature is currently in public preview and will be generally available by early September 2024.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC711018>
+
+
+
+
+### Late-Sep 2024 - Default Sensitivity Labels and Policy Enhancement
+
+
+Default sensitivity labels and policies, which currently cover only files and emails, will also include meetings. This update will not change any existing sensitivity labels used in your organization. It will only affect organizations that choose to activate the default labels.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC841050>
+
+
+
+
 ## Existing Functionality Changes
 
 ### Sep 2024 - Changes to Phone Call Settings in Entra ID
@@ -413,6 +429,24 @@ The end of support for the classic Teams client in VDI starts October 1, 2024, a
 
 ***Ref:*** 
 <https://learn.microsoft.com/en-us/MicrosoftTeams/new-teams-vdi-requirements-deploy>   
+
+### Oct 1, 2024 - IPv6 Enablement for Accepted Domains in Exchange Online
+
+To improve security and performance, Microsoft will begin enabling IPv6 for accepted domains using Exchange Online for inbound mail. To benefit from IPv6, admins must ensure that their network allow-list includes Exchange Online IPv6 endpoints.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC835648>
+
+### Mid-Oct 2024- New cmdlet for Content Explorer 
+
+Currently, the Content Explorer export feature has a limitation of exporting data only after drilling down to a specific location. With this update, admins can use a new cmdlet, ***Export-ContentExplorerData***, to export all rows of data for the content on the Content Explorer. 
+
+Note: The new cmdlet is available in Security & Compliance PowerShell. 
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698421>  
 
 ### Oct 23, 2024- Classic Teams Desktop App End of Availability 
 
@@ -444,6 +478,36 @@ SharePoint Add-Ins will stop working for new tenants as of November 1, 2024, and
 ***Ref***: 
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC693865> 
 
+### Early-Nov 2024 - Microsoft Teams: Shorter Meeting URLs
+
+
+Microsoft plans to shorten the meeting URLs for easy sharing across all Teams platforms. Starting early-November, the URL will contain only the meeting ID and other parameters such as tenant ID, Organizer ID, Conversation ID, and message ID will not be there. This will be the new URL format: https://teams.microsoft.com/meet/<meeting\_id>?p=<HashedPasscode>
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC772556>
+
+### Early Nov 2024 - Enhanced Content Extraction and File Type Coverage for DLP on Windows Devices
+
+
+The Microsoft Purview Data Loss Prevention has planned to introduce the following enhancements by early-November 2024.
+
+- The number of supported file types will increase from 40 to 100.
+- Identifies sensitive content in metadata and protected files (pfiles)
+- DLP will detect sensitive information in PDF form fields and files embedded within Office files (e.g., a .txt file inside a .pptx file)
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC791881>
+
+### Mid- Nov 2024 - General Availability of Dynamic Watermarking for Current Channel
+
+Dynamic watermarking, a new sensitivity label setting is used to add watermarks onto content in files created in Microsoft Word, Excel, and PowerPoint. This feature will be generally available to the current channel by mid-November 2024.
+
+
+
+***Ref:*** <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/preview-dynamic-watermarking-for-sensitivity-labels-in-word/ba-p/4185842>
+
+
+
 ## December 2024
 
 ### Dec 16, 2024 - Delve Web Retirement 
@@ -459,16 +523,33 @@ Microsoft retiring Delve on December 16th, 2024. Many Delve features are now ava
 - Favorites: Use favorites on Office.com and OneDrive for similar functionality. 
 - Boards: Will not be replaced. 
 
-***Ref***: 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698136> 
-##
-## Dec 21, 2024: Intune Ending Support for Android Device Administrators on Devices with GMS Access
-Google has decided to phase out Android device administrator management. In response, Microsoft Intune will stop supporting this management type on devices using Google Mobile Services (GMS) starting December 21, 2024.
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC698136>
+
+### Mid-Dec 2024 - Data Lifecycle Management: New integration with Adaptive Protection
+### 
+Microsoft Purview's Data Lifecycle Management integrates with Adaptive Protection to automatically retain items deleted by users identified as having an elevated risk level. This integration capability will be generally available by mid-December 2024
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC791110>
+
+
+## Dec 31, 2024 - Intune Ending Support for Android Device Administrators on Devices with GMS Access
+Google has decided to phase out Android device administrator management. In response, Microsoft Intune will stop supporting this management type on devices using Google Mobile Services (GMS) starting December 31, 2024.
 
 **Solution:** Stop enrolling devices into Android device administrator and migrate impacted devices to other management methods. 
 
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC674247>
+
+### December 31, 2024 - Update the URL of Existing Office 365 Connectors to Continue Functioning.
+
+
+Connector owners must update their URLs by this date to continue using connectors beyond December 31, 2024, or the connectors will stop working.
+
+
+
+***Ref:***
+<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC808160>
+
 
 ### End of 2024- Retirement of Mail and Calendar Apps in Windows  
 
@@ -499,6 +580,15 @@ As part of enforcing MFA for all Azure users, MFA enforcement for Azure Command 
 ***Ref:*** 
 <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/update-on-mfa-requirements-for-azure-sign-in/>
 
+### Late-Jan 2025 - Microsoft Auto-Archives Unlicensed OneDrive Accounts
+
+Starting in **late January 2025**, any OneDrive accounts left unlicensed for more than 90 days will be automatically archived, hitting you with extra costs to regain access in Microsoft Archive.  Yes! You will be charged $0.05 per GB per month to store unlicensed OneDrive content and $0.60 per GB to reactivate the account in the Microsoft 365 archive.
+
+
+
+***Ref:*** <https://learn.microsoft.com/en-us/sharepoint/unlicensed-onedrive-accounts>
+
+
 
 
 ### Feb 2025- Removal of the ApplicationImpersonation Role Based Access Control (RBAC) in Exchange Online  
@@ -507,9 +597,7 @@ Microsoft is going to remove ApplicationImpersonation Role Based Access Control 
 
 ***Ref:*** 
 <https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-rbac-application-impersonation-in-exchange-online/ba-p/4062671> 
-
-### Feb 01, 2025- Azure Key Vault: Soft-delete Will be Enabled on All Key Vaults**    
-
+### Feb 01, 2025 - Azure Key Vault: Soft-delete Will be Enabled in All Key Vaults
 Soft Delete preserves deleted key vaults and secrets for up to 90 days, enabling customers to restore them through a self-serve process.   
 
 ***Ref:*** <https://learn.microsoft.com/en-us/azure/key-vault/general/soft-delete-change> 
@@ -592,6 +680,16 @@ Office 2016 and Office 2019 extended support ends in 2025.
 
 ***Ref:***
 <https://learn.microsoft.com/en-us/lifecycle/products/microsoft-office-2016>
+
+### Dec 2025 - Existing Office 365 Connectors will stop Working
+
+Existing Office 365 connectors will continue to work until December 2025, after which they will no longer work.
+
+
+
+***Ref:*** <https://learn.microsoft.com/en-us/power-bi/connect-data/service-publish-from-excel>
+
+
 
 ## 2026 (Attention Needed: 9)
 
@@ -688,6 +786,7 @@ In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires 
 
 We are committed to keeping this blog updated with the latest information, so stay tuned for upcoming updates.
 ### <https://blog.admindroid.com/microsoft-365-end-of-support-milestones/>
+
 
 
 
