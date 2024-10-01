@@ -1,6 +1,8 @@
 ﻿# What's Changing in Microsoft 365? A Guide to Feature Deprecations and Upcoming Enhancements
 
-Join us in this blog as we explore the dynamic world of Microsoft 365. We will shed light on the features and products that are undergoing transformations or bidding farewell. Whether you are a system administrator managing the Microsoft 365 environment or an avid user staying ahead of the curve, this blog will provide you with invaluable insights and actionable recommendations.
+Join us in this blog as we explore the dynamic world of Microsoft 365. We will shed light on
+
+` `the features and products that are undergoing transformations or bidding farewell. Whether you are a system administrator managing the Microsoft 365 environment or an avid user staying ahead of the curve, this blog will provide you with invaluable insights and actionable recommendations.
 
 Discover the **key changes, deprecations**, and **end-of-support** scenarios that require your attention. From deprecated features to configuration modifications and essential upgrade plans, we'll cover everything you need to make informed decisions and ensure a smooth transition.
 
@@ -8,300 +10,74 @@ Discover the **key changes, deprecations**, and **end-of-support** scenarios tha
 
 Here is a list of changes categorized by month and year.
 
-- Aug 2024 (New Features: 6, Retirements: 7, Enhancements: 8, Existing Functionality Changes: 2, Action Required: 1)
-- Sep 2024 (Attention needed: 11)
-- Oct 2024 (Attention needed: 4)
+- Sep 2024 (New Features: 8, Retirements: 8, Enhancements: 5, Existing Functionality Changes: 4, Action Needed: 2)
+- Oct 2024 (Attention needed: 8)
 - Nov 2024 (Attention needed: 5)
-- Dec 2024 (Attention needed: 5)
-- 2025 (Attention needed: 15)
+- Dec 2024 (Attention needed: 6)
+- 2025 (Attention needed: 19)
 - 2026 (Attention needed: 9)
 
 
 
 
 
-## August 2024
-
-New Features: 6 | Retirements: 7 | Enhancements: 8 | Existing Functionality Changes: 2 | Action Needed: 1
-## New Features
-
-### Early-Aug 2024 - Public Preview of Progressive Alert Scoring
-
-Microsoft is rolling out a new feature -" Progressive alert scoring" in public review, starting in early August 2024. Currently, user activities that could potentially result in data security incidents will be assessed once every 24 hours. After this rollout, the assessment of user activities will be done more frequently within a 24- hour period, along with alert insights.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC707653>
-
-### Early-Aug 2024 - New Administrative Units for Microsoft Teams Administration
-
-
-Microsoft will start rolling out new Administrative Units in the Teams admin center by early August 2024. After the rollout, admins can facilitate delegation administration by assigning the following roles to the AUs.
-
-- Teams Administrator
-- Teams Device Administrator
-- Teams Communication Administrator
-- Teams Communication Support Engineer
-- Teams Communication Support Specialist
-- Teams Telephony Administrator
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC810173>
-
-
-
-### Mid-Aug 2024 - New Recommendations for Microsoft Secure Score
-
-
-Microsoft Defender XDR is enhancing its security capabilities by introducing four new recommendations focused on Azure Single Sign-On (SSO) account configurations and Microsoft Entra Connect accounts.
-
-These new recommendations will be visible in Microsoft Defender XDR from mid-August 2024.
-
-- Azure SSO account configuration: Password last set more than 90 days ago
-- Azure SSO account configuration: Resource-Based Constrained Delegation configured
-- Remove unnecessary replication permissions for Microsoft Entra Connect accounts
-- Rotate password for Entra Connect connector users
-
-
-
-**Note:** By default, it will be available only to customers who have installed an MDI sensor on the Entra Connect server.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC816173>
-
-
-
-
-
-
-
-
-### Late-Aug 2024 - General Availability of Adaptive Protection for GCC, GCCH, DoD
-
-
-By late August 2024, the Adaptive Protection integration with Microsoft Purview Data Loss Prevention will be generally available for government clouds (GCC, GCC High, DoD). Following this, admins will be able to manage policies more effectively based on insider risk levels.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803011>
-
-### Aug 2024 - New Authentication Method "QR Code Sign-in"
-
-Microsoft is introducing a new authentication method, "QR code sign-in," in a private preview by August 2024. This feature allows users on mobile devices (Android/iOS/iPadOS) to authenticate using a QR code and PIN.
-
-**Ref:**
-<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/>
-
-
-### Aug 2024 - Conditional Access What If API in Preview
-
-
-The Conditional Access What If API, which is used to analyze the impact of Configured CA policies, will enter preview by August 2024.
-
-
-
-***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=In%20development&searchterms=406760>
-
-
-## Retirements
-
-### Aug 5, 2024 - Microsoft 365 Groups Connectors Retirement
-
-Microsoft 365 group connectors, which deliver notifications from online tools and services to group emails, will no longer be available for New Outlook for Windows & Outlook on the Web users from Aug 5, 2024. Existing group connectors will not receive any updates after this date.
-
-**Solution**: Use the Power Automate app as an alternative to receive notifications and updates on Group email.
-
-**Ref:**
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC798683>
-
-### Aug 15, 2024 - Office 365 Connectors Retirement
-
-Users will no longer be able to create new Office 365 Connectors from Aug 15, 2025. However, all the existing connectors will continue to work until December 2025, unless you undergo a URL update.
-
-
-
-**Solution:** Migrate to alternate solutions such as Power Automate or Microsoft Graph.
-
-
-
-***Ref:*** <https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/>
-
-
-
-### Aug 18, 2024 - Retirement of Four Override Alerts in Microsoft Defender for Office 365
-
-
-Microsoft Defender for Office 365 plans to remove four legacy override alerts starting August 18, 2024. This decision is due to the 'Secure by default' feature with ZAP (Zero-Hour Auto Purge), which will automatically block high-confidence phishing emails. As a result, these four alerts will no longer be needed.
-
-1. Phish not zapped because ZAP is disabled
-1. Malware not zapped because ZAP is disabled
-1. Phish delivered due to ETR override
-1. Phish delivered due to IP allow
-
-
-
-***Ref:*** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC822720
-](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC822720)
-
-
-### Aug 19, 2024 - “Publish to Power BI” Feature Retirement in Microsoft Excel
-
-
-The "Publish to Power BI' feature in Microsoft Excel will retire by Aug 19, 2024. So, users will no longer be able to publish the data directly from Excel to Power BI.
-
-
-
-**Solution:** Move to Power BI service (Power BI on the web), which offers additional capabilities that are not found in Excel publishing including, non-default workspaces, workspace folders, and modern format data models.
-
-
-
-***Ref:*** <https://learn.microsoft.com/en-us/power-bi/connect-data/service-publish-from-excel>
-
-
-### Aug 20, 2024 – All Contents from Stream (Classic) will be Deleted 
-
-With the retirement of Stream Classic on April 15, 2024, all content will be deleted starting August 20, 2024. 
-
-**Solution:** Migrate your Stream (Classic) content to Stream (on SharePoint) to ensure continued access. 
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC764452> 
-
-### Aug 26, 2024 – Existing SharePoint News Connectors Retirement
-
-All existing SPO news connectors will be retired by August 26, 2024. Also, users can’t create new SPO news connectors from July 22, 2024.
-
-**Solution:** Move to alternatives like Viva Connections News notifications, Viva Amplify, or Teams Workflow.
-
-***Ref:***
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC803508>
-
-
-
-### Aug 31, 2024 - Azure AD Graph API Retirement
-
-The initial phase of Azure AD Graph API retirement begins on Aug 31, 2024. Entra ID apps created after this date and trying to use the Azure AD Graph API will face errors. Applications that are created *before Aug 31, 2024,* will not be impacted at this stage. 
-
-***Ref:*** 
-[https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/ba-p/3796387](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/ba-p/3796387#:~:text=Important%20Update%3A%20Azure%20AD%20Graph%20Retirement)
-
-## Enhancements
-
-### Aug 2024- Microsoft SharePoint Document Libraries: Improved Version History Controls
-
-Microsoft is introducing new version controls to assist tenant and site admins, as well as document library owners, in reducing storage consumption caused by low-value file versions. With this update, admins can configure two version history settings.  
-
-- ***Automatic Mode:*** This mode automatically expires both new and existing versions based on their age and the probability of restoration.  
-- ***Manual Mode:*** In this mode, admins can set time-based version expiration and count limits for both new and existing versions according to their preferences.  
-
-Admins can opt into the Public Preview by running the SharePoint Online Management PowerShell cmdlet.  
-
-` `Set-SPOTenant -EnableVersionExpirationSetting $true   
-
-Note: Public preview for this feature was released in May 2024, and the General Availability is scheduled for August 2024, 
-
-***Ref:*** 
-<https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC789209> 
-
-### Mid-Aug 2024 - Outlook: Folder/Subfolder Recursive Search 
-
-With this feature, when a user searches for content in an Outlook folder, all its subfolders are also searched, and the results are displayed. 
-
-***Ref:***  <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC802699>
-
-### **Mid-Aug 2024 - New Filters in Microsoft Purview Audit Search**
-
-Four new filters will be available in the public preview for unified audit log search by mid-August 2024. The four additional fields in the audit search UI are UserType, UserKey, ClientIP, and Id.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC789312>
-
-
-### Mid-Aug 2024 - New eDiscovery Hold Reports in Microsoft Purview
-
-The new tenant-wide "eDiscovery Hold reports" will be generally available under the *Reports* tab in eDiscovery (Premium). Starting mid-August 2024, admins can access this report to review all hold policies with eDiscovery cases in the Microsoft Purview compliance portal.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC776192>
-
-### Mid-August 2024 - Audit: New Cloud Policy Service Audit Logs for Policy Changes
-
-
-
-Microsoft will soon integrate cloud policy service into Microsoft Purview Compliance portal. Admins can search and review Microsoft 365 cloud policy changes (Create, update, delete) using unified audit logs from mid-August 2024. These logs will be available to **Purview Audit Standard** users.
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC789309>
-
-### Mid-August 2024 - SharePoint eSignature Service in Canada, the UK, and Selected European Countries
-
-Microsoft's SharePoint eSignature service, initially launched in the US in late November 2023, is now expanding its availability to include users in the UK, Canada, and selected European countries. Starting mid-August 2024, users from these regions will be able to utilize SharePoint online to request eSignatures on PDF documents.
-
-**Ref:**
-<https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC800502>
-
-### **Late-Aug 2024 - Microsoft 365 Groups Scoping in Teams DLP Policy Extend Protection to 1:1/n Chats**
-
-
-Starting late August 2024, DLP policies for Microsoft 365 Groups in Teams will automatically protect all 1:1/n (non-channel) chats, in addition to standard and shared channel chats. So, manually adding users or groups is no longer required, except for those using OCR in Teams chat.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC837079>
-
-
-### **Aug 2024 - Enhanced Alert and User Investigation with Copilot for Security**
-
-
-Starting in August, Copilot for Security will assist in investigating alerts within Microsoft Purview Insider Risk Management. It will provide concise summaries of alerts and important details, such as the user's risk profile and other relevant information.
-
-
-
-***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=In%20development&searchterms=407864>
-
-## Existing Functionality Changes
-
-### Early-Aug 2024 - Changes in Handling of Documents in MS Outlook for iOS and Android.
-
-
-Currently, Microsoft prioritizes opening documents in the Microsoft 365 app when users have both the Microsoft 365 app and standalone apps for Word, Excel, or PowerPoint. However, starting early-August 2024, users will be prompted to use the standalone apps instead of the Microsoft 365 app.
-
-
-
-**Note**: It is advised to review your organization's app management policies to ensure that users are not restricted to using only the Microsoft 365 app for document handling.
-
-
-
-***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC788952>
-
-
-
-
-### Aug 30, 2024 - Admins Can No Longer Receive User Passwords in Email
-
-
-Starting August 30, 2024, the 'Send Password in Email' feature will be retired from the Microsoft 365 admin center. Admins will no longer be able to receive usernames and passwords via email after this date. Instead, it is advised to use the "Print" option in the Microsoft admin center to save the account credentials and share them with respective users.
-
-
-
-***Ref***: <https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/reset-passwords?view=o365-worldwide>
-
-
-## Action Required
-
-### Aug 31, 2024 – PowerBI Retiring Support for Older Browsers by August 31, 2024
-
-Microsoft PowerBI is retiring support for older browsers on September 1, 2024. 
-
-**Solution:** To avoid interruptions in functionality, users should upgrade their browsers by August 31, 2024.
-
-***Ref:*** <https://powerbi.microsoft.com/en-us/blog/power-bi-june-2024-feature-summary/>
 
 
 ## September 2024
 
-## New Features
+New Features: 8 | Retirements: 8 | Enhancements: 5 | Existing Functionality Changes: 4 | Action Needed: 2
 
+## New Features
+### Sep 2024 – Exchange - High Volume Email for Microsoft 365 (General Availability) 
+High Volume Email (HVE) is designed for large-scale internal communications, facilitating mass mailing needs.  
+
+Note: In public preview, you can send emails to up to 100k recipients per 24 hours, with a maximum of 2,000 external users. 
+
+***Ref:***
+<https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/high-volume-mails-m365>  
+### Sep 2024 - Centrally Manage Branding in SharePoint
+
+Microsoft will introduce new branding and management capabilities in Sep 2024 to help admins maintain consistency across sites and pages.
+
+***Ref***: <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=124838>
+
+### Sep 2024 - New "Resources" Category in Microsoft Entra Conditional Access
+
+Microsoft Entra Conditional Access will streamline the "Target resources" assignment by combining the current options "Cloud apps" and "Global Secure Access" into a single category named "Resources."
+
+
+***Ref:*** 
+<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/>
+
+### Sep 2024 - New Audit logs for Audit Activities in Microsoft Purview Compliance Portal
+
+
+Starting September 2024, admins can audit user activities such as submitting Audit Search queries, viewing and exporting audit logs, and deleting search history using the Microsoft Purview Audit feature.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=392841>
+
+
+### Mid-Sep 2024 - Manage Self-service Purchases Using Microsoft 365 Admin Center
+
+
+Starting mid-September 2024, Microsoft will introduce a new, streamlined interface in the Microsoft 365 admin center for managing self-service purchases and trials. This new UI will allow admins to easily enable or block self-service purchases without relying on the MSCommerce PowerShell module.
+
+
+
+***Ref:*** <https://learn.microsoft.com/en-us/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins>?
+
+### Mid-Sep 2024 - Relaunch of App Centric Management in Microsoft Teams
+
+
+Microsoft is restarting the rollout of App centric management in Teams admin center, which replaces the Teams apps permissions policies. Phase 2 of this rollout will begin mid-to-late September 2024, impacting tenants with both global and custom app permissions policies.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC688930>
+
+###
 ### Mid-Sep 2024 - New Workflow Builder Feature in Microsoft Teams
 
 
@@ -320,26 +96,23 @@ The new onboarding process which gives Teams owners the ability to recommend Tea
 
 ***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC790796>
 
-### Sep 2024 – Exchange - High Volume Email for Microsoft 365 (General Availability) 
-
-High Volume Email (HVE) is designed for large-scale internal communications, facilitating mass mailing needs.  
-
-Note: In public preview, you can send emails to up to 100k recipients per 24 hours, with a maximum of 2,000 external users. 
-
-***Ref:***
-<https://learn.microsoft.com/en-us/Exchange/mail-flow-best-practices/high-volume-mails-m365>  
-
-### Sep 2024 - New "Resources" Category in Microsoft Entra Conditional Access
-
-Microsoft Entra Conditional Access will streamline the "Target resources" assignment by combining the current options "Cloud apps" and "Global Secure Access" into a single category named "Resources."
-
-
-***Ref:*** 
-<https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/>
-
 
 
 ## Retirements
+
+### September 1, 2024 - Retirement of Viva Connections Feed Web Part and Video News Link
+
+
+To improve and simplify the user experience, Microsoft will retire the Feed for Viva Connections web part and the Video news link starting September 1, 2024. After this date, site editors will not be able to add these features to their sites.
+
+
+
+**Solution:** Consider using the news web part, Viva Engage web parts, file and media web part, or other available options.
+
+
+
+***Ref:*** <https://techcommunity.microsoft.com/t5/viva-connections-blog/viva-connections-feed-web-part-and-video-news-link-retirement/ba-p/4210720>
+
 
 
 ### Sep 1, 2024 - File Pages in Microsoft Defender for Cloud Apps Retirement
@@ -355,19 +128,30 @@ Microsoft will start deprecating the Files page from Microsoft Defender for Clou
 
 ***Ref:*** <https://learn.microsoft.com/en-us/defender-cloud-apps/file-filters>
 
-### Early - Sep 2024 - Retirement of Dictation Feature in Microsoft Outlook for iOS and Android.
+### Sep 5, 2024 - Retirement of Zapier Integration with Microsoft Viva Goals
 
 
-Microsoft will be removing the dedicated Dictation feature from Outlook for iOS and Android due to redundancy with the system microphone. This change will take effect starting in early September 2024.
-
-
-
-**Solution**: Use the system microphone itself for dictation in Outlook for iOS and Android.
+To strengthen security standards and ensure maximum protection for users, Microsoft will retire the Microsoft Viva Goals integration with the Zapier feature.
 
 
 
-***Ref:*** <https://support.microsoft.com/en-us/office/dictate-your-emails-in-outlook-mobile-fe39a8bc-ea2b-45b9-83cc-e71b8e8c7d93>
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC851617>
 
+
+
+### Sep 15, 2024 - Deprecation of Search-AdminAuditLog Cmdlets
+
+
+Microsoft initially planned to retire four Admin Audit Log and Mailbox Audit Log cmdlets together on April 30, 2024. However, the new plan separates these dates, and the Admin Audit Log cmdlets—'Search-AdminAuditLog' and 'New-AdminAuditLogSearch'—will now be deprecated on September 15, 2024.
+
+
+
+**Solution:** Transition to the unified audit logs cmdlet, "Search-UnifiedAuditLog", ASAP.
+
+
+
+***Ref:*** <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/update-on-the-deprecation-of-admin-audit-log-cmdlets/ba-p/4172019>
+###
 ### Sep 30, 2024- Azure Multi-Factor Authentication Server   
 
 Azure MFA Server deployments will no longer service MFA requests, which could cause authentications to fail for your organization.  
@@ -386,7 +170,39 @@ Microsoft will retire Business Connectivity Services features in Microsoft 365.
 ***Ref***: 
 <https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/support-update-for-business-connectivity-services-in-microsoft/ba-p/3938773>  
 
+### Sep 30, 2024 - End of Inline PDF Viewing in Classic Viva Engage
+
+
+Classic Viva Engage users will no longer be able to view PDFs inline within external networks and non-connected communities. After this change, users will need to download the attached PDFs to view them using the updated interface.
+
+
+
+**Solution**: Upgrade the network to Native Mode to enable inline PDF viewing for users.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC876292>
+
+### **Sep 15, 2024 – Retirement of Four Override Alerts in Microsoft Defender for Office 365** 
+Microsoft Defender for Office 365 plans to remove four legacy override alerts completely by Sep 15, 2024. This decision is due to the ‘Secure by default’ feature with ZAP (Zero-Hour Auto Purge), which will automatically block high-confidence phishing emails. As a result, these four alerts will no longer be needed. 
+
+1. Phish not zapped because ZAP is disabled 
+1. Malware not zapped because ZAP is disabled 
+1. Phish delivered due to ETR override 
+1. Phish delivered due to IP allow 
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC822720>
+
 ## Enhancements
+
+### Early-Sep 2024 - Unified Settings and Policies Management in Teams Admin Center
+
+GCC, GCC High, and DoD customers will soon benefit from a more streamlined IT administration experience in Microsoft Teams. Starting in September 2024, admins can manage all settings and policies from a unified interface in the Teams admin center, eliminating the need for separate settings and policy pages.
+
+***Ref:*** <https://learn.microsoft.com/en-us/microsoftteams/unified-policies-settings-management-teams-admin-center>
+
+
+
 ### Early-Sep 2024 - General Availability of Inbound SMTP DANE with DNSSEC
 
 
@@ -395,6 +211,39 @@ Exchange Online has begun supporting DNS-based Authentication of Named Entities 
 
 
 ***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC711018>
+
+
+
+
+### Mid-Sep 2024 - New Recommendations in Microsoft Secure Score
+By mid-September 2024, Microsoft will introduce 10 new recommendations to Microsoft Secure Score in Public Preview. Below are new recommendations, which are on by default and will be reflected as identity-related improvements in Microsoft Defender XDR.
+
+- Accounts with non-default Primary Group ID
+- Domain Controllers with computer account password unchanged for more than 45 days
+- GPO assigns unprivileged identities to local groups with elevated privileges
+- GPO can be modified by unprivileged accounts
+- GPO contains passwords Group Policy Preferences files
+- Built-in Active Directory Guest account is enabled
+- Unsafe permissions on the DnsAdmins group
+- Ensure that all privileged accounts have the configuration flag "this account is sensitive and cannot be delegated"
+- Change password of krbtgt account
+- Change password of built-in domain Administrator account
+
+
+
+***Ref:*** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC875063
+](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC875063)
+
+
+### 
+### Mid-Sep 2024 - New Automatic and Manual Version Limits in Microsoft SharePoint
+
+
+Microsoft is rolling out new version management features in SharePoint by mid-September 2024. These include automatic version limits based on document age & restoration probability, and manual settings for version expiration and count limits.
+
+
+
+***Ref***: <https://learn.microsoft.com/en-us/sharepoint/document-library-version-history-limits>
 
 
 
@@ -412,6 +261,10 @@ Default sensitivity labels and policies, which currently cover only files and em
 
 
 ## Existing Functionality Changes
+### Sep 2024 – Admins Can No Longer Receive User Passwords in Email 
+Starting August 30, 2024, the ‘Send Password in Email’ feature was retired from the Microsoft 365 admin center. Admins will no longer be able to receive usernames and passwords via email after this date. Instead, it is advised to use the “Print” option in the Microsoft admin center to save the account credentials and share them with respective users. 
+
+***Ref***: <https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/reset-passwords?view=o365-worldwide>
 
 ### Sep 2024 - Changes to Phone Call Settings in Entra ID
 
@@ -420,8 +273,58 @@ Entra will relocate phone call settings (custom greetings and caller ID) from th
 ***Ref:*** 
 <https://techcommunity.microsoft.com/t5/microsoft-entra-blog/what-s-new-in-microsoft-entra-june-2024/>
 
+### Early-Sep 2024 - User and License Admins Can Manage Self-Service License Requests
+
+
+Currently, only Global admins can manage self-service license requests in Microsoft 365. Starting mid-September 2024, user admins and license admins can also manage these requests directly from the Microsoft 365 admin center.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC810926>
+
+### Late - Sep 2024 - User Settings Relocation in Outlook on the Web
+
+
+Microsoft is enhancing the usability of Outlook on the web by moving various user settings into a new "Account" settings category. This update will be generally available by late Sep 2024 and will include settings like Automatic replies, Email signatures, Categories, Mobile devices, and Storage.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC867665>
+
+
+## Action Required
+
+### Sep 16, 2024 - The Deprecation of Basic Authentication for Outlook Personal Email Accounts
+
+
+Beginning September 16, 2024, Microsoft will discontinue support for basic authentication for Outlook personal email accounts. So, users with older apps that only support Basic Authentication will no longer be able to access Outlook.com, Hotmail.com, or Live.com email accounts after September 16, 2024.
+
+
+
+**Solution:** Move to mail or Calender app or Outlook.com supporting modern authentication (latest versions of Outlook, Apple Mail, or Thunderbird)
+
+
+
+***Ref:*** <https://techcommunity.microsoft.com/t5/outlook-blog/keeping-our-outlook-personal-email-users-safe-reinforcing-our/ba-p/4164184>
+
+
+### Sep 23, 2024 - Upgrade to the Latest Version of Microsoft Entra Connect 
+
+
+Microsoft has upgraded Microsoft Entra Connect Sync and Microsoft Entra Connect Health. Admins who opted out of the auto-upgrade or experienced a failed upgrade are strongly advised to move to the latest version by September 23, 2024. After this date, the auto-upgrade service for Microsoft Entra Connect Sync and some alerts in Microsoft Entra Connect Health will no longer function. 
+
+***Ref:*** <https://entra.microsoft.com/#view/Microsoft_AAD_IAM/ChangeManagementHubList.ReactView?Microsoft_AAD_IAM_legacyAADRedirect=true>
 
 ## October 2024 
+
+### Oct 2024 - New ChatGPT Connector in Microsoft Purview Compliance Portal
+
+
+From October 2024, admins will be able to connect their ChatGPT Enterprise workspaces to Microsoft Purview. This integration allows them to discover, collect, and store user interactions with ChatGPT and include these interactions within the scope of Purview’s compliance capabilities and policies. 
+
+
+
+***Ref***: <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=401125>
 
 ### Oct 01, 2024- Classic Teams in VDI End of Support 
 
@@ -437,6 +340,21 @@ To improve security and performance, Microsoft will begin enabling IPv6 for acce
 
 
 ***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC835648>
+
+### **Early - Oct 2024 – SharePoint eSignature Service in Selected European Countries** 
+Microsoft’s SharePoint eSignature service, initially launched in the US in late November 2023, is now expanding its availability to include users in selected European countries. Starting October 2024, users of selected European countries can use SharePoint online to request eSignatures on PDF documents. 
+
+**Ref:** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC80050](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC800502)
+
+### Oct 15, 2024 - Enable Multi-factor Authentication in Microsoft 365
+
+
+Microsoft will require admins to use multi-factor authentication when signing into the Microsoft Azure portal, Microsoft Entra admin center, and Microsoft Intune admin center from Oct 15, 2024. So, admins need to enable MFA in the tenant before October 15, 2024. If you need some more time to set up MFA, you can apply to postpone the enforcement date.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC862873>
+
 
 ### Mid-Oct 2024- New cmdlet for Content Explorer 
 
@@ -459,6 +377,17 @@ Starting July 1, 2025, classic Teams desktop app will reach end of availability 
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC783985> 
 
+### Late-Oct 2024 - Decoupling Policy Tips and Email Notifications for SharePoint and OneDrive
+
+
+Currently, admins when trying to enable email notifications, policy tips also need to be enabled. However, the user email notifications and policy tips options will be decoupled, and admins can configure them independently. By late October 2024, it will be out for public preview.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC791114>
+
+
+
 ## November 2024
 
 ### Nov 01, 2024- Azure ACS Retirement in Microsoft 365
@@ -467,8 +396,7 @@ Microsoft is retiring the use of Azure ACS as auth platform for SharePoint Onlin
 
 **Solution**: Admins can utilize the Microsoft 365 Assessment tool to scan the tenants for any usage of Azure Access Control Service (ACS) and [migrating from Azure ACS to Microsoft Entra ID](https://aka.ms/retirement/acs/guidance).  
 
-***Ref***:
-<https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs>  
+***Ref:*** <https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/retirement-announcement-for-azure-acs>  
 
 ### Nov 01, 2024- SharePoint Add-in Retirement  
 SharePoint Add-Ins will stop working for new tenants as of November 1, 2024, and they will be fully retired as of April 2nd, 2026.  
@@ -477,6 +405,10 @@ SharePoint Add-Ins will stop working for new tenants as of November 1, 2024, and
 
 ***Ref***: 
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC693865> 
+### Nov 5, 2024 – Existing Feed for Viva Connections Web Parts and Video News Link Will Stop Working
+Starting November 5, 2024, existing instances of the Feed for Viva Connections web parts and Video News Link will stop displaying content.
+
+***Ref:*** <https://techcommunity.microsoft.com/t5/viva-connections-blog/viva-connections-feed-web-part-and-video-news-link-retirement/ba-p/4210720>
 
 ### Early-Nov 2024 - Microsoft Teams: Shorter Meeting URLs
 
@@ -509,6 +441,15 @@ Dynamic watermarking, a new sensitivity label setting is used to add watermarks 
 
 
 ## December 2024
+
+### Dec 2024 - Email Response Actions API for Microsoft Defender
+
+
+Admins will be able to use the Email Response Actions API in Microsoft Graph to perform actions such as soft delete, hard delete, moving emails to junk, etc., in Microsoft Defender.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=93434>
 
 ### Dec 16, 2024 - Delve Web Retirement 
 
@@ -550,7 +491,7 @@ Connector owners must update their URLs by this date to continue using connector
 ***Ref:***
 <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC808160>
 
-
+###
 ### End of 2024- Retirement of Mail and Calendar Apps in Windows  
 
 At the end of 2024, Microsoft replacing the Mail and Calendar apps in Windows with the new Outlook for Windows.    
@@ -561,6 +502,25 @@ At the end of 2024, Microsoft replacing the Mail and Calendar apps in Windows wi
 <https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC590123> 
 
 ## 2025 (Attention Needed: 13)
+
+### Jan 2025 - Add Shared Mailbox as Accounts in New Outlook for Windows
+
+
+Starting January 2025, you’ll be able to add shared mailboxes as accounts in the New Outlook for Windows. With the necessary permissions, you can access these shared mailboxes by providing the user’s credentials.
+
+
+***Ref***: [https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=375635
+](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=375635) 
+
+
+### Jan 2025 - New DLP action to Trigger Custom Power Automate Workflows
+
+
+Microsoft will introduce a new DLP action that triggers custom Power Automate workflows when a DLP policy is violated.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=380721>
 
 ### Jan 01, 2025- External Recipient Rate Limit in Exchange Online 
 
@@ -573,12 +533,24 @@ For existing tenants, this limit will be enforced in the second half of 2025.
 ***Ref:*** 
 <https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-to-introduce-external-recipient-rate-limit/ba-p/4114733> 
 
+### Jan 13, 2025 - Microsoft Viva Engage: Retirement of Private Unlisted Groups in External Networks
+
+
+Microsoft Viva Engage will retire private unlisted groups in external networks on January 13, 2025. After this date, users will no longer be able to create, export, access, or participate in unlisted groups within external networks. So, admins are advised to convert them to listed ones to secure their data.
+
+
+
+***Ref:*** <https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC867664>
+
+
 ### Early 2025 - MFA Enforcement for CLI, Azure PowerShell, IaC Tools
 
 As part of enforcing MFA for all Azure users, MFA enforcement for Azure Command Line Interface (CLI), Azure PowerShell, and Infrastructure as Code (IaC) tools will gradually be introduced to all tenants starting in early 2025.
 
 ***Ref:*** 
 <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/update-on-mfa-requirements-for-azure-sign-in/>
+
+
 
 ### Late-Jan 2025 - Microsoft Auto-Archives Unlicensed OneDrive Accounts
 
@@ -588,6 +560,15 @@ Starting in **late January 2025**, any OneDrive accounts left unlicensed for mor
 
 ***Ref:*** <https://learn.microsoft.com/en-us/sharepoint/unlicensed-onedrive-accounts>
 
+
+### Feb 2025 - Bulk Upload for Priority User Groups in Insider Risk Management
+
+
+Priority user groups in Insider Risk Management are designed to prioritize examining users who handle sensitive information or have a history of risk. Microsoft will soon enhance these groups by enabling admins to bulk upload users via CSV when creating Priority user groups.
+
+
+
+***Ref:*** <https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=409540>
 
 
 
@@ -786,8 +767,6 @@ In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires 
 
 We are committed to keeping this blog updated with the latest information, so stay tuned for upcoming updates.
 ### <https://blog.admindroid.com/microsoft-365-end-of-support-milestones/>
-
-
 
 
 
