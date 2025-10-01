@@ -9,336 +9,43 @@ Discover the **key changes, deprecations**, and **end-of-support** scenarios tha
   
 Here is a list of changes categorized by month and year.  
 
-*   September 2025 (Retirements: 7, New Features: 11, Enhancements: 9, Existing Functionality Changes: 4, Action Needed: 5)
-*   October (Retirements: 5, New Features: 7, Enhancements: 2, Existing Functionality Changes: 3, Action Needed: 1)
-*   November (Attention Needed: 3)
-*   December (Attention Needed: 7)
-*   Q1 2026 (Attention Needed: 12)
-*   Q2 2026 (Attention Needed: 8)
-*   Q3 2026 (Attention Needed: 2)
+*   October 2025 (Retirements: 6, New Features: 10, Enhancements: 6, Existing Functionality Changes: 5, Action Needed: 4)
+*   November 2025 (Retirements: 3, New Features: 9, Enhancements: 1, Existing Functionality Changes: 1, Action Needed: 1)
+*   December 2025 (Attention Needed: 11)
+*   Q1 2026 (Attention Needed: 13)
+*   Q2 2026 (Attention Needed: 7)
+*   Q3 2026 (Attention Needed: 3)
 *   Q4 2026 (Attention Needed: 3)
 
   
-
-## September 2025
-
-### Retirements
-
-### Sep 1, 2025 – Legacy Message Trace Experience Retires in Exchange Online
-
-With the introduction of the new Message Trace in Microsoft Exchange Online, the legacy experience will retire on September 1, 2025. The updated version offers improved performance and a modern interface, replacing:
-
-1.  Legacy Message Trace UI in the EAC
-2.  Legacy cmdlets: Get-MessageTrace, Get-MessageTraceDetail
-
-**Solution:** As the new Message Trace becomes the default, admins should update scripts to use _Get-MessageTraceV2_ and _Get-MessageTraceDetailV2_, and complete the transition. The new UI remains enabled in the Exchange admin center.
-
-**_Ref_**: [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1092458](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1092458)
-
-### Sep 1, 2025 – Client Access Rules Deprecation in Exchange Online
-
-Client Access Rules (CARs), used to control access to Exchange Online services based on various conditions, will be deprecated by September 1, 2025.
-
-**Solution:** Migrate to Conditional Access policies with Continuous Access Evaluation (CAE) to benefit from more advanced and flexible access control.
-
-**_Ref_**: [https://techcommunity.microsoft.com/blog/exchange/update-on-client-access-rules-deprecation-in-exchange-online/4354809](https://techcommunity.microsoft.com/blog/exchange/update-on-client-access-rules-deprecation-in-exchange-online/4354809)
-
-### Sep 1, 2025 – Retirement of Classic eDiscovery (Premium) in Microsoft Purview
-
-Microsoft will retire Classic eDiscovery (Premium) experience from the Microsoft 365 Purview portal by Aug 31, 2025. So, starting Sep 1, 2025, the classic eDiscovery (Premium) experience will not be available as an experience option in Microsoft Purview portal.
-
-  
-**Solution:** Transition to the new unified eDiscovery for faster and improved search and investigation capabilities.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1107493](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1107493)
-
-### Sep 9, 2025 – ‘Mobile Devices’ Settings Page to Be Removed in Outlook
-
-The ‘Mobile devices’ page in Outlook Web and the new Outlook currently allows users to view and manage all devices syncing with their mailbox. Microsoft will retire this page starting September 9, 2025, as part of the shift toward modern device management tools.  
-  
-**Solution:** Users can use the My Account portal or iOS/Android native tools to view, manage, and remotely wipe their connected devices.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1130607](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1130607)
-
-### Sep 15, 2025 - Retirement of Power BI Cognitive Services and Azure Machine Learning Features
-
-Microsoft is retiring Cognitive Services and Azure Machine Learning features in Power BI by September 15, 2025. Existing models will continue to refresh until the retirement date. Microsoft recommends transitioning to Microsoft Fabric, where continued investments in AI capabilities will be made.  
-
-**Solution:** Move to Auto ML in Microsoft Fabric for supported AI scenarios.
-
-**_Ref_**: [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1124567](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1124567)
-
-### Mid-Sep 2025 – Microsoft To Do Ending Support for iOS 16 and macOS 12
-
-After mid-Sep 2025, users running iOS 16 or earlier and macOS 12 or earlier will no longer receive updates to Microsoft To Do. For better performance and stronger security, Microsoft To do require updated operating systems.  
-  
-**Solution**: Update the devices to iOS 17 or later and macOS 13 or later. Also, review your organization’s device management policies to confirm they’re compatible with these OS versions.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1129721](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1129721)
-
-### Sep 22, 2025 - Retirement of Sub-Domains Feature in Defender for Cloud Apps – Cloud Discovery
-
-The sub-domains feature in Microsoft Defender for Cloud Apps – Cloud Discovery gives admins detailed visibility into app usage at the sub-domain level.  
-Due to low usage, Microsoft will retire this feature starting September 22, 2025. After that, sub-domain insights will no longer be available.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1141957](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1141957)
-
-### New Features
-
-### Early-Sep 2025 - General Availability of Progressive Alert Scoring in IRM
-
-Microsoft will roll out a new feature -" Progressive alert scoring" in Microsoft Purview Insider Risk Management. Currently, user activities that could potentially result in data security incidents will be assessed once every 24 hours. After this rollout, the assessment of user meeactivities will be done more frequently within a 24- hour period, along with alert insights. This feature will be generally available for GCC, GCC-High, DoD environments by early-Sep 2025.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC707653](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC707653)
-
-### Sep 2025 – General Availability of High Volume Exchange Email for Microsoft 365
-
-Microsoft will roll out High Volume Email (HVE) in general availability to support internal communication needs for line-of-business applications and high-volume SMTP use cases. HVE allows organizations to send internal emails well beyond the standard Exchange Online limits.
-
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=382633](https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=382633)
-
-### Early-Sep 2025 – Information Barrier Support in Microsoft Planner
-
-Currently, when sharing a Planner plan, users can view the full tenant member list, which creates a potential risk of data exposure. To address this, Microsoft is adding Information Barriers support in both the Planner web app and the Planner app in Teams. With this update, users will only be able to discover members within their assigned segments.
-
-**Note:** Information Barrier functionality will not be available in the Planner mobile app or when using Planner through mobile browsers.  
-  
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1139487](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1139487)
-
-### Early-Sep 2025 – Microsoft Teams to Support Silent Test Calls for Network Readiness  
-
-Microsoft Teams will allow IT admins to run silent call simulations to proactively test network readiness and detect issues early. Available for Windows and Mac desktops, this feature requires a Teams Premium license.
-
-**_Ref:_** [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1089323](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1089323)
-
-### Mid-Sep 2025 - Rule-based Enablement of Microsoft 365 third-party apps in the Teams admin center
-
-To streamline app management in Teams, Microsoft is adding a new rule-based setting in the Teams admin center. This update allows administrators to manage Microsoft 365 certified apps in bulk by using controls available in the _org-wide settings_ section. Admins can define availability based on permission scopes and publisher names. A 30-day review period will be provided before these changes affect app availability.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1085133](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1085133)
-
-### Mid-Sep 2025 – New Recommendations Added to Microsoft Secure Score
-
-To further strengthen security posture, Microsoft Secure Score will introduce two new recommendations:
-
-*   Remove inactive service accounts
-*   Remove discovered passwords in Active Directory account attributes
-
-These recommendations will appear only if your tenant has a Defender for Identity sensor deployed. It will be rolled out in General availability by mid-September 2025.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1130384](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1130384)
-
-### Mid-Sep 2025 – Microsoft Teams Integration with Microsoft Defender for Office 365 Tenant Allow/Block List
-
-Admins can currently configure allow/block lists for domains in Teams admin center. With this update, Microsoft enables organizations to manage blocked external domains centrally through the Tenant Allow/Block List (TABL) in the Microsoft Defender portal.  
-  
-This feature ensures consistent domain management across Microsoft 365 services. It will be available only for customers with Microsoft Defender for Office 365 Plan 1/2 and Microsoft Teams.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1133508](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1133508)
-
-### Mid-Sep 2025 – New Workflows Experience in SharePoint
-
-Microsoft is rolling out a new Workflows experience in SharePoint for enhanced automation in lists, libraries and chats, powered by Power Automate. Key updates include:
-
-*   A new workflows button on list and library command bars.
-*   A streamlined interface for building automations directly in SharePoint and Teams
-*   A refreshed template library for easier workflow discovery
-*   Natural language-to-flow capabilities and a Madlib-style editor for quick customization
-
-This brings the same intuitive automation experience already available in Teams to SharePoint.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1138798](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1138798)
-
-### Mid-Sep 2025 - Data Lifecycle Management: Retention Based on “last accessed” for OneDrive and SharePoint Files
-
-Starting mid-Sep2025, Microsoft will introduce a "When items were last accessed" option in Purview retention policies. This will allow admins to configure retention policies based on file access history in OneDrive and SharePoint, enabling the removal of outdated data.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC999442](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC999442)
-
-### Mid-Sep 2025 – Priority Cleanup in Purview Data Lifecycle Management
-
-Microsoft is adding a new ‘Priority Cleanup’ feature in Purview Data Lifecycle Management. This lets admins delete OneDrive and SharePoint content before existing retention or hold periods end, giving more control over items like Teams recordings and transcripts. The feature includes options such as simulation mode, audit logs, and reviews, but it isn’t on by default.
-
-To ensure security and avoid mistakes, at least two admins are required: one with the _Priority Cleanup Admin_ role to draft the policy, and another with the _Retention Management role_ to review and approve it. The rollout starts with Public Preview in mid–September 2025.
-
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC971035](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC971035)
-
-### Late-Sep 2025 - Usage Reports to Manage Metered Consumption Costs for Microsoft 365 Copilot Chat
-
-To help organizations manage metered costs for Microsoft 365 Copilot Chat, Microsoft is rolling out a new Message Consumption Usage report in the Microsoft 365 admin center. This preview report offers detailed insights into billed messages, including total usage, daily usage patterns, and breakdowns by user, billing policy, agent, and agent-user pair.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1069563](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1069563)
-
-### Enhancements
-
-### Early- Sep 2025 - Automatically Set Work Location by Connecting to a Wi-Fi Network
-
-Microsoft Teams will introduce a feature that automatically sets users' work locations when they connect to the organization's Wi-Fi or certain peripherals. This helps deliver location-based experiences without manual input.
-
-**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=488800](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=488800)
-
-### Early-Sep 2025 – Updated Page Analytics in Microsoft SharePoint Online
-
-SharePoint Page Analytics will receive new capabilities starting early-Sep 2025. If your organization has Microsoft Viva Suite or Viva Pulse Communications and Communities, you’ll gain access to enhanced features:
-
-*   View analytics data for up to 365 days (increased from 90 days).
-*   See how news posts were viewed across Outlook, SharePoint, Teams, and Viva Engage. This applies to all charts, including _Unique viewers, Total views,_ and _Average time spent per user_.
-*   Export analytics data directly to Excel or PowerPoint for reporting.
-*   New Reactions and Promotions metrics show how many times users reacted to a post, along with the total number of shares, mentions, etc.
-*   Improved layout and visuals for a better analytics experience and a few more features.
-
-Organizations without these licenses will still have access to the current set of metrics, displayed with a modernized page design.
-
-Currently, this rollout will be targeted to SharePoint News posts only.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1069561](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1069561)
-
-### Sep 2025 – Microsoft Purview Diagnostics Access Now Available to More Admin Roles
-
-Diagnostics access in the Purview compliance portal will be expanded beyond Global Admins. Compliance Administrators, Security Administrators, and Organization Management roles will also gain access, enabling broader troubleshooting and issue resolution. This update will be rolled out in preview by Sep 2025.
-
-**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=500894](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=500894)
-
-### Sep 2025 – Mail Merge (Advanced) in Outlook on the Web & New Outlook for Windows
-
-Outlook on the Web and the new Outlook for Windows will receive enhanced Mail Merge (Advanced) capabilities. Users will be able to insert dynamic fields into email templates for personalized messages and advanced customizations, making it easier to tailor communications.
-
-**_Ref:_** [https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=423047](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=423047)
-
-### Mid-Sep 2025 - Streamlined Same-Device Number Matching and First Run Experience (FRX) in Microsoft Authenticator
-
-Starting mid-September 2025, Microsoft Authenticator will receive two updates to improve the users’ sign-in experience:
-
-*   **Same-device sign-ins will no longer require number matching**: Users can simply tap "Yes" or "No" to confirm, reducing friction, especially on Android. iOS users will also benefit, though app switching may still be needed with the SSO extension.
-*   **Improved First Run Experience (FRX):** Microsoft simplifies account setup by combining multiple consent pages into consolidated one. It also prioritizes signing in with a Microsoft Entra account (work or school) instead of a personal Microsoft account.
-
-**_Ref_**: [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1117816](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1117816)
-
-### Late-Sep 2025 - Enable Smart Tagging for eSigned Documents in SharePoint
-
-Microsoft SharePoint Online will automatically add the “Signed” tag to documents when they are electronically signed. In addition, two metadata columns—“Electronically Signed” and “Signature Provider”, will be added to indicate whether the document is e-signed and to identify the service used for the e-signature.
-
-**Note**: This feature is available only for tenants with e-signature enabled.
-
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1143282](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1143282)
-
-### Sep 30, 2025 - Teams Meeting Join URL Validation
-
-To strengthen meeting security, Microsoft will begin validating Microsoft Teams meeting URLs. If your organization uses security tools that rewrite or modify these links, they could be flagged as malicious and impact the meeting experience.
-
-**Proactive step**: Admins can whitelist Microsoft Teams join URLs in the security tools. Also, review any URL rewriting or inspection rules to ensure they don't alter meeting links.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1120871](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1120871)
-
-### Late-Sep 2025 – Improved Insights on License Assignment Path in Microsoft 365 Admin Center
-
-Microsoft will fully update the product licensing page by late -September 2025. Admins will be able to view separate tabs for direct license assignments and group-based assignments, making it easier to clearly understand how licenses are distributed.  
-  
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1102762](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1102762)
-
-### Late-Sep 2025 – Enhancements in Microsoft Teams Private Channels
-
-Microsoft is expanding Teams private channel capabilities:
-
-*   Increase from 30 to 1000 private channels per team
-*   Up to 5000 members per private channel
-*   Ability to schedule meetings in private channels
-*   Compliance policies (DLP, retention, etc.) applied at the group level
-
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1134737](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1134737)
-
-### Existing Functionality Changes
-
-### September 2025 – Access Reviews Data Retention Policy Update
-
-Beginning in September 2025, Microsoft Entra ID Access Reviews will retain history for only the past 12 months. Any review data older than one year will no longer be stored or retrievable through Microsoft Graph APIs or any other method. Organizations should take this into account if they require long-term access review data.  
-
-**_Ref:_** [https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-%E2%80%93-june-2025/4352579](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-%E2%80%93-june-2025/4352579)
-
-### Sep 18, 2025 – Microsoft Defender for Identity Alerts Transitioning to XDR
-
-Microsoft Defender for Identity classic alerts will transition to the XDR detection platform on September 18, 2025. This change improves detection accuracy and performance. Users must update workflows with new Detector IDs and reconfigure alert exclusions using XDR Alert Tuning rules.  
-  
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1137610](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1137610)
-
-### Sep 26, 2025 - Unlicensed OneDrive Accounts to Enter Read-Only Mode
-
-Microsoft will begin transitioning OneDrive accounts that remain unlicensed before July 28, 2025, to read-only mode by September 26, 2025. Admins should monitor the Unlicensed OneDrive Accounts report and take appropriate actions such as renewing, archiving, or deleting accounts to ensure compliance and uninterrupted access.
-
-**_Ref:_** [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC836942](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC836942)
-
-### Sep 26, 2025 - Changes to Microsoft Purview DLP Alert Settings
-
-In a few tenants, DLP rules showed alerts as enabled in the Purview portal, while they were actually disabled through PowerShell. To address this inconsistency, Microsoft Purview will align DLP alert settings between the portal and PowerShell.
-
-If a rule’s alerts were disabled using PowerShell, the portal will now also display them as disabled. If you want to continue receiving alerts, you’ll need to re-enable them either in the portal or through PowerShell.  
-
-**_Ref_**: [https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1143996](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1143996)
-
-### Action Required
-
-### Early -Sep 2025 – Retirement of Azure AD Graph API
-
-Starting early September 2025, applications that were granted extended access and still rely on Azure AD Graph APIs will no longer be able to use these APIs.
-
-**Solution:** Use the **_Recommendations_** tab in the Microsoft Entra admin center to identify affected apps and migrate to Microsoft Graph APIs.
-
-**_Ref_**: [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1101901](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1101901)
-
-### Sep 2, 2025 – Update Conditional Access Policies for Azure DevOps Sign-ins
-
-Microsoft is removing Azure Resource Manager (ARM) as a dependency for Azure DevOps sign-ins and token refresh. Previously, Conditional Access policies targeting ARM would apply to Azure DevOps as well. With this change, those policies will no longer enforce access controls on Azure DevOps usage.
-
-**Solution:** Admins should configure a separate Conditional Access policy specifically for Azure DevOps to maintain security controls.
-
-**_Ref_**: [https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/](https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/)
-
-### Sep 14, 2025 – New Authentication Requirements for Teams PowerShell Module
-
-Microsoft is updating the authentication requirements for application-based authentication in the Microsoft Teams PowerShell Module.
-
-**Solution**: If your organization is currently using Entra applications to automate or manage Microsoft Teams via PowerShell, you must update your application permissions to include: GroupMember.Read.All and RoleManagement.Read.Directory.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1134747](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1134747)
-
-### Sep 15, 2025 – MFA Requirement for Credential Management
-
-Microsoft will require users to complete an MFA prompt for all credential management activities performed on the “My sign-ins” page. Users will have to complete MFA if they have not authenticated within the last 10 minutes of their current session.  
-  
-**Solution**: Prepare your users for this change by informing them that they may be required to re-authenticate more frequently whenever they perform actions like password changes.
-
-**_Note_**: In Message Center, there is a date inconsistency. Enforcement begins on August 15, while Microsoft sets the action deadline as September 15. It’s recommended to take precautionary steps early to prevent any disruption.
-
-  
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1135479](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1135479)
-
-### Sep 30, 2025 – Retirement of Managing Authentication Methods in Legacy MFA &SSPR Policy
-
-Starting Oct 2025, Microsoft no longer allow authentication methods to be managed in the legacy MFA and SSPR policies.
-
-**Solution:** Organizations should use the converged authentication methods policy where methods can be managed centrally for all authentication scenarios including passwordless, MFA and SSPR.
-
-**_Ref:_** [https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage#legacy-mfa-and-sspr-policies](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage#legacy-mfa-and-sspr-policies)
 
 ## October 2025
 
 ### Retirements
 
-### After Oct 1, 2025 – Retirement of Rewrite Suggestions in Word
+### Oct 1, 2025 – Retirement of “Add to existing remediation” Option in Microsoft Defender for Office 365
 
-The Rewrite Suggestions feature in Microsoft Word, which offered AI-generated alternatives for improving clarity, grammar, and tone, will be deprecated after October 1, 2025.  
-  
-**Solution:** Transition to Copilot’s Auto-Rewrite for advanced writing assistance.
+When running a remediation on phishing emails, admins have the option “Add to existing remediation” to apply actions to messages as part of an ongoing remediation job. Since this option was rarely used, Microsoft has decided to retire the option.
 
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1129729](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1129729)
+**Solution:** Use the “Create new remediation” option instead, which allows admins to start a fresh remediation process for the selected emails.
 
-### Oct 15, 2025 - End of Office 2016 and Office 2019 Support
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1146813](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1146813)
 
-Support for Office 2016 and Office 2019 will end on October 15, 2026. After this date, these versions will no longer receive updates or support.  
+### Oct 3, 2025 - Retirement of Web-based “Share to Teams” Experience from Outlook
 
-**Solution:** Upgrade to Microsoft 365 E3 or Office LTSC 2024 for continued updates and support
+The “Share to Teams” option in Outlook allows users to share Outlook content directly to Teams chat or channels. Microsoft plans to retire this standalone experience for users who do not have the Teams desktop installed. When such users try to use this option, they will be prompted to install the Teams desktop app via a launcher page. This update affects Outlook for Windows (new and classic), Outlook for Mac (new and legacy), and Outlook Web App (OWA) clients. The retirement will complete on Oct 3, 2025.
 
-**_Ref:_** [https://techcommunity.microsoft.com/blog/officeeos/get-ready-now-one-year-until-office-20162019-end-of-support/4267801](https://techcommunity.microsoft.com/blog/officeeos/get-ready-now-one-year-until-office-20162019-end-of-support/4267801)
+**Solution**: Install Teams desktop app to use the “Share to Teams” option.
+
+**_Ref_**: [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1140180](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1140180)
+
+### Oct 6, 2025 – Retirement of Outlook Lite App
+
+Microsoft will retire the Outlook Lite app starting Oct 6, 2025, with new installations blocked after this date.
+
+**Solution:** Use the Outlook Mobile app for secure and feature-rich email experience.
+
+**_Ref_**: [https://support.microsoft.com/en-us/office/get-help-with-outlook-lite-for-android-78eb02b2-1c16-4da3-90e2-5edd14bcafa0](https://support.microsoft.com/en-us/office/get-help-with-outlook-lite-for-android-78eb02b2-1c16-4da3-90e2-5edd14bcafa0)
 
 ### Oct 14, 2025 - Microsoft OneNote for Windows 10 retirement
 
@@ -350,11 +57,11 @@ To offer a unified and modern OneNote experience, Microsoft will retire the OneN
 
 ### Oct 31, 2025 - Retirement of the SharePoint SendEmail API
 
-The _SP.Utilities.Utility.SendEmail_ API in SharePoint will be retired on October 31, 2025. Any components, custom code, or Power Automate flows relying on this API should be updated before its retirement.
+The _SP.Utilities.Utility.SendEmail_ API in SharePoint will be retired on October 31, 2025. Admins can identify the usage of the API via Purview audit log. Any components, custom code, or Power Automate flows relying on this API should be updated before its retirement.
 
-Consider transitioning to modern solutions such as the Microsoft Graph API or Power Automate’s Outlook connector for email functionality.
+**Solution:** Consider transitioning to modern solutions such as the Microsoft Graph API or Power Automate’s Outlook connector for email functionality.
 
-**_Ref_**:[https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC921752](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC921752)
+**_Ref_**: [https://support.microsoft.com/en-us/office/retirement-of-the-sharepoint-sendemail-api-b35bbab1-7d09-455f-8737-c2de63fe0821](https://support.microsoft.com/en-us/office/retirement-of-the-sharepoint-sendemail-api-b35bbab1-7d09-455f-8737-c2de63fe0821)
 
 ### After Oct 2025 – End of Support for Legacy Microsoft Outlook for Mac
 
@@ -366,11 +73,39 @@ As part of Microsoft's commitment to a more secure and robust email experience, 
 
 ### New Features
 
+### Early-Oct 2025 – New Admin Control in Microsoft 365 Admin Center for Org-wide Sharing of User-built Copilot Agents
+
+Admins can control who can create org-wide sharing links for agents built using Copilot Studio agent builders. This allows admins to achieve granular control, governance, and better alignment with organizational policies.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1138797](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1138797)
+
+### Early-Oct 2025 – Microsoft Entra ID Free Subscription
+
+  
+Microsoft is adding a free subscription called Entra ID Free to help you keep track of which tenants you own. It will start showing up in Microsoft 365 and Azure portals from October. Microsoft is adding a free subscription called Entra ID Free to help you keep track of which tenants you own.
+
+**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1156361](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1156361)
+
 ### Early-Oct 2025 – AI-Powered Data Security Investigations in Microsoft Purview
 
-Microsoft Purview is launching Data Security Investigations (DSI), an AI-driven solution that helps security teams detect, analyze, and mitigate data risks. It provides deep content analysis, visualizes correlations, and simplifies policy refinement, all within a unified experience.  
+Microsoft Purview is launching Data Security Investigations (DSI), an AI-driven solution that helps security teams detect, analyze, and mitigate data risks. It provides deep content analysis, visualizes correlations, and simplifies policy refinement, all within a unified experience. It will be available in general availability by early-Oct 2025.  
   
 **_Ref_**: [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1047912](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1047912)
+
+### Early-Oct 2025 – New SharePoint Assessment and Dashboard to Streamline Site Governance
+
+Microsoft will introduce a Content Management Assessment (CMA) in SharePoint Advanced Management. This allows admins to view site health, permissions, and lifecycle readiness from a single console. The dashboard consolidates multiple reports such as Data Access Governance and Site Lifecycle Management and provides recommendations.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1148538](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1148538)
+
+### Early-Oct 2025 – Streamlined Same-Device Number Matching and First Run Experience (FRX) in Microsoft Authenticator
+
+Microsoft Authenticator will receive two updates to improve the users’ sign-in experience within early-oct 2025:
+
+*   **Same-device sign-ins will no longer require number matching**: Users can simply tap “Yes” or “No” to confirm, reducing friction, especially on Android. iOS users will also benefit, though app switching may still be needed with the SSO extension.
+*   **Improved First Run Experience (FRX):** Microsoft simplifies account setup by combining multiple consent pages into consolidated one. It also prioritizes signing in with a Microsoft Entra account (work or school) instead of a personal Microsoft account.
+
+**_Ref_:** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1117816](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1117816)
 
 ### Oct 2025 - Information Barriers Upgrade from IB v1 to IB v2
 
@@ -386,34 +121,31 @@ With this feature, organizations can automatically apply DLP restrictions to unc
 
 **_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?searchterms=139457](https://www.microsoft.com/en-us/microsoft-365/roadmap?searchterms=139457)
 
-### Oct 2025 - Room Recommender for Teams Meetings
+### Mid-Oct 2025 – Cross-cloud Synchronization in Microsoft Entra
 
-When no room is booked for a meeting, a new AI feature will suggest available rooms directly in the meeting chat. Suggestions are based on attendee locations and room availability. About an hour before the meeting starts, if two or more attendees are in the same building, the feature will recommend a room to make in-person collaboration easier.  
-  
-This feature enhances meeting efficiency and requires a Teams Premium license to be enabled for organizers.
+Microsoft Entra will introduce cross-cloud synchronization in public preview. This helps admins automate user lifecycle management across Microsoft commercial, US Government, and China clouds, allowing the automated creation, updating, and deletion of users across supported cloud pairs. This is an opt-in feature and will be available completely by mid-Oct 2025.
 
-**_Ref_**: [https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=482191](https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=482191)
-
-### October 2025 – New Personalization Settings in Microsoft Purview
-
-Microsoft will introduce a new personalization page in Microsoft Purview, allowing admins to customize their experience. New features will include the ability to pin/unpin solutions, toggle solution bar visibility, access solution walk-throughs, export personalization data, and delete preferences. This update will help streamline the management of individual admin experiences within Microsoft Purview.
-
-**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=483884](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=483884)
-
-### Mid-Oct 2025 – Prevent Screen Capture in Microsoft Teams
-
-  
-Microsoft is adding a new “Prevent screen capture” feature to help protect meeting confidentiality. Available with Teams Premium, this capability blocks users from taking screenshots or recordings during meetings across supported platforms.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1140178](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1140178)
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1124558](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1124558)
 
 ### Mid-Oct 2025 – Drag and Drop Between Accounts Coming to New Outlook for Windows
 
-The new Microsoft Outlook for Windows adds drag and drop support to attach emails and files between personal or enterprise accounts, improving cross-account productivity. This update also allows attaching content from shared mailboxes or shared folders into another mailbox. Admins can control this capability using the _ItemsToOtherAccountsEnabled_ parameter in _OWAMailboxPolicy_.
+The new Microsoft Outlook for Windows adds drag and drop support to attach emails and files between personal or enterprise accounts, improving cross-account productivity. This update also allows attaching content from shared mailboxes or shared folders into another mailbox. Admins can control this capability using the _ItemsToOtherAccountsEnabled_ parameter in _OWAMailboxPolicy_. The feature will be rolled out in general availability by mid-Oct 2025.
 
-**_Ref:_** [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1104315](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1104315)
+**_Ref_**: [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1104315](https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1104315)
+
+### Late-Oct 2025 – Control External Access by Domain for Specific Users and Groups in Teams
+
+Currently, external access settings can only be configured at the tenant level. Microsoft Teams is adding a new external collaboration feature that lets admins control which users or groups can interact with specific external domains. This provides more granular control, such as piloting with certain departments, restricting high-risk roles, or enabling broader federation.
+
+**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150123](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150123)
 
 ### Enhancements
+
+### Early-Oct 2025 – Updated Sender Email Address for Channel Guest Invitations in Teams
+
+To support backend service improvements and enhance email deliverability, Microsoft Teams is updating the default sender address used for guest access invitations to Teams channels. The sender address will change from [noreply@microsoft.com](mailto:noreply@microsoft.com) to [no-reply@teams.mail.microsoft](mailto:no-reply@teams.mail.microsoft). Admins need to manage the allow lists or email filtering policies to permit the new sender address.
+
+**_Ref:_** [https://admin.microsoft.com/#/MessageCenter/:/messages/MC1148535](https://admin.microsoft.com/#/MessageCenter/:/messages/MC1148535)
 
 ### Oct 2025 – OCR Support for Endpoint in Microsoft Purview Compliance Portal  
 
@@ -426,6 +158,26 @@ Microsoft Purview Compliance Portal will gain Optical Character Recognition (OCR
 Microsoft is adding inbound support for SMTP DANE with DNSSEC to Exchange Online GCC High and DoD. This enhancement will be available in preview starting October 2025, further strengthening email security for these environments.
 
 **_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?featureid=361914&searchterms=361914](https://www.microsoft.com/en-in/microsoft-365/roadmap?featureid=361914&searchterms=361914)
+
+### Mid-Oct 2025 – Unified Licensing View in Microsoft 365 Admin Center
+
+Microsoft is rolling out a refreshed licensing experience in the Microsoft 365 admin center to improve visibility into license assignments.  
+
+1.  A **unified licensing view** will consolidate both user-based and group-based license assignments into a single list.
+2.  The **Licensing Errors** tab will highlight user-level issues from group-based assignments, categorize them, and suggest resolutions.
+3.  A **Users without licenses** page will show users in licensed groups who haven’t received licenses due to insufficient availability.
+
+**_Ref:_** [https://admin.microsoft.com/#/MessageCenter/:/messages/MC1160187](https://admin.microsoft.com/#/MessageCenter/:/messages/MC1160187)
+
+### Late-Oct 2025 – UX Improvements to DLP Alerts in Purview Portal
+
+For faster alert investigation, Microsoft will roll out a unified view experience in the DLP alerts page in Microsoft 365.  
+1\. Events related to each alert will be available directly on the alerts page.  
+2\. Admins can access event details from the events page itself, reducing triage time.  
+3\. Four new columns - Location, DLP policy name, DLP rule name, and Rule action, will provide better visibility.  
+4\. Cache improvements will ensure faster load times and a smoother experience.
+
+**_Ref:_** [https://admin.microsoft.com/#/MessageCenter/:/messages/MC1148526](https://admin.microsoft.com/#/MessageCenter/:/messages/MC1148526)
 
 ### Existing Functionality Changes
 
@@ -448,6 +200,28 @@ During initial tenant setup, organizations are provided with a default onmicroso
 
 **_Ref:_** [https://techcommunity.microsoft.com/blog/exchange/limiting-onmicrosoft-domain-usage-for-sending-emails/4446167](https://techcommunity.microsoft.com/blog/exchange/limiting-onmicrosoft-domain-usage-for-sending-emails/4446167)
 
+### Oct 27, 2025 – Changes to Office Script Admin Settings in Excel
+
+Office Script settings let you control whether users in your organization can create and run scripts in Excel Online to automate tasks. Scripts can be run directly in Excel or integrated into Power Automate flows.  
+  
+Now, Microsoft is moving these settings from the Microsoft 365 admin center to Cloud Policy service for easier management. Admins should manage three specific settings:
+
+1.  Let users automate their tasks in Excel
+2.  Let users with access to Office Scripts share their scripts with others in the organization
+3.  Let users with access to Office Scripts run their scripts with Power Automate.
+
+If you leave these settings unchanged, they will be enabled by default.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150681](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150681)
+
+### Late-Oct 2025 – Short Meeting URLs for Microsoft Teams
+
+Microsoft plans to shorten the meeting URLs for easier sharing across all Teams platforms. The URL will contain only the meeting ID, and other parameters such as tenant ID, organizer ID, conversation ID, and message ID will not be included. The new URL format will be: [https://teams.microsoft.com/meet/<meeting\_id>?p=<HashedPasscode>](https://teams.microsoft.com/meet/%3Cmeeting_id%3E?p=%3CHashedPasscode%3E).  
+  
+By late October 2025, GCC High and DoD environments will be able to experience this change.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC772556](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC772556)
+
 ### Late-Oct 2025 – Removal of Microsoft Graph Beta API Property
 
 By late October 2025, the _sendDeviceOwnershipChangePushNotification_ property will be removed from Microsoft Graph Beta API. This property previously triggered notifications when device ownership changed from personal to corporate, but it is now redundant since notifications are automatically sent.  
@@ -455,6 +229,31 @@ By late October 2025, the _sendDeviceOwnershipChangePushNotification_ property w
 **_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1127211](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1127211)
 
 ### Action Required
+
+### Oct 14, 2025 – End of Support for Office 2016, Office 2019, and Additional Apps
+
+Support for Office 2016, Office 2019, Visio 2016/2019, and Microsoft Project 2016/2019 will end on Oct 14, 2025. After this date, relying on unsupported software can cause security risks, system incompatibilities, and other issues.
+
+**Solution:** Upgrade devices to Microsoft 365, Office LTSC 2024, or Office 365 suite that includes Microsoft 365 apps to mitigate the risks.
+
+**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1154299](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1154299)
+
+### Oct 20, 2025 – Legacy TLS Cipher Suites will be Deprecated in M365 Services
+
+Microsoft 365 will deprecate legacy TLS cipher suites lacking forward secrecy on October 20, 2025. Only specified TLS 1.3 and 1.2 cipher suites will be supported.
+
+**Solution:** Admins need to ensure all systems and clients support these approved suites, update legacy operating systems, adjust security or Group Policy settings if needed.
+
+**_Ref_**: [https://admin.microsoft.com/#/MessageCenter/:/messages/MC1155427](https://admin.microsoft.com/#/MessageCenter/:/messages/MC1155427)
+
+### Oct 20, 2025 – MFA Requirement for Credential Management
+
+Microsoft will require users to complete an MFA prompt for all credential management activities performed on the “My sign-ins” page. Users will have to complete MFA if they have not authenticated within the last 10 minutes of their current session.  
+  
+**Solution**: Prepare your users for this change by informing them that they may be required to re-authenticate more frequently whenever they perform actions like password changes.
+
+**_Note_**: In Message Center, there is a date inconsistency. Enforcement begins on August 15, while Microsoft sets the action deadline as Oct 20, 2025. It’s recommended to take precautionary steps early to prevent any disruption.  
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1135479](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1135479)
 
 ### Oct 31, 2025 – Retirement of Deception Feature in Microsoft Defender for Endpoint
 
@@ -464,26 +263,112 @@ The Deception feature, which used decoys and lures to detect intrusions, will be
   
 **_Ref:_** [https://learn.microsoft.com/en-us/defender-xdr/deception-overview](https://learn.microsoft.com/en-us/defender-xdr/deception-overview)
 
-### November (Attention Needed: 3)
+### November 2025
+
+### Retirements
+
+### Nov 6, 2025 – ‘Mobile Devices’ Settings Page to Be Removed in Outlook  
+
+The ‘Mobile Devices’ page in Outlook Web and the new Outlook currently allows users to view and manage all devices syncing with their mailbox. Microsoft will retire this page completely by Nov 6, 2025, as part of the shift toward modern device management tools.
+
+**Solution:** Users can use the My Account portal or native iOS/Android tools to view, manage, and remotely wipe their connected devices.  
+  
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1130607](https://admin.microsoft.com/Adminportal/Home?#/MessageCenter/:/messages/MC1130607)
+
+### Mid-Nov 2025 - Retirement of Power BI “Visualize the List” and “Visualize the Library” Features in SharePoint Online
+
+The “Visualize the List” and “Visualize the Library” features in SharePoint Online allow users to quickly generate Power BI reports directly from SharePoint lists or libraries. To streamline the reporting experience, Microsoft has planned to retire these features.
+
+**Solution**: Users will need to use Export to Power BI or Power BI Desktop to create reports from SharePoint data.
+
+**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1156359](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1156359)
+
+### Mid-Nov 2025 – Retirement of Microsoft Lists Mobile Apps for iOS and Android
+
+  
+Microsoft will retire the Microsoft Lists mobile apps for iOS and Android by mid-November 2025. After this date, the app will no longer appear in Google Play or the Apple App Store for installation.
+
+**Solution**: Switch to Microsoft List mobile web version.
+
+**_Ref_**: [https://support.microsoft.com/en-us/office/get-started-with-the-microsoft-lists-mobile-app-6abf88b7…](https://support.microsoft.com/en-us/office/get-started-with-the-microsoft-lists-mobile-app-6abf88b7-4c91-4af2-87c5-8d94afe34623)
+
+### New Features
+
+  
+
+### Nov 1, 2025 - Knowledge Agent in SharePoint
+
+Knowledge Agent brings AI-powered features directly into SharePoint to streamline content management and boost Copilot capabilities. It helps to:
+
+*   Organize and enrich content for Copilot and agents to provide accurate answers.
+*   Improve metadata and tagging with auto-fill suggestions and classification.
+*   Keep content up-to-date by detecting broken links, retiring inactive pages, and identifying content gaps.
+*   Assist as a co-author with templates, layout suggestions, and FAQs.
+*   Respond to natural language questions and guide users to the right information.
+
+From November 1, 2025, individual sites can opt in at their own pace.
+
+Ref: [https://techcommunity.microsoft.com/blog/spblog/introducing-knowledge-agent-in-sharepoint/4454154](https://techcommunity.microsoft.com/blog/spblog/introducing-knowledge-agent-in-sharepoint/4454154)
+
+### Early-November 2025 – Data Loss Prevention: New Inline Protection Controls for AI Apps in Microsoft Edge for Business
+
+  
+Microsoft Data Loss Prevention will roll out new inline protection capabilities for Microsoft Edge for Business. This helps admins block users from interacting with sensitive data in AI apps. For example, if users type prompts containing sensitive data into ChatGPT, Google Gemini, or Deepseek, it will be blocked. The inline protection capability complements existing endpoint DLP controls for uploading or pasting sensitive content in the browser.
+
+**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=486368](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=486368)
+
+### Early-Nov 2025 – Malicious URL Protection for Teams Chat and Channels
+
+  
+To improve protection against phishing attacks, Microsoft will display a warning in Teams when users receive malicious URLs in Teams chats and channels. Admins can manage this link protection feature in the Microsoft Teams Admin Center or by using the _\-UrlReputationCheck_ parameter in the _Set-CsTeamsMessagingConfiguration_ PowerShell cmdlet. This feature will reach general availability by November 2025.
+
+**_Ref_**: [https://learn.microsoft.com/en-us/microsoftteams/malicious-url-protection-teams](https://learn.microsoft.com/en-us/microsoftteams/malicious-url-protection-teams)
+
+### Early-Nov 2025 – SMTP Onboarding to App RBAC in Microsoft 365
+
+Granting apps permission to send emails on behalf of mailboxes is now simpler. Currently, admins have to assign permissions individually for each mailbox using PowerShell. With App Role-Based Access Control (RBAC), admins can assign the _SMTP.SendAsApp_ role to an app for group-based or scoped mailbox access. This eliminates per-mailbox configuration, streamlines OAuth SMTP onboarding.
+
+**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=498356](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=498356)
 
 ### Nov 2025 - Microsoft Entra ID to Support Passkey Profiles in Authentication Methods Policy
 
-In November 2025, Microsoft Entra ID will introduce support for passkey profiles in the passkey (FIDO2) authentication methods policy. This update allows admins to apply different passkey configurations to specific user groups, offering more granular control. New schema changes will apply if configurations are made through the Azure or Entra portal during the preview.
+Microsoft Entra ID will introduce support for passkey profiles in the passkey (FIDO2) authentication methods policy. This update allows admins to apply different passkey configurations to specific user groups, offering more granular control. New schema changes will apply if configurations are made through the Azure or Entra portal during the preview.
 
 **_Ref:_** [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1097225](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1097225)
 
-### November 2025 – Retention Policies for Microsoft Planner Content
+### Early-Nov 2025 – Weaponizable File Protection in Microsoft Teams
 
   
-Microsoft is introducing data lifecycle management to Microsoft Planner. This will allow admins to apply retention policies to Planner content, ensuring governance and compliance for project-related data.
+To reduce malware risks, Microsoft will introduce a new feature that blocks messages containing weaponizable file types such as .ace, .ani, .apk, .app, .appx, .arj, .bat, and .cab in Teams chats and channels. Admins can enable this feature in the Microsoft Teams Admin Center or by using the _\-FileTypeCheck_ parameter in the _Set-CsTeamsMessagingConfiguration_ PowerShell cmdlet.
 
-**_Ref_**: [https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=486828](https://www.microsoft.com/en-in/microsoft-365/roadmap?searchterms=486828)
+**_Ref:_** [https://learn.microsoft.com/en-us/microsoftteams/weaponizable-file-protection-teams](https://learn.microsoft.com/en-us/microsoftteams/weaponizable-file-protection-teams)
 
-### Nov 2025 - Introducing Data Lifecycle Management for Microsoft Planner
+### Nov 2025 – Microsoft Purview Compliance Portal: Scan Existing Files in SharePoint and OneDrive for Sensitive Information
 
-Compliance admins can now create retention policies to manage content in Microsoft Planner, including tasks from plans associated with Microsoft 365 groups.
+A new capability in the Microsoft Purview Compliance Portal will allow admins to scan existing files at rest in SharePoint and OneDrive for Business to detect sensitive information. This feature will roll out in preview by November 2025.
 
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=486828](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=486828)
+**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=499076](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=499076)
+
+### Nov 2025 – Enterprise Application Insights for SharePoint Sites
+
+  
+SharePoint admins can use the new “Enterprise Application Insights” report to gain visibility into sites accessed by third-party applications registered in the tenant. The report shows detailed information such as application permissions and request counts, helping admins take action more effectively.  
+  
+**Note**: This is part of SharePoint Advanced Management capabilities.
+
+**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=417481](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=417481)
+
+### November 2025 - Insider Risk Management- Risky AI Usage
+
+New detections in Insider Risk Management will be generally available, enabling admins to identify risky AI activity, such as sensitive prompts, risky intents, and AI-generated sensitive content. This applies to M365 Copilot, Copilot Studio, and ChatGPT Enterprise, contributing to Adaptive Protection risk levels.
+
+**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=480730](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=480730)
+
+### Nov 2025 - Integration of Insider Risk Management and Data Security Investigation
+
+Microsoft Purview now integrates Insider Risk Management (IRM) with Data Security Investigation (DSI). This update allows data security admins to launch a pre-scoped investigation directly from an IRM case, simplifying the investigation of risky user behavior and assessing potential impact after an incident.
+
+**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=486827](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=486827)
 
 ### Nov 2025 - New Message Trace on Graph API
 
@@ -491,7 +376,41 @@ Microsoft plans to launch the new Message Trace on Microsoft Graph API in Public
 
 **_Ref:_** [https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1092458](https://admin.microsoft.com/?ref=MessageCenter/:/messages/MC1092458)
 
-### December (Attention Needed: 4)
+### Enhancements
+
+### Nov 2025 – Require Explicit Consent for Recording and Transcription in Teams 1:1 Calls
+
+  
+Microsoft Teams is expanding the consent requirement for recording and transcription to include 1:1 calls. Admins can enforce this via a new Teams Calling policy setting. When a call is recorded or transcribed, the other participant’s camera, microphone, and screen sharing are automatically disabled until they provide explicit consent.
+
+**_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=503295](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=503295)
+
+### Existing Functionality Changes
+
+### Nov 2025 - New Calendar Experience in Microsoft Teams
+
+Microsoft Teams is introducing a new calendar experience to enhance productivity across Microsoft 365. It combines familiar features with Microsoft Copilot and Microsoft Places for seamless collaboration. As part of this change, the legacy calendar will be retired, and the toggle to switch between old and new calendars will be removed.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1129730](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1129730)
+
+### Action required
+
+### Nov 2025 – Retirement of Microsoft Places Team Guidance Feature
+
+  
+The Team Guidance feature in Microsoft Places, which helped managers manage in-office days and team priorities, is being retired. Microsoft is retiring it to simplify collaboration and encourage teams to use Microsoft 365 Groups for scheduling and coordination.
+
+**Solution:** Begin transitioning to Microsoft 365 Groups for team scheduling.
+
+**_Ref_**: [https://support.microsoft.com/en-us/office/retirement-of-places-team-guidance-ba959478-e979-4f76-b235-1afacf1b6185](https://support.microsoft.com/en-us/office/retirement-of-places-team-guidance-ba959478-e979-4f76-b235-1afacf1b6185)
+
+### December (Attention Needed: 11)
+
+### Dec 2025 – Automatically Set Work Location by Connecting to a Wi-Fi Network
+
+Microsoft Teams will introduce a feature that automatically sets users’ work locations when they connect to the organization’s Wi-Fi or certain peripherals. This helps deliver location-based experiences without manual input.
+
+**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=488800](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=488800)
 
 ### Dec 2025 – Multi-Selectable DLP Policies as Insider Risk Management Triggers
 
@@ -530,20 +449,48 @@ All retention actions will be logged in the Microsoft Purview Audit log for trac
 
 **_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=117425](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=117425)
 
+### December 2025 - Two New Email Indicators in Insider Risk Management
+
+Admins can use the two new email indicators in Insider Risk Management as triggers.  
+They are,
+
+1.  **Emails with attachments to free public domains** – Flags users when business-sensitive data is sent from a work account to a free public domain email.
+2.  **Emails with attachments to self** – Flags users when business-sensitive data is sent from a work account to their personal email or themselves.
+
+**_Ref_**: [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=496149](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=496149)
+
 ### Dec 2025 – Inline Detection of Sensitive Data Shared Over Network via Microsoft Purview
 
 Microsoft Purview now integrates with your existing Secure Access Service Edge (SASE) solution, extending Data Loss Prevention (DLP) capabilities to the network layer. This enables admins to intercept, inspect, and enforce DLP policies on network traffic carrying sensitive data.
 
 **_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=488807](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=488807)
 
-### Late-Dec 2025 – Retirement of Mailbox Audit Log Cmdlets in Exchange Online
+### Dec 2, 2025- Update Firewall Rules for Intune via Azure Front Door
+
+As part of Microsoft’s Secure Future Initiative (SFI), starting on or after December 2, 2025, Microsoft Intune network endpoints will use Azure Front Door IP addresses. Since Basic Mobility and Security for Microsoft 365 relies on Intune, customers using firewall allowlists based on IP addresses or service tags must update them.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150664](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1150664)
+
+### Mid-Dec 2025 - Data Lifecycle Management: Retention based on “last accessed” for OneDrive and SharePoint files
+
+Microsoft will introduce a "When items were last accessed" option in Purview retention policies. This will allow admins to configure retention policies based on file access history in OneDrive and SharePoint, enabling the removal of outdated data and enhancing Microsoft 365 Copilot responses. This update will be rolled out to preview by mid-Dec 2025.
+
+**_Ref_**: [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC999442](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC999442)
+
+### End of 2025 – Retirement of Mailbox Audit Log Cmdlets in Exchange Online
 
 By late December 2025, Microsoft will retire the Search-MailboxAuditLog and New-MailboxAuditLogSearch cmdlets in Exchange Online.  
   
 **Solution**: Use Search-UnifiedAuditLog instead.  
 **_Ref_**: [https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-exchange-online-search-mailboxauditlog-and-new-mailboxauditlogsearch-w/4366310](https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-exchange-online-search-mailboxauditlog-and-new-mailboxauditlogsearch-w/4366310)
 
-## Q1 2026 (Attention Needed: 12)
+## Q1 2026 (Attention Needed: 13)
+
+### Early-Jan 2026 - Policy Alerts Improvements in Microsoft Purview Communication Compliance
+
+Communication Compliance is enhancing policy alert customization. Admins will have the ability to set the alert frequency for each policy and adjust the email alert frequency and recipients directly within the policy creation wizard, via the new alerts page. This update will be generally available from mid-May 2025.
+
+**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC920304](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC920304)
 
 ### Jan 13, 2026 – End of Extended Support for Microsoft Advanced Threat Analytics 1.x
 
@@ -627,7 +574,7 @@ The Require approved client app control in Azure Active Directory (Azure AD) Con
 
 **_Ref:_** [https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/microsoft-entra-change-announcements-march-2023-train/ba-p/2967448)
 
-## Q2 2026 (Attention Needed: 8)
+## Q2 2026 (Attention Needed: 7)
 
 ### April 2026 – External Recipient Rate Limit in Exchange Online
 
@@ -704,6 +651,14 @@ Microsoft will discontinue support for SharePoint Alerts. Existing alerts can no
 **Solution:** Microsoft recommends migrating SharePoint Alerts to Power Automate or SharePoint Rules. Use the Microsoft 365 Assessment tool to review alerts and plan the move.
 
 **_Ref_**: [https://support.microsoft.com/en-us/office/sharepoint-alerts-retirement-813a90c7-3ff1-47a9-8a2f-152f48b2486f](https://support.microsoft.com/en-us/office/sharepoint-alerts-retirement-813a90c7-3ff1-47a9-8a2f-152f48b2486f)
+
+### Sep 17, 2026 - Retirement of Legacy Education LTI Tools
+
+Microsoft is retiring legacy Education LTI tools (Teams Assignments, OneDrive, OneNote Class Notebook, Reflect) on September 17, 2026, replacing them with a unified Microsoft 365 LTI tool. Users and admins will need to transition to the Microsoft 365 LTI unified tool.
+
+Ref:
+
+[https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1160188](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1160188)
 
 ## Q4 2026 (Attention Needed: 3)
 
