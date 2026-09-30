@@ -4,338 +4,23 @@ Join us in this blog as we explore the dynamic world of Microsoft 365. 🌟 We�
 
 🚀Discover the **key changes, deprecations,** and **end-of-support** scenarios that require your attention. From deprecated features to configuration modifications and essential upgrade plans, we’ve got you covered! Make informed decisions and ensure a smooth transition. ⚡️
 
+**_Note:_** **_Interested in exploring past month’s features and deprecations?_** _Look no further! You can find a comprehensive history of all the changes in our_ [**_GitHub_**](https://github.com/admindroid-community/Microsoft365-Upcoming-Deprecations-and-Changes/blob/main/Microsoft%20365-%20Upcoming%20Changes%20and%20End-of-Support%20Milestones.md) _repository._
 
 ## Microsoft 365 Upcoming Changes and Deprecations List:
 
 Here is a list of changes categorized by month and year:
 
-*   September 2026 (Retirements: 7, New Features: 11, Enhancements: 7, Existing Functionality Changes: 7, Action Needed: 4, Live: 3)
-*   October 2026 (Retirements: 9, New Features: 10, Enhancements: 6, Existing Functionality Changes: 2, Action Needed: 3)
-*   November 2026 (Attention Needed: 5)
-*   December 2026 (Attention Needed: 5)
-*   2027 (Attention Needed: 16)
-
-## September 2026
-
-Retirements: 7 | New Features: 11 | Enhancements: 7| Existing Functionality Changes: 7 | Action Needed: 4 | Live Now: 3
-
-### Retirements
-
-### September 2, 2026 – Power Automate Retires the Legacy Chatbot
-
-Microsoft will retire the legacy chatbot experience in the Power Automate portal starting September 2, 2026. After the retirement, users will no longer be able to access the legacy chatbot.
-
-Help, documentation, and support resources will remain available through the Help (?) menu in the Power Automate portal. Existing flows and other Power Automate functionality will not be affected.
-
-**Solution:** Inform affected users about the retirement and direct them to the available Help (?) resources for assistance.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1448890](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1448890)
-
-### Early-September 2026 – Microsoft Teams Retires Android Device Management in Teams Admin Center
-
-Microsoft is transitioning Teams Android device management from the Teams admin center (TAC) to the Teams Rooms Pro Management portal (PMP). While the public-cloud migration to PMP is already complete, Microsoft will begin retiring overlapping Android device-management capabilities in TAC in early September 2026.
-
-**Solution:** Move Android device-management operations to the Teams Rooms Pro Management portal (PMP) and update administrator processes accordingly.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1227622](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1227622)
-
-### Early-September 2026 – Exchange Admin Center Retires the “Other Features” Page
-
-Microsoft will retire the _Other Features page_ in the Exchange admin center beginning in early September 2026. The page mainly provides links to administrative experiences hosted in other Microsoft portals. No Exchange Online workloads, settings, policies, or management capabilities are being removed.
-
-**Solution:** Update documentation, bookmarks, and administrative procedures that reference the retired page. Replace those references with direct links to the relevant Microsoft admin portals.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1452374](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1452374)
-
-### September 17, 2026 – Retirement of Legacy Education LTI Tools
-
-On September 17, 2026, Microsoft will retire legacy Education LTI tools such as Teams Assignments, OneDrive, OneNote Class Notebook, and Reflect. These tools will be replaced by a single Microsoft 365 LTI unified tool.
-
-**Solution:** Migrate to and configure the Microsoft 365 LTI unified tool, and ensure users and admins are prepared for the transition.
-
-**_Ref:_** [https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1160188](https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/MC1160188)
-
-### September 24, 2026 – Microsoft Edge Retires Windows Information Protection and Defender Application Guard
-
-Microsoft Edge will retire support for Windows Information Protection (WIP) and Microsoft Defender Application Guard (MDAG) by September 24, 2026. These capabilities have already been removed from Windows 11 version 24H2.
-
-**Solution:** Organizations still using WIP or MDAG on Windows 10 should migrate to supported alternatives, such as Microsoft Purview Information Protection, Purview DLP, or Microsoft Edge's built-in security capabilities.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1459132](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1459132)
-
-### September 26, 2026 – Defender for Cloud Apps Retires Cloud Application Administrator Support
-
-Microsoft Defender for Cloud Apps is retiring Cloud Application Administrator support for App Governance. This change aligns App Governance with the standard Microsoft Entra roles used across Microsoft Defender and supports future RBAC enhancements. Starting September 26, 2026, administrators assigned only this role will no longer be able to access App Governance.
-
-**Solution:** Review affected administrator assignments and assign a supported role, such as Security Administrator, Compliance Administrator, Application Administrator, or Global Reader, before the enforcement date.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462464](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462464)
-
-### September 30, 2026 – Deprecation of Custom Controls in Microsoft Entra Conditional Access
-
-Microsoft is officially retiring Conditional Access Custom Controls on September 30, 2026. This legacy preview feature is being deprecated as Microsoft moves away from the older custom-control approach for integrating third-party authentication providers.
-
-**Solution:** Admins should migrate to External MFA before the retirement date to avoid disruption.
-
-**_Ref:_** [https://techcommunity.microsoft.com/blog/microsoft-entra-blog/external-mfa-in-microsoft-entra-id-is-now-generally-available/4488926](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/external-mfa-in-microsoft-entra-id-is-now-generally-available/4488926#:~:text=Migration%20from%20Custom%20Controls)
-
-### New Features
-
-### September 2026 – Microsoft Purview Enhances DLP Alert Aggregation
-
-Microsoft Purview will enhance Data Loss Prevention (DLP) alerting by aggregating alerts based on common user entities, even when multiple DLP rules are triggered. This consolidates related alert events into a single alert, helping reduce alert noise, simplify investigations, and provide better context for policy violations.
-
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567010](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567010)
-
-### September 2026 – Mail Merge (Advanced) in Outlook on the Web & New Outlook for Windows
-
-Outlook on the web and the new Outlook for Windows will receive enhanced Mail Merge (Advanced) capabilities. With this update, users will be able to insert dynamic fields into email templates, enabling more personalized and customized communication at scale.
-
-This enhancement simplifies the process of tailoring messages, making it more efficient to send targeted and professional emails.
-
-**_Ref:_** [https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=423047](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=423047)
-
-### September 2026 – New Secure Workflow to Bypass Legal Holds and Retention Policies in Microsoft Purview
-
-Admins will have the ability to permanently delete sensitive Exchange mailbox content, bypassing retention policies and eDiscovery holds. This will be possible through the “Priority Cleanup Administrator” role, which grants authorized users’ permission to initiate Priority Cleanup for Exchange, allowing exceptions to standard retention and legal hold policies.
-
-Since this process is irreversible and overrides existing policies, Microsoft has built-in approvals and special auditing for security.
-
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=392838](https://www.microsoft.com/en-in/microsoft-365/roadmap?filters=&searchterms=392838)
-
-### September 2026: Pay-As-You-Go Billing for Extra Microsoft SharePoint Storage
-
-Currently, organizations must purchase the Office 365 Extra File Storage add-on for additional SharePoint storage, which is billed in per-GB increments and can result in paying for unused capacity.
-
-With this update, Microsoft is making [pay-as-you-go billing for extra SharePoint storage](https://blog.admindroid.com/pay-as-you-go-billing-for-extra-sharepoint-storage/) generally available worldwide. Storage is measured via a consumption-based meter, allowing organizations to pay only for what they use and improving overall cost efficiency.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1330893](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1330893)
-
-### Early-September 2026 – Microsoft Defender for Office 365 Adds Prompt Injection Protection for Email
-
-Microsoft Defender for Office 365 introduces prompt injection protection to detect and block malicious email content designed to manipulate AI assistants and agents. Emails identified as prompt injection attacks are classified as _High Confidence Phish_ and automatically quarantined. The feature is enabled by default for organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 E5.
-
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1422060](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1422060)
-
-### Early-September 2026 – eSignature for Microsoft 365 Recipient Groups
-
-When a specific signer is unavailable, workflows may be interrupted, causing delays in the signing process. To improve reliability, eSignature for Microsoft 365 recipient groups is being introduced, allowing a single recipient slot to be assigned to up to 10 people. The first available signer can complete the signing requirement. The feature is enabled by default and doesn’t require any admin configuration.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1290821](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1290821)
-
-### Mid-September 2026 – Full Workload Backup for SharePoint, OneDrive, and Exchange Enters Public Preview
-
-A [Full Workload Backup](https://blog.admindroid.com/microsoft-365-backup-for-onedrive-sharepoint-and-exchange/#%F0%9F%91%89June-2026-Update%3A-Microsoft-Introduces-Full-Workload-Backup-for-SharePoint-Online%2C-Exchange-Online%2C-and-OneDrive) capability is being introduced for Microsoft 365 Backup, enabling organizations to create a single backup policy for an entire workload, including SharePoint, OneDrive, and Exchange Online. This policy will automatically protect all eligible artifacts within the selected workload.
-
-The GA rollout will begin in mid-September 2026.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1387526](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1387526)
-
-### Mid-September 2026 – Microsoft 365 Introduces a New File and Folder Sharing Experience
-
-Microsoft 365 is introducing a new file and folder sharing experience centered around a single **hero link** for each file or folder. The new experience allows users to update the existing sharing link when access requirements change instead of creating and distributing a new link.
-
-By default, the hero link is limited to people explicitly added to the file or folder, while administrators can configure the default audience at the SharePoint site collection or OneDrive level.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454378](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454378)
-
-### Mid-September 2026 – Microsoft Purview Adds Lifecycle Status Controls to Adaptive Scopes
-
-Microsoft Purview is adding lifecycle status controls for adaptive scopes, letting admins control which active, inactive, or soft-deleted users and site owners are included.
-
-Newly created adaptive scopes will evaluate only active recipients and site owners by default. Administrators can configure scopes to include inactive or soft-deleted users when required. The update also adds support for ISO 8601 duration values for selected date attributes in the advanced query builder.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450128](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450128)
-
-### Late-September 2026 – Microsoft Purview Extends DLP Protection to the Network Layer
-
-Microsoft Purview is extending Data Loss Prevention (DLP) to the network layer through integration with Microsoft Entra Internet Access, a component of Entra Global Secure Access (GSA). This enables organizations to inspect and protect sensitive data in network traffic, including AI prompts, files, and cloud service interactions, using existing Purview DLP policies.
-
-The integration also enables administrators to audit or block sensitive data transfers and investigate alerts and incidents through Microsoft Purview and Microsoft Defender.  
-
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1419797](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1419797)
-
-### September 30, 2026 – New Outlook for Windows Becomes Available for GCC High and DoD Environments
-
-Microsoft is introducing the new Outlook for Windows experience for all GCC High and DoD environments, providing users with access to modern Outlook features. The experience will be available as an opt-in feature and is off by default.
-
-Existing organizational settings remain unchanged, and users are not automatically switched to the new Outlook. Users can switch between the new and classic Outlook experiences at any time using the built-in toggle.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1338816](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1338816)
-
-### Enhancements  
-
-### September 2026 – Microsoft Purview Extends DLP and Auto-Labeling to Non-Microsoft Connected Apps
-
-Microsoft Purview plans to expand DLP and Information Protection auto-labeling to non-Microsoft connected apps, including Google Workspace, Box, Dropbox, and Salesforce.
-
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=568075](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=568075)
-
-### Mid-September 2026 – Microsoft Purview Extends Endpoint DLP Protection to Excluded Windows Folders
-
-Microsoft Purview Endpoint Data Loss Prevention (DLP) will extend protection to sensitive files stored in previously excluded Windows folders, such as AppData and temporary directories. Policy enforcement will apply during egress activities, including copying, printing, saving to network shares, and uploading to cloud services.
-
-*   Audit mode: User actions continue and are logged for review.
-*   Block mode: Restricted actions, such as copying, printing, or uploading sensitive files, are blocked.
-*   If both policies apply: Block mode takes precedence over Audit mode.
-
-Before enabling this feature, deploy Microsoft Defender anti-malware _client version 4.18.26051_ or later. Review excluded folder paths, update Endpoint DLP policies, and validate the changes in _Audit_ mode before enabling _Block_ mode.
-
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1384420](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1384420)
-
-### Mid-September 2026 – Updates to Tenant External Recipient Rate Limit Quotas for New, Trial, and Education Tenants
-
-Microsoft is updating Tenant External Recipient Rate Limit (TERRL) quotas for new, trial, and education tenants in Exchange Online. The changes adjust how external recipient limits are calculated based on tenant age and licensing conditions.
-
-The update is intended to provide more appropriate limits for different tenant types while helping protect Exchange Online from abuse.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454397](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454397)
-
-### Late-September 2026 – Microsoft Defender Automatically Enables Unified RBAC for Tenants
-
-Starting in late September, Microsoft will begin automatically enabling unified RBAC for eligible tenants. Administrators will receive advance notification before their tenant is enabled, and existing roles will be imported into the unified RBAC model.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1457836](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1457836)
-
-### Late-September 2026 – Microsoft Teams Introduces a Refreshed In-Meeting Experience with Simpler Controls
-
-Microsoft Teams is refreshing the in-meeting experience with redesigned meeting controls and a smarter sharing panel. Meeting controls will be simplified and reorganized, while the updated share panel will provide easier access to content-sharing options and improved previews.
-
-The refreshed experience is designed to make common meeting actions easier to find and reduce accidental actions when presenting or leaving meetings.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1317197](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1317197)
-
-### Late-September 2026: Hard Delete SharePoint and OneDrive Files in Microsoft Purview
-
-Microsoft Purview Data Lifecycle Management is introducing a new hard delete option in Priority Cleanup policies. The update adds a “Delete data permanently” action for supported SharePoint and OneDrive file types, allowing organizations to permanently remove files from storage. Deleted files will no longer be discoverable through Microsoft 365 services. The capability also applies to files governed by retention policies and retention labels.
-
-The GA rollout will begin in late September 2026.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1261587](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1261587)
-
-### September 30, 2026 – Microsoft Teams Introduces New PowerShell Controls for Federated Group Chats
-
-Microsoft Teams is introducing [PowerShell controls for federated group chats](https://blog.admindroid.com/manage-federated-group-chats-with-teams-powershell-controls/) to enforce stricter external access and mutual federation policies. Disabled by default, these controls are managed using the _Set-CsTenantFederationConfiguration_ cmdlet.
-
-Starting September 30, 2026, the _EnableMutualFederationForChatParticipants_ parameter will be available. When enabled, it requires all participating organizations in a federated group chat to have mutual federation configured.
-
-Review your external access policies and Allowed Domains configuration before enabling these controls. Evaluate how they may affect existing federated group chats and users with restricted federation access.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1423114](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1423114)
-
-### Existing Functionality Changes
-
-### September 2026 – Microsoft Expands Archive Mailbox Capacity Beyond 1.5 TB
-
-Currently, auto-expanding archive mailboxes are limited to 1.5 TB, after which they stop working. This limit has now been removed, allowing archive mailboxes to grow beyond 1.5 TB automatically to support ongoing retention needs.
-
-This feature follows a consumption-based pricing model for storage beyond 1.5 TB, costing $0.25 per GB per month (or $0.0082 per GB per day).
-
-**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=560820#Roadmap](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=560820#Roadmap)
-
-### September 2026 – Prepare for the New Intune Device Page Becoming the Default
-
-Microsoft Intune is making the new device management experience the default device page in the Intune admin center. The refreshed experience provides an updated interface for viewing and managing device information and replaces the existing device page as the default experience.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1456780](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1456780)
-
-### September 1, 2026 – Microsoft Entra Makes Passkeys the Default Authentication Method
-
-Microsoft Entra will make passkeys the default authentication experience starting September 1, 2026, as Microsoft moves away from SMS and voice-based authentication toward phishing-resistant MFA. Users will be prompted to register a passkey during sign-in.
-
-Organizations should prepare users for the new passkey registration experience and review their authentication policies to ensure they are ready for the transition.  
-  
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1426371](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1426371)
-
-### Mid-September 2026 – Microsoft Purview Changes Just-in-Time Audit Behavior for Endpoint DLP
-
-Microsoft Purview Endpoint Data Loss Prevention (DLP) is changing how Just-in-Time protection collects audit events. Previously, user activities were automatically audited when Just-in-Time protection was enabled. Going forward, admins must explicitly configure which users or groups are included in the audit scope, giving organizations greater control over audit data collection and reducing unnecessary audit noise.
-
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1387575](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1387575)
-
-### September 24, 2026 – Copilot Chat Edge Endpoint Change
-
-Microsoft is updating the endpoint used by Copilot Chat in Microsoft Edge. Organizations may need to review network, firewall, proxy, or allowlist configurations to ensure continued access to Copilot Chat after the endpoint change.
-
-Admins should verify that the required Microsoft domains and endpoints are permitted in their organization's network environment to prevent connectivity issues.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1456610](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1456610)
-
-### Late-September 2026 – Update Office Apps to Keep Read Aloud, Transcription, and Dictation Features
-
-Read Aloud, Transcription, and Dictation features in Microsoft 365 Office apps will stop working on versions earlier than 16.0.18827.20202 because of backend upgrades. This change takes effect late September 2026 for Worldwide tenants and November 2026 for GCC, GCC High, and DoD environments.
-
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1127222](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1127222)
-
-### Late-September 2026 – Teams Channel Whiteboard Storage Moves to SharePoint
-
-Microsoft is updating the default storage location for whiteboards created in Teams Channel tabs. Starting in late Sep 2026, these files will be stored in the channel’s associated SharePoint site instead of the creator’s OneDrive. Enabled by default, this change prevents access issues caused by sharing settings, Information Barriers, and Conditional Access policies.
-
-With this update, Whiteboards inherit SharePoint-based Microsoft Purview controls such as DLP, sensitivity labels, retention, eDiscovery, and audit logging, while also improving centralized compliance monitoring and reporting.
-
-**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1253753](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1253753)
-
-### Action Required  
-
-### September 1, 2026 – Microsoft Defender Retires Standalone Automated Investigation and Response (AIR)
-
-Microsoft Defender will retire the standalone Automated Investigation and Response (AIR) experience on September 1, 2026. AIR will no longer support manual triggering, as its detection and response capabilities are already integrated into always-on antivirus protection and run automatically. For on-demand investigations, administrators can use full antivirus scans.
-
-**Solution:** Organizations that trigger AIR through playbooks, scripts, or integrations must update those workflows before the retirement. Replace AIR-based workflows with full antivirus scan workflows for on-demand investigations before September 1, 2026.
-
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1411577](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1411577)
-
-### September 1, 2026 – Update Power Platform Flows Using SharePoint Thumbnail URLs
-
-Microsoft is changing how SharePoint thumbnail URLs are generated and accessed. Power Platform flows that directly reference or construct SharePoint thumbnail URLs may stop working as expected after the change.
-
-**Solution:** Review Power Automate flows and other Power Platform solutions that use SharePoint thumbnail URLs. Update affected flows to use supported methods for retrieving thumbnail information to prevent broken images or flow failures.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454816](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1454816)
-
-### Mid-September 2026 – External Messaging Limits for onmicrosoft.com-Only Organizations in Microsoft Teams
-
-Microsoft Teams is introducing external messaging limits for organizations that use only an **onmicrosoft.com** domain. These limits are intended to help protect the Teams messaging environment and reduce unwanted external communication.
-
-**Solution:** Review your organization's external messaging requirements and ensure users who need to communicate externally are configured with the appropriate supported domain.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1463510](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1463510)
-
-### September 30, 2026 – Upgrade to Microsoft Entra Connect v2.5.79.0 or Later
-
-As part of Microsoft’s ongoing security hardening, Microsoft Entra Connect now uses the Microsoft Entra AD Synchronization Service, a dedicated first-party application, to synchronize Active Directory with Microsoft Entra ID.
-
-**Solution:** Organizations must upgrade to Microsoft Entra Connect version 2.5.79.0 or later by September 30, 2026, to ensure uninterrupted synchronization.
-
-**_Ref:_** [https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-upgrade-previous-version?WT.mc\_id=Portal-Microsoft\_AAD\_IAM](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-upgrade-previous-version?WT.mc_id=Portal-Microsoft_AAD_IAM)
-
-### Live in September
-
-### Microsoft Teams Adds Security Detection Report
-
-Microsoft Teams now includes a Security Detection Report in the Teams admin center, giving administrators a centralized view of messaging security detections. The report helps identify potential threats such as impersonation attempts, malicious URLs, and weaponizable file types.
-
-Administrators can review detection activity in one place and export detailed report data to support security investigations and response workflows.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1311977](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1311977)
-
-### New Report for “Everyone” and “Everyone except external users” in SharePoint
-
-Microsoft SharePoint now includes a new report in the SharePoint admin center that provides item-level visibility into permissions granted through the Everyone and Everyone except external users special groups.
-
-The report helps administrators identify broadly shared content across SharePoint and OneDrive, supporting governance, oversharing reviews, and permission remediation without changing existing permissions.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450131](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450131)
-
-### September 2026 – New SharePoint Experience
-
-Microsoft rolled out the redesigned SharePoint experience with a refreshed app bar and new Discover, Publish, and Build hubs. The update also introduced AI-assisted capabilities for users with a Microsoft 365 Copilot license and renamed Followed Sites and Saved for Later to Favorites.
-
-The new experience was made available automatically, with existing SharePoint content transitioning to the redesigned experience.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher#/MessageCenter/:/messages/MC1240699](https://admin.cloud.microsoft/?source=applauncher#/MessageCenter/:/messages/MC1240699)
+*   October 2026 (Retirements: 8, New Features: 12, Enhancements: 7, Existing Functionality Changes: 5, Action Needed: 4, Live: 1)
+*   November 2026 (Retirements: 3, New Features: 6, Enhancements: 2, Existing Functionality Changes: 2, Action Needed: 1)
+*   December 2026 (Attention Needed: 8)
+*   Q1 2027 (Attention Needed: 11)
+*   Q2 2027 (Attention Needed: 3)
+*   Q3 2027 (Attention Needed: 1)
+*   Q4 2027 (Attention Needed: 2)
 
 ## October 2026
+
+Retirements: 8 | New Features: 12 | Enhancements: 7| Existing Functionality Changes: 4 | Action Needed: 5 | Live Now: 1
 
 ### Retirements
 
@@ -347,14 +32,6 @@ Starting October 1, 2026, Microsoft will start blocking EWS requests from non-Mi
 
 **_Ref_**_:_ [https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-exchange-web-services-in-exchange-online/ba-p/3924440](https://techcommunity.microsoft.com/t5/exchange-team-blog/retirement-of-exchange-web-services-in-exchange-online/ba-p/3924440)
 
-### October 1, 2026 – Microsoft Teams and Google Calendar Sync Retirement
-
-Microsoft Teams will retire calendar synchronization with Google Workspace on October 1, 2026. Calendars previously configured for synchronization will stop syncing, and administrators will no longer be able to manage calendar synchronization through the Teams Admin app.
-
-**Solution:** Use the Microsoft Teams Meeting add-on for Google Workspace to schedule Teams meetings directly from Google Calendar.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462469](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462469)
-
 ### October 01, 2026- Sign-in Risk Policy and User Risk Policy Retirement from Entra ID Protection
 
 User risk policy or Sign-in risk policy UX in Entra ID Protection (formerly Identity Protection) will be retired on October 1, 2026.
@@ -363,7 +40,7 @@ User risk policy or Sign-in risk policy UX in Entra ID Protection (formerly Iden
 
 **_Ref_**_:_ [https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/what-s-new-in-microsoft-entra/ba-p/3796395](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/what-s-new-in-microsoft-entra/ba-p/3796395)
 
-### October 01, 2026 – Retirement of SharePoint One-Time Passcode for External Sharing
+### October 2026 – Retirement of SharePoint One-Time Passcode for External Sharing
 
 Microsoft will retire SharePoint One-Time Passcode authentication for external sharing beginning in October 2026. As part of this change, external sharing authentication in OneDrive and SharePoint will transition to Microsoft Entra B2B. External users who previously accessed content using OTP will receive access denied unless a corresponding guest account exists.
 
@@ -381,7 +58,7 @@ Microsoft Teams Live Chat will no longer be supported starting October 5, 2026. 
 
 **Solution:** Remove the Microsoft Teams live chat widget from all websites, notify affected users, and implement an alternative customer engagement solution.
 
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1449174](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1449174)
+**_Ref_**: [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1449174](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1449174)
 
 ### October 13, 2026- Retirement of Microsoft Publisher
 
@@ -399,21 +76,23 @@ Microsoft will retire Office LTSC 2021, Visio LTSC 2021, Microsoft Project LTSC 
 
 **_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1278920](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1278920)
 
-### October 2026 – Microsoft Teams Retires Calendar Functionality for Older Mobile App Versions
+### Mid-Oct 2026 - Retirement of SharePoint Page Agent (Frontier)
 
-Microsoft Teams users on iOS and Android must update to the latest mobile app by October 2026 to continue using Calendar. Calendar functionality will no longer be available in older Teams mobile app versions. Desktop and web clients are not affected.
+The SharePoint Page Agent (Frontier) helps users turn content from Microsoft 365 Copilot conversations into draft SharePoint pages and news posts. Microsoft is retiring this agent as similar AI-powered page and news authoring capabilities are now available directly in SharePoint through Copilot in SharePoint.
 
-**Solution:** Ensure users update to the latest Teams mobile app and configure managed devices to deploy app updates automatically. If your organization still relies on Exchange Web Services (EWS) for Teams Calendar functionality, you can extend EWS support until April 2027, but plan to transition before it is retired.
+After the retirement, users will no longer be able to create SharePoint pages or news posts using the SharePoint Page Agent.
 
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567313](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567313)
+**Solution:** Users can create and refine SharePoint pages and news posts directly using Copilot in SharePoint.
 
-### October 26, 2026 – Microsoft Entra ID Retires Custom CSS Positioning Properties in Company Branding
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481325](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481325)
 
-As part of Microsoft’s Secure Future Initiative (SFI), Microsoft Entra ID will retire support for custom CSS positioning properties used in company branding starting October 26, 2026. Properties such as position, margin, transform, opacity, overflow, filter, and other layout-related CSS properties will no longer be supported to improve sign-in security and phishing resistance. Branding elements that rely on these retiring properties will remain visible but may revert to their default placement.
+### Oct 16, 2026 - Retirement of Standalone Microsoft Whiteboard Apps
 
-**Solution:** Review company branding configurations and remove unsupported CSS positioning properties. Update branding elements that depend on these properties to ensure they display as expected.
+Microsoft will retire the standalone Whiteboard apps for Windows, iOS, and Android on October 16, 2026. After this date, the standalone apps will no longer be supported for work or school accounts or personal Microsoft accounts.
 
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1435782](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1435782)
+**Solution:** Users can continue using Whiteboard through Microsoft Teams or supported web experiences.
+
+**_Ref_**: [https://support.microsoft.com/en-us/whiteboard/retirement-standalone-microsoft-whiteboard-apps](https://support.microsoft.com/en-us/whiteboard/retirement-standalone-microsoft-whiteboard-apps)
 
 ### New Features
 
@@ -423,45 +102,47 @@ Microsoft Entra ID is expanding passkey support to business-to-business (B2B) co
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1459133](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1459133)
 
-### Early-October 2026 – Microsoft Teams Enables Users to Report Security Concerns in Group Calls
+### Early-Oct 2026 - Archive SharePoint Files Under Retention Policies in Microsoft Purview
 
-Microsoft Teams will allow users to report security concerns directly during group calls. This provides participants with a way to flag potentially suspicious or problematic activity during a call, helping organizations improve their security response and protect users.
+Admins can now configure retention policies in Data Lifecycle Management to automatically move inactive OneDrive and SharePoint files to Microsoft 365 Archive. Archived content is excluded from Copilot indexing. This feature is turned off by default and helps admins manage storage costs effectively.
 
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1447673](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1447673)
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1472601](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1472601)
 
-### Early-October 2026 – Credential scanning in Microsoft Purview Data Security Posture Agent
+### Early-Oct 2026 - Microsoft Defender for Office 365 Adds Prompt Injection Protection for Email
 
-A new Credential Scanning capability will be introduced in Microsoft Purview Data Security Posture Agent to identify exposed credentials and related security risks across configured data sources. The AI-powered scanning engine uses large language models (LLMs) to detect sensitive credentials, including Microsoft Entra ID credentials, private keys, and API keys.
+Microsoft Defender for Office 365 is introducing prompt injection protection to detect and block malicious email content designed to manipulate AI assistants and agents. Emails identified as prompt injection attacks will be classified as _High Confidence Phish_ and automatically quarantined. The feature is enabled by default for organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 E5.
 
-Scan results are presented through a dashboard with risk scores, AI-generated insights, and confidence ratings, enabling administrators to prioritize and remediate credential exposure more effectively.
+**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1422060](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1422060)
 
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1259828](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1259828)
+### Early-Oct 2026 - Auto-labeling Per-policy Coverage in Microsoft Purview
 
-### Early-October 2026 – Microsoft Teams Introduces AI Meeting Archive Files
+Microsoft Purview is introducing a new report called the Auto-labeling Policy Coverage Report. Admins can use this report to track policy enforcement progress. It provides a centralized view of files that were successfully labeled, files that are still being processed, and files that require attention. The report is expected to be generally available by early October 2026.
 
-Microsoft Teams introduces AI meeting archive files that capture AI-generated meeting insights to improve responses from Microsoft 365 Copilot and Facilitator. The archive contains structured AI-generated meeting information instead of raw meeting content and is stored in a tenant-owned SharePoint Embedded container.
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1456609](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1456609)
 
-The feature is enabled by default, with administrator controls to manage archive generation and retention. Only meeting participants can access AI responses based on the meeting archive.
+### Early-Oct 2026 - Microsoft Teams Enables Users to Report Security Concerns in Group Calls
 
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1429018](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1429018)
+Microsoft Teams will allow users to report security concerns directly during Teams meetings. This gives participants a way to flag potentially suspicious or problematic activity, helping organizations identify threats such as impersonation, phishing, scams, and other suspicious behavior.
 
-### October 2026 – Microsoft Teams Introduces Separate Attendance Report Policy for Events
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466296](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466296)
 
-Microsoft Teams is introducing a dedicated attendance and engagement report policy for Teams events, such as webinars and town halls, separating their controls from Teams meetings. This allows administrators to grant event organizers access to event attendance and engagement reports while separately controlling access to Teams meeting reports.
+### Early-Oct 2026 - Centralized Notification Settings for Teams Channels
 
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567466](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567466)
+A new centralized location will allow admins to manage notification settings for Teams channels in one place instead of configuring them individually for each channel. This feature is enabled by default and is expected to reach General Availability by early October 2026.
 
-### October 2026 – Microsoft Purview Adds Inline DLP Controls for Prompts in Microsoft Foundry Apps and Agents
+**_Ref_:** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466307](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466307)
 
-Microsoft Purview Data Loss Prevention (DLP) will support inline DLP policies for built-in apps and agents in Microsoft Foundry. Organizations will be able to enable Microsoft Purview within Foundry to apply these policies. The integration helps prevent sensitive data from being shared through prompts and AI interactions, strengthening data protection controls.
+### Early-Oct 2026 - Temporarily Pause All Notifications in Microsoft Teams
 
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1304291](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1304291)
+To help users reduce interruptions and stay focused, Microsoft Teams is introducing a feature that allows users to pause all notifications for a specific period. The feature will be available on desktop, web, and mobile, with General Availability planned for early October 2026.
 
-### October 2026 – Microsoft Teams Adds the Ability to Pop Out Calls into a New Browser Window
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1465768](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1465768)
 
-Microsoft Teams browser app users will be able to pop out calls into a simplified call window that remains available while they navigate away from, hide, or minimize the browser tab or progressive web app (PWA) hosting the call. This makes it easier for users to multitask and continue collaborating while staying on a call.
+### Oct 2026 - Malicious URL Protection for Teams Chats and Channels in Government Cloud
 
-**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=569206](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=569206)
+To strengthen protection against malware attacks in Government Cloud environments, Microsoft is introducing a feature that detects and warns users about malicious URLs shared in Teams chats and channels.
+
+**_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?id=569421](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=569421-check)
 
 ### October 2026 – Microsoft Teams Automatically Blocks External AI Bots in Meetings
 
@@ -477,13 +158,17 @@ With this feature, organizations can automatically apply DLP restrictions to unc
 
 **_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?searchterms=139457](https://www.microsoft.com/en-us/microsoft-365/roadmap?searchterms=139457)
 
-### Late-October 2026 – Microsoft Entra Enables Passwordless Password Changes from My Sign-Ins
+### Mid-Oct 2026 - Data Loss Prevention for Microsoft Cowork in Microsoft Purview
 
-Microsoft Entra will allow passwordless users to change their passwords directly from _My Sign-Ins_ page using a strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business.
+Microsoft Purview Data Loss Prevention (DLP) is expanding support to Microsoft Cowork. This enhancement enables organizations to apply DLP protections consistently across Microsoft 365 Copilot and Microsoft Cowork, helping prevent the exposure of sensitive information and supporting enterprise-ready AI experiences.
 
-Users can complete the password change without knowing their current password or using Self-Service Password Reset (SSPR). The feature is disabled by default and can only be enabled as a tenant-wide setting.
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1477182](https://admin.cloud.microsoft/#/messages/MC1477182)
 
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1437671](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1437671)
+### Late-Oct 2026 - Change the Organizer of Meetings in Microsoft Outlook
+
+Microsoft is introducing "Change organizer" for eligible Outlook meetings and recurring meeting series. Users can ask another person in their organization to become the organizer, and the selected person must accept before the ownership changes. This helps maintain meeting continuity during role changes, leave, and offboarding. The feature will roll out to the GCC environment by late October 2026.
+
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1472028](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1472028)
 
 ### Enhancements
 
@@ -505,15 +190,17 @@ The credentials will also appear in My Security Info as auto-registered passkeys
 
 ### Mid-October 2026 – Microsoft Purview Adds Lifecycle Controls to Adaptive Scopes
 
-Microsoft Purview is introducing lifecycle status evaluation controls for adaptive scopes, allowing administrators to configure whether recipients and site owners should be evaluated based on their lifecycle status. This provides greater control over how adaptive scopes dynamically identify users and sites for compliance and data governance policies.
+Microsoft Purview is introducing lifecycle status evaluation controls for adaptive scopes, allowing administrators to configure whether recipients and site owners should be evaluated based on their lifecycle status. This provides greater control over how adaptive scopes dynamically identify users and sites for compliance and data governance policies. It will be rolled out in general availability by mid-oct 2026.
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450128](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1450128)
 
-### October 2026 – Microsoft Purview Introduces a Guided Diagnostics Experience for DLP
+### Oct 2026 - OneDrive Raises the macOS Sync Limit to 1 Million Items
 
-Microsoft Purview is introducing a guided diagnostics experience for Data Loss Prevention (DLP), helping administrators troubleshoot DLP policy and enforcement issues more efficiently. The guided experience provides targeted diagnostic information to help identify configuration or policy-related problems and determine appropriate remediation steps.
+OneDrive will increase its supported sync limit on macOS from 300,000 to 1 million items. This makes it easier to work with large SharePoint libraries and shared content on Mac devices.
 
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1293479](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1293479)
+The preview is available through the Insiders ring and requires devices to meet Microsoft's hardware and configuration requirements. Devices that do not meet the requirements will continue to use the existing 300,000-item limit.
+
+**_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?id=570448](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=570448)
 
 ### October 2026 – Microsoft Purview Increases Auto-Labeling Scale for SharePoint and OneDrive
 
@@ -521,15 +208,37 @@ Microsoft Purview is increasing the daily auto-labeling limit for SharePoint and
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1461154](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1461154)
 
-### Late-October 2026 – Purview Integrates Adaptive Protection with Data Lifecycle Management
+### Mid-Oct 2026 - Choose Detection Sources for Microsoft Defender XDR Alert Tuning Rules
 
-Microsoft Purview is making its Adaptive Protection integration with Data Lifecycle Management (DLM) generally available in late October 2026. The integration automatically retains content deleted by elevated-risk users for 120 days across SharePoint, OneDrive, and Exchange, helping protect against potential data sabotage.
+Microsoft Defender XDR is adding detection-source controls to alert tuning rules. Admins will be able to specify which detection sources a rule should cover, giving them more control over which alerts are affected by each tuning configuration. The feature is expected to enter Public Preview in mid-October 2026.
 
-Admins can enable the integration from the Microsoft Purview compliance portal, while Microsoft automatically creates and manages the required retention label and policy.
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481318](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481318)
 
-**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC791110](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC791110)
+### Late-Oct 2026 - File Sharing in External Teams Chats Will Be Enabled by Default
+
+Microsoft is changing the default behavior for file sharing in Teams external chats. Users will be able to share files with external participants without admins having to enable the capability first.
+
+Teams will automatically assign the necessary permissions when a file is shared in an external chat. Admins can still control this behavior through the available settings and PowerShell configuration.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1479514](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1479514)
 
 ### Existing Functionality Changes
+
+### Oct 2026 – Microsoft Expands Archive Mailbox Capacity Beyond 1.5 TB
+
+Currently, auto-expanding archive mailboxes are limited to 1.5 TB, after which they stop working. This limit has now been removed, allowing [archive mailboxes to grow upto 3 TB](https://blog.admindroid.com/microsoft-365-auto-expanding-mailbox-archive-limit-increase/) automatically to support ongoing retention needs.
+
+**_Ref:_** [https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=560820#Roadmap](https://www.microsoft.com/en-US/microsoft-365/roadmap?filters=&searchterms=560820#Roadmap)  
+
+### Oct 1, 2026 - Update EWSAllowedAppIDs Before EWS Access Changes
+
+Microsoft is changing how the EWSAllowedAppIDs setting will be applied as part of the final phase of Exchange Web Services (EWS) retirement. Starting October 1, 2026, tenants with EWSEnabled set to True will require an AppID allow list for EWS access.
+
+If you still have applications that require EWS, review your EWS usage and configure EWSAllowedAppIDs with only the applications that need access. Once you configure the list yourself, Microsoft will not overwrite, modify, or automatically update it.
+
+If you don't configure the list yourself, Microsoft may automatically populate it based on EWS usage from the previous 60 days. This may include applications you no longer want to allow or miss applications that are used infrequently.
+
+**_Ref_**: [https://techcommunity.microsoft.com/blog/exchange/take-control-of-your-ewsallowedappids-list-before-ews-access-changes/4553534](https://techcommunity.microsoft.com/blog/exchange/take-control-of-your-ewsallowedappids-list-before-ews-access-changes/4553534)
 
 ### October 5, 2026 – OneDrive Adds Default Exclusion for .db-wal Files
 
@@ -537,13 +246,19 @@ Microsoft OneDrive will add the .db-wal file type to its default exclusion list 
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1457838](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1457838)
 
-### Mid-October 2026 – Entra ID Sign-in Experience to Enforce Stricter Content Security Policy
+### Late-Oct 2026 - Teams Retention Policies Will No Longer Cover Copilot Interactions
 
-Microsoft Entra ID will enforce a stricter Content Security Policy (CSP) for browser-based sign-ins starting mid-October 2026. The updated policy will allow only trusted Microsoft scripts, helping prevent injected code and reduce cross-site scripting (XSS) risks.
+Microsoft is changing how legacy Teams retention policies handle Copilot data. From late October 2026, these policies will retain only Teams content and will no longer apply to Microsoft 365 Copilot interactions. Organizations that need to retain Copilot data must configure separate retention settings for the Copilot workload.
 
-The change applies to sign-ins through _login.microsoftonline.com_ and does not affect Entra External ID tenants.
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481313](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481313)
 
-**_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1191924](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1191924)
+### Late-Oct 2026 - Teams User Reporting Becomes the Default in Microsoft Defender for Office 365
+
+Microsoft Defender for Office 365 will turn on Teams user reporting by default, giving users a built-in way to flag suspicious activity in Teams. Users can report potentially harmful messages, calls, and meetings, helping security teams investigate threats such as phishing, spam, impersonation, and malicious content.
+
+The feature is available with Microsoft Defender for Office 365 Plan 1 or Plan 2, Microsoft 365 E5, and Office 365 E5.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1478463](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1478463)
 
 ### Action Needed
 
@@ -555,6 +270,14 @@ Microsoft is moving the Microsoft 365 Copilot web app from m365.cloud.microsoft 
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462915](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1462915)
 
+### Oct 1, 2026 - Project Online Essentials Reaches End of Life
+
+Project Online Essentials will reach its end of life on October 1, 2026.
+
+**Solution:** Organizations using this license should move affected users to supported licensing options, such as Project and Planner Plan 1 or Plan 3, to continue accessing the required Project and Planner capabilities.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466302](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1466302)
+
 ### October 1, 2026 – Exchange Web Services Will Be Blocked for Kiosk and Frontline Licenses
 
 Microsoft will block Exchange Web Services access for mailboxes that do not include EWS usage rights starting October 1, 2026. After enforcement, requests made without a supported license will return an HTTP 403 error. Impacted licenses include Exchange Online Kiosk, Microsoft 365/Office 365 F1, and F3.
@@ -562,6 +285,14 @@ Microsoft will block Exchange Web Services access for mailboxes that do not incl
 **Solution:** To continue using EWS, assign a license that includes EWS access, such as Exchange Online Plan 1 or 2 or Microsoft 365 E3/E5.
 
 **_Ref:_** [https://techcommunity.microsoft.com/blog/exchange/update-to-ews-access-for-kiosk–frontline-worker-licensed-users/4474299](https://techcommunity.microsoft.com/blog/exchange/update-to-ews-access-for-kiosk%E2%80%93frontline-worker-licensed-users/4474299)
+
+### Oct 19, 2026 - Microsoft Entra ID to Block External Script Injection During Sign-in
+
+Microsoft is strengthening the Microsoft Entra ID authentication experience by introducing additional Content Security Policy (CSP) protections. These controls will restrict sign-in pages to trusted Microsoft-hosted scripts and help prevent unauthorized script injection, including cross-site scripting (XSS) attacks.
+
+**Action required:** Admins should check whether any browser extensions, tools, or custom solutions inject scripts into Microsoft Entra sign-in pages. Any solutions that depend on this behavior may need to be updated.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481309](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481309)
 
 ### October 31, 2026 – Retirement of Microsoft Defender for Endpoint on Amazon Linux 2 (ARM64)
 
@@ -571,7 +302,30 @@ From October 31, 2026, Microsoft will retire support for Microsoft Defender for 
 
 **_Ref:_** [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1392568](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1392568)
 
-## November 2026 (Attention Needed: 5)
+### Live Now
+
+### Pay-As-You-Go Billing for Extra Microsoft SharePoint Storage
+
+Previously, organizations had to purchase the Office 365 Extra File Storage add-on for additional SharePoint storage, which is billed in 1-GB increments and could result in paying for capacity that remained unused.
+
+Microsoft 365 SharePoint Storage is now generally available worldwide with pay-as-you-go billing. Storage is measured based on actual consumption above the tenant's included storage quota, allowing organizations to pay only for the additional storage they use.
+
+## November 2026
+
+### Retirements
+
+### Nov 2026 - Retirement of Four Microsoft Graph Endpoints
+
+Microsoft is planning to retire four Microsoft Graph endpoints in November: _/drive/recent, /drive/sharedWithMe, /insights/used, and /insights/shared_.
+
+**Ref:**
+
+*   /drive/recent - [https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-1.0&tabs=http](https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-1.0&tabs=http)
+*   /drive/sharedWithMe - [https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-1.0&tabs=http](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-1.0&tabs=http)
+*   /insights/used - [https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-1.0&tabs=http](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-1.0&tabs=http)
+*   /insights/shared - [https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-1.0&tabs=http](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-1.0&tabs=http)
+
+**Note:** Microsoft has not provided any alternative endpoints or workaround options for these retirements.
 
 ### November 2, 2026 – Outlook for Windows Report Retirement in the Exchange Admin Center
 
@@ -579,17 +333,15 @@ Microsoft is retiring the Outlook for Windows report in the Exchange admin cente
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1230889](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1230889)
 
-### November 3, 2026 – Microsoft Entra ID Retires MemberOf Rule Operator
+### Late-Nov 2026 - Retirement of Classic DSPM and DSPM for AI Experiences
 
-Microsoft Entra ID will retire the MemberOf rule operator for dynamic groups and dynamic administrative units. Organizations using this operator in dynamic membership rules will need to update those rules to supported alternatives before the retirement date.
+Microsoft is consolidating its Microsoft Purview Data Security Posture Management capabilities into a unified DSPM experience. As part of this change, the classic DSPM and DSPM for AI experiences will be retired.
 
-**_Ref:_** [https://techcommunity.microsoft.com/discussions/microsoft-365/entra-id-drops-the-memberof-rule-operator-for-dynamic-groups-and-dynamic-admin-u/4544978](https://techcommunity.microsoft.com/discussions/microsoft-365/entra-id-drops-the-memberof-rule-operator-for-dynamic-groups-and-dynamic-admin-u/4544978)
+The unified experience will provide a central place for organizations to discover, protect, and investigate data security risks across traditional data sources as well as AI applications and agents.
 
-### November 9, 2026 – Microsoft Entra ID SSPR Requires Registered Authentication Methods
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481315](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481315)
 
-Microsoft Entra ID Self-Service Password Reset (SSPR) will require users to verify their identity using authentication methods explicitly registered for authentication. Directory-stored contact information that has not been registered as an authentication method will no longer be accepted for SSPR verification.
-
-**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1325414](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1325414)
+### New Features
 
 ### November 2026 – Pay-as-You-Go Consumption-Based Billing for Extra OneDrive Storage
 
@@ -599,13 +351,88 @@ The model enables organizations to scale storage flexibly and pay only for the a
 
 **_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=562352](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=562352)
 
+### Nov 2026 – Microsoft Teams Introduces Separate Attendance Report Policy for Events
+
+Microsoft Teams is introducing a dedicated attendance and engagement report policy for Teams events, such as webinars and town halls, separating their controls from Teams meetings. This allows administrators to grant event organizers access to event attendance and engagement reports while separately controlling access to Teams meeting reports.
+
+**_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567466](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=567466)
+
+### Nov 2026 - Share Local Word, Excel, and PowerPoint Files in New Outlook for Windows
+
+New Outlook for Windows will make it easier to attach files stored locally on a user’s device. Users will be able to select local Word, Excel, and PowerPoint files directly when composing an email and send them as attachments. The capability will be enabled by default.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1245222](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1245222)
+
+### Nov 2026 - Personal Message Reminders for Teams Chats and Channels
+
+Teams now lets users set and manage reminders directly on chat and channel messages. Users can create, update, complete, and delete reminders, track them in a dedicated Reminders view, and receive notifications when they are due. Reminders are private to each user and include the original message context, making it easier to revisit and act on important messages.
+
+**_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?id=565869](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=565869)
+
+### Early-Nov 2026 – Microsoft Teams Introduces AI Meeting Archive Files
+
+Microsoft Teams introduces AI meeting archive files that capture AI-generated meeting insights to improve responses from Microsoft 365 Copilot and Facilitator. The archive contains structured AI-generated meeting information instead of raw meeting content and is stored in a tenant-owned SharePoint Embedded container.
+
+The feature is enabled by default, with administrator controls to manage archive generation and retention. Only meeting participants can access AI responses based on the meeting archive.
+
+**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1429018](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC1429018)
+
+### Late-Nov 2026 – Purview Integrates Adaptive Protection with Data Lifecycle Management
+
+Microsoft Purview is making its Adaptive Protection integration with Data Lifecycle Management (DLM) generally available in late Nov 2026. The integration automatically retains content deleted by elevated-risk users for 120 days across SharePoint, OneDrive, and Exchange, helping protect against potential data sabotage.
+
+Admins can enable the integration from the Microsoft Purview compliance portal, while Microsoft automatically creates and manages the required retention label and policy.
+
+**_Ref:_** [https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC791110](https://admin.cloud.microsoft/?ref=MessageCenter/:/messages/MC791110)
+
+### Enhancements
+
+### Nov 2026 - Two Presenters Can Share Screens Simultaneously in Microsoft Teams Meetings
+
+Microsoft Teams is expanding meeting screen-sharing capabilities to support two presenters at the same time. Instead of limiting meetings to a single shared screen or window, two presenters will be able to share their content simultaneously, allowing participants to view both streams during the meeting.
+
+**_Ref_**: [https://www.microsoft.com/en-us/microsoft-365/roadmap?id=80239](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=80239)
+
+### Mid-Nov 2026 - Improved Memory and Personalization in Microsoft 365 Copilot
+
+Microsoft 365 Copilot is getting updates to its memory and personalization capabilities. Copilot will use relevant chat history to provide responses that are more tailored to the user’s context and previous interactions.
+
+Microsoft is also refreshing the Copilot settings experience, making it easier for users to review and manage their saved memories. These improvements will be available to Copilot Chat users.
+
+**_Ref_**: [https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1158329](https://admin.cloud.microsoft/?#/MessageCenter/:/messages/MC1158329)
+
+### Existing Functionality Changes
+
 ### November 2026 – Microsoft Purview Reduces DLP Policy Sync Time from 2 Hours to 30 Minutes
 
 Microsoft Purview is reducing the expected synchronization time for Data Loss Prevention (DLP) policy changes from approximately two hours to 30 minutes. This enhancement allows administrators to see newly created or modified DLP policies take effect more quickly across supported workloads.
 
 **_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1317834](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1317834)
 
+### November 9, 2026 – Microsoft Entra ID SSPR Requires Registered Authentication Methods
+
+Microsoft Entra ID Self-Service Password Reset (SSPR) will require users to verify their identity using authentication methods explicitly registered for authentication. Directory-stored contact information that has not been registered as an authentication method will no longer be accepted for SSPR verification.
+
+**_Ref:_** [https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1325414](https://admin.cloud.microsoft/?source=applauncher&ref=MessageCenter/:/messages/MC1325414)
+
+### Action Required
+
+### November 3, 2026 – Microsoft Entra ID Retires MemberOf Rule Operator
+
+Microsoft Entra ID will retire the MemberOf rule operator for dynamic groups and dynamic administrative units.
+
+**Solution:** Organizations using this operator in dynamic membership rules will need to update those rules to supported alternatives before the retirement date.
+
+**_Ref:_** [https://techcommunity.microsoft.com/discussions/microsoft-365/entra-id-drops-the-memberof-rule-operator-for-dynamic-groups-and-dynamic-admin-u/4544978](https://techcommunity.microsoft.com/discussions/microsoft-365/entra-id-drops-the-memberof-rule-operator-for-dynamic-groups-and-dynamic-admin-u/4544978)
+
 ## December 2026 (Attention Needed: 5)  
+Early-Dec 2026 - Retirement of Data Risk Graph in Insider Risk Management
+
+Microsoft is retiring the Data Risk Graph in Insider Risk Management and shifting investigations toward other built-in investigation experiences. The Data Risk Graph currently provides a visual view of relationships between users, data, alerts, and related activities.
+
+After its retirement, admins can use Activity Explorer, Content Explorer, and User Activity experiences to investigate risk indicators and related activities in greater detail.
+
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481317](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1481317)
 
 ### December 2026 – Credential Parameter Retirement in Exchange Online PowerShell
 
@@ -620,6 +447,25 @@ Exchange Online PowerShell is deprecating the _\-Credential_ parameter as it rel
 Starting in December 2026, organizations will be able to select how long Message Trace data is retained by choosing from a set of predefined retention periods. This enhancement gives admins greater flexibility to align log retention with their compliance, audit, and operational requirements.
 
 **_Ref:_** [https://www.microsoft.com/en-in/microsoft-365/roadmap?id=542929](https://www.microsoft.com/en-in/microsoft-365/roadmap?id=542929)
+
+### Mid-Dec 2026 - Endpoint DLP Introduces a Curated File Extension List
+
+Microsoft Purview Endpoint DLP is introducing a predefined list of supported file extensions for policy configuration. Admins will no longer be able to enter file extensions manually, helping ensure that only supported file types are included in DLP policies.
+
+Existing policies will continue to work as configured, but admins may need to remove unsupported extensions when making future changes.
+
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1384415](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1384415)
+
+### Dec 16, 2026 - Microsoft 365 Companion Apps Will Reach End of Life
+
+Microsoft is retiring the Microsoft 365 companion apps for Calendar, People, and Files. These taskbar-integrated apps will no longer be supported or functional after December 16, 2026.
+
+Microsoft has already stopped providing updates and fixes, including security updates, and is phasing out their automatic installation.
+
+**Action required:**  
+Admins should remove the companion apps from organizational devices before the retirement date.
+
+**_Ref_**: [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1474111](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1474111)
 
 ### End of December 2026 – Disable SMTP Auth for Basic Authentication
 
@@ -725,6 +571,16 @@ After this retirement, users will no longer be able to verify their identity usi
 
 **_Ref:_** [https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-security-questions](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-security-questions)
 
+### Mar 2027 - Classic SharePoint Publishing Site and Page Creation Will Be Disabled
+
+Microsoft is phasing out classic SharePoint publishing capabilities as part of the transition to modern SharePoint experiences.
+
+Starting March 1, 2027, existing tenants will no longer be able to create classic publishing sites or activate publishing features. New tenants will also have restrictions on creating classic pages and making changes that depend on custom scripts.
+
+From October 1, 2028, existing classic user-created pages will become read-only, and custom scripting restrictions will apply across all tenants.
+
+**_Ref:_** [https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1464926](https://admin.cloud.microsoft/#/MessageCenter/:/messages/MC1464926)
+
 ### March 31, 2027 – Microsoft Sentinel Retirement in Azure Portal
 
 Microsoft is migrating Microsoft Sentinel from the Azure portal to the Microsoft Defender portal. After March 31, 2027, Microsoft Sentinel will no longer be supported in the Azure portal, and must be accessed through the Microsoft Defender portal.
@@ -775,6 +631,8 @@ To align with the updated passkey policy API schema that supports group-based pa
 
 In conclusion, navigating the ever-evolving landscape of Microsoft 365 requires staying informed about the changes 🔍. By proactively adapting to these changes, you can optimize your Microsoft 365 experience, maximize productivity, and effectively plan for the future. 💪
 
-We’re committed to keeping this blog fresh with the most current information. Stay tuned for the latest updates!
+_Don’t miss out on the latest buzz in Microsoft 365! 🐝_
+
+### _We’re committed to keeping this blog fresh with the most current information. Stay tuned for the latest updates!_  
 
 [https://blog.admindroid.com/microsoft-365-end-of-support-milestones/](https://blog.admindroid.com/microsoft-365-end-of-support-milestones/)
